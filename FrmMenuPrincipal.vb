@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class FrmMenuPrincipal
     Private Sub NToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NToolStripMenuItem.Click
 
     End Sub
