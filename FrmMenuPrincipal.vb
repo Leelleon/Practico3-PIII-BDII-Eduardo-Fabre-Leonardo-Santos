@@ -1,5 +1,6 @@
 ﻿Public Class FrmMenuPrincipal
     Private Sub NToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NToolStripMenuItem.Click
+        FrmAltaPersona.Show()
 
     End Sub
 
