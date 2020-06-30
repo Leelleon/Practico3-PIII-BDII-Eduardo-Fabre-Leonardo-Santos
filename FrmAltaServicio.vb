@@ -11,6 +11,7 @@ Public Class FrmAltaServicio
     End Sub
 
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
+
         Dim Servicio(3) As String
         Servicio(0) = TxtNombre.Text
         Servicio(1) = TxtCosto.Text

@@ -41,7 +41,7 @@ Partial Class FrmAltaServicio
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
-        Me.BtnCancelar.TabIndex = 55
+        Me.BtnCancelar.TabIndex = 5
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
@@ -88,7 +88,7 @@ Partial Class FrmAltaServicio
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
-        Me.TxtNombre.TabIndex = 47
+        Me.TxtNombre.TabIndex = 1
         '
         'TxtCosto
         '
@@ -97,7 +97,7 @@ Partial Class FrmAltaServicio
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
         Me.TxtCosto.Size = New System.Drawing.Size(205, 26)
-        Me.TxtCosto.TabIndex = 46
+        Me.TxtCosto.TabIndex = 2
         '
         'TxtId
         '
@@ -106,7 +106,7 @@ Partial Class FrmAltaServicio
         Me.TxtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(68, 26)
-        Me.TxtId.TabIndex = 45
+        Me.TxtId.TabIndex = 0
         '
         'BtnAceptar
         '
@@ -114,17 +114,19 @@ Partial Class FrmAltaServicio
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(125, 55)
-        Me.BtnAceptar.TabIndex = 44
+        Me.BtnAceptar.TabIndex = 4
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
         'CmbTipo
         '
         Me.CmbTipo.FormattingEnabled = True
+        Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
         Me.CmbTipo.Location = New System.Drawing.Point(206, 258)
+        Me.CmbTipo.MaxLength = 50
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(205, 28)
-        Me.CmbTipo.TabIndex = 56
+        Me.CmbTipo.TabIndex = 3
         '
         'FrmAltaServicio
         '
