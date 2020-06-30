@@ -28,4 +28,31 @@
         Command.ExecuteNonQuery()
     End Sub
 
+    Public Function ObtenerDatos()
+        Command.CommandText = "
+            SELECT 
+                nombre, costo_mensual, tipo
+            FROM
+                servicio
+            WHERE
+                id = " + Me.Id + " AND
+                activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+    End Function
+
+    Public Function ObtenerIDs()
+        Command.CommandText = "
+            SELECT
+                id
+            FROM 
+                servicio
+            WHERE
+                activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+    End Function
+
 End Class
