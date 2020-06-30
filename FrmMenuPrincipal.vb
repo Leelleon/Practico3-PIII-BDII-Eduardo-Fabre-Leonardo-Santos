@@ -18,4 +18,8 @@
         FrmListarPersona.Show()
 
     End Sub
+
+    Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem.Click
+        FrmAltaServicio.Show()
+    End Sub
 End Class
