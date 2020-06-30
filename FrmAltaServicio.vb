@@ -7,7 +7,23 @@ Public Class FrmAltaServicio
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+        TxtId.Text = ""
+        TxtNombre.Text = ""
+        TxtCosto.Text = ""
+        CmbTipo.Text = ""
         Me.Close()
+    End Sub
+
+    Private Sub TxtNombre_TextChanged(sender As Object, e As EventArgs) Handles TxtNombre.TextChanged
+        PermitirAceptar()
+    End Sub
+
+    Private Sub TxtCosto_TextChanged(sender As Object, e As EventArgs) Handles TxtCosto.TextChanged
+        PermitirAceptar()
+    End Sub
+
+    Private Sub CmbTipo_TextChanged(sender As Object, e As EventArgs) Handles CmbTipo.TextChanged
+        PermitirAceptar()
     End Sub
 
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
@@ -19,4 +35,14 @@ Public Class FrmAltaServicio
 
         ControladorServicio.InsertarServicio(Servicio)
     End Sub
+
+    Public Sub PermitirAceptar()
+        If ((TxtNombre.Text <> "") And (TxtCosto.Text <> "") And (CmbTipo.Text <> "")) Then
+            BtnAceptar.Enabled = True
+        Else
+            BtnAceptar.Enabled = False
+        End If
+    End Sub
+
+
 End Class
