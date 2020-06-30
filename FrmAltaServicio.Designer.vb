@@ -37,10 +37,10 @@ Partial Class FrmAltaServicio
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(280, 362)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnCancelar.Location = New System.Drawing.Point(187, 235)
+        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
+        Me.BtnCancelar.Size = New System.Drawing.Size(72, 31)
         Me.BtnCancelar.TabIndex = 55
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
@@ -48,72 +48,77 @@ Partial Class FrmAltaServicio
         'LblTipo
         '
         Me.LblTipo.AutoSize = True
-        Me.LblTipo.Location = New System.Drawing.Point(89, 267)
+        Me.LblTipo.Location = New System.Drawing.Point(59, 174)
+        Me.LblTipo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(39, 20)
+        Me.LblTipo.Size = New System.Drawing.Size(28, 13)
         Me.LblTipo.TabIndex = 53
         Me.LblTipo.Text = "Tipo"
         '
         'LblCosto
         '
         Me.LblCosto.AutoSize = True
-        Me.LblCosto.Location = New System.Drawing.Point(89, 201)
+        Me.LblCosto.Location = New System.Drawing.Point(59, 131)
+        Me.LblCosto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblCosto.Name = "LblCosto"
-        Me.LblCosto.Size = New System.Drawing.Size(51, 20)
+        Me.LblCosto.Size = New System.Drawing.Size(34, 13)
         Me.LblCosto.TabIndex = 52
         Me.LblCosto.Text = "Costo"
         '
         'LblPersonaNombre
         '
         Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(89, 129)
+        Me.LblPersonaNombre.Location = New System.Drawing.Point(59, 84)
+        Me.LblPersonaNombre.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(65, 20)
+        Me.LblPersonaNombre.Size = New System.Drawing.Size(44, 13)
         Me.LblPersonaNombre.TabIndex = 51
         Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
         Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(89, 60)
+        Me.LblPersonaId.Location = New System.Drawing.Point(59, 39)
+        Me.LblPersonaId.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(23, 20)
+        Me.LblPersonaId.Size = New System.Drawing.Size(16, 13)
         Me.LblPersonaId.TabIndex = 50
         Me.LblPersonaId.Text = "Id"
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(206, 129)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtNombre.Location = New System.Drawing.Point(137, 84)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
+        Me.TxtNombre.Size = New System.Drawing.Size(138, 20)
         Me.TxtNombre.TabIndex = 47
         '
         'TxtCosto
         '
-        Me.TxtCosto.Location = New System.Drawing.Point(206, 195)
-        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtCosto.Location = New System.Drawing.Point(137, 127)
+        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
-        Me.TxtCosto.Size = New System.Drawing.Size(205, 26)
+        Me.TxtCosto.Size = New System.Drawing.Size(138, 20)
         Me.TxtCosto.TabIndex = 46
         '
         'TxtId
         '
         Me.TxtId.Enabled = False
-        Me.TxtId.Location = New System.Drawing.Point(206, 60)
-        Me.TxtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtId.Location = New System.Drawing.Point(137, 39)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(68, 26)
+        Me.TxtId.Size = New System.Drawing.Size(47, 20)
         Me.TxtId.TabIndex = 45
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Location = New System.Drawing.Point(133, 359)
-        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnAceptar.Enabled = False
+        Me.BtnAceptar.Location = New System.Drawing.Point(89, 233)
+        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(125, 55)
+        Me.BtnAceptar.Size = New System.Drawing.Size(83, 36)
         Me.BtnAceptar.TabIndex = 44
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
@@ -121,16 +126,18 @@ Partial Class FrmAltaServicio
         'CmbTipo
         '
         Me.CmbTipo.FormattingEnabled = True
-        Me.CmbTipo.Location = New System.Drawing.Point(206, 258)
+        Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
+        Me.CmbTipo.Location = New System.Drawing.Point(137, 168)
+        Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CmbTipo.Name = "CmbTipo"
-        Me.CmbTipo.Size = New System.Drawing.Size(205, 28)
+        Me.CmbTipo.Size = New System.Drawing.Size(138, 21)
         Me.CmbTipo.TabIndex = 56
         '
         'FrmAltaServicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 461)
+        Me.ClientSize = New System.Drawing.Size(339, 300)
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTipo)
@@ -141,6 +148,7 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmAltaServicio"
         Me.Text = "FrmAltaServicio"
         Me.ResumeLayout(False)
