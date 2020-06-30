@@ -139,7 +139,6 @@ Partial Class FrmAltaPersona
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Enabled = False
         Me.BtnCancelar.Location = New System.Drawing.Point(244, 282)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"

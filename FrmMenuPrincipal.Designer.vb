@@ -26,8 +26,18 @@ Partial Class FrmMenuPrincipal
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PnlPersona = New System.Windows.Forms.Panel()
         Me.CbxBaja = New System.Windows.Forms.CheckBox()
         Me.LblActivo = New System.Windows.Forms.Label()
@@ -46,16 +56,6 @@ Partial Class FrmMenuPrincipal
         Me.BtnCancelar = New System.Windows.Forms.Button()
         Me.BtnAceptar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.PnlPersona.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,6 +92,18 @@ Partial Class FrmMenuPrincipal
         Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
+        'ListarToolStripMenuItem
+        '
+        Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ListarToolStripMenuItem.Text = "Listar"
+        '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ModificarToolStripMenuItem1, Me.EliminarToolStripMenuItem1, Me.ListarToolStripMenuItem1})
@@ -99,12 +111,60 @@ Partial Class FrmMenuPrincipal
         Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(79, 24)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
+        'NuevoToolStripMenuItem
+        '
+        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.NuevoToolStripMenuItem.Text = "Nuevo"
+        '
+        'ModificarToolStripMenuItem1
+        '
+        Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.ModificarToolStripMenuItem1.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem1
+        '
+        Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
+        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.EliminarToolStripMenuItem1.Text = "Eliminar"
+        '
+        'ListarToolStripMenuItem1
+        '
+        Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
+        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.ListarToolStripMenuItem1.Text = "Listar"
+        '
         'ContratosToolStripMenuItem
         '
         Me.ContratosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.ModificarToolStripMenuItem2, Me.ListarToolStripMenuItem2, Me.EliminarToolStripMenuItem2})
         Me.ContratosToolStripMenuItem.Name = "ContratosToolStripMenuItem"
         Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
         Me.ContratosToolStripMenuItem.Text = "Contratos"
+        '
+        'NuevoToolStripMenuItem1
+        '
+        Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.NuevoToolStripMenuItem1.Text = "Nuevo"
+        '
+        'ModificarToolStripMenuItem2
+        '
+        Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(148, 26)
+        Me.ModificarToolStripMenuItem2.Text = "Modificar"
+        '
+        'ListarToolStripMenuItem2
+        '
+        Me.ListarToolStripMenuItem2.Name = "ListarToolStripMenuItem2"
+        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(148, 26)
+        Me.ListarToolStripMenuItem2.Text = "Listar"
+        '
+        'EliminarToolStripMenuItem2
+        '
+        Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
+        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(148, 26)
+        Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'PnlPersona
         '
@@ -291,66 +351,6 @@ Partial Class FrmMenuPrincipal
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(327, 373)
         Me.DataGridView1.TabIndex = 17
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
-        'ListarToolStripMenuItem
-        '
-        Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.ListarToolStripMenuItem.Text = "Listar"
-        '
-        'NuevoToolStripMenuItem
-        '
-        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.NuevoToolStripMenuItem.Text = "Nuevo"
-        '
-        'ModificarToolStripMenuItem1
-        '
-        Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
-        Me.ModificarToolStripMenuItem1.Text = "Modificar"
-        '
-        'EliminarToolStripMenuItem1
-        '
-        Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
-        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
-        Me.EliminarToolStripMenuItem1.Text = "Eliminar"
-        '
-        'ListarToolStripMenuItem1
-        '
-        Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
-        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
-        Me.ListarToolStripMenuItem1.Text = "Listar"
-        '
-        'NuevoToolStripMenuItem1
-        '
-        Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
-        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
-        Me.NuevoToolStripMenuItem1.Text = "Nuevo"
-        '
-        'ModificarToolStripMenuItem2
-        '
-        Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
-        Me.ModificarToolStripMenuItem2.Text = "Modificar"
-        '
-        'ListarToolStripMenuItem2
-        '
-        Me.ListarToolStripMenuItem2.Name = "ListarToolStripMenuItem2"
-        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
-        Me.ListarToolStripMenuItem2.Text = "Listar"
-        '
-        'EliminarToolStripMenuItem2
-        '
-        Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
-        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
-        Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'FrmMenuPrincipal
         '
