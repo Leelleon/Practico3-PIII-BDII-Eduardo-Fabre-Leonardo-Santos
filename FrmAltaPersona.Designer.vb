@@ -127,7 +127,6 @@ Partial Class FrmAltaPersona
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Enabled = False
         Me.BtnAceptar.Location = New System.Drawing.Point(69, 282)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
