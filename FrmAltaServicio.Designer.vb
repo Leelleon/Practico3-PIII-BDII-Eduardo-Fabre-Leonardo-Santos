@@ -40,13 +40,8 @@ Partial Class FrmAltaServicio
         Me.BtnCancelar.Location = New System.Drawing.Point(187, 235)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnCancelar.Name = "BtnCancelar"
-<<<<<<< HEAD
-        Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
-        Me.BtnCancelar.TabIndex = 5
-=======
         Me.BtnCancelar.Size = New System.Drawing.Size(72, 31)
         Me.BtnCancelar.TabIndex = 55
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
@@ -96,13 +91,8 @@ Partial Class FrmAltaServicio
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-<<<<<<< HEAD
-        Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
-        Me.TxtNombre.TabIndex = 1
-=======
         Me.TxtNombre.Size = New System.Drawing.Size(138, 20)
         Me.TxtNombre.TabIndex = 47
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         '
         'TxtCosto
         '
@@ -110,13 +100,8 @@ Partial Class FrmAltaServicio
         Me.TxtCosto.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
-<<<<<<< HEAD
-        Me.TxtCosto.Size = New System.Drawing.Size(205, 26)
-        Me.TxtCosto.TabIndex = 2
-=======
         Me.TxtCosto.Size = New System.Drawing.Size(138, 20)
         Me.TxtCosto.TabIndex = 46
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         '
         'TxtId
         '
@@ -124,13 +109,8 @@ Partial Class FrmAltaServicio
         Me.TxtId.Location = New System.Drawing.Point(137, 39)
         Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtId.Name = "TxtId"
-<<<<<<< HEAD
-        Me.TxtId.Size = New System.Drawing.Size(68, 26)
-        Me.TxtId.TabIndex = 0
-=======
         Me.TxtId.Size = New System.Drawing.Size(47, 20)
         Me.TxtId.TabIndex = 45
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         '
         'BtnAceptar
         '
@@ -138,13 +118,8 @@ Partial Class FrmAltaServicio
         Me.BtnAceptar.Location = New System.Drawing.Point(89, 233)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnAceptar.Name = "BtnAceptar"
-<<<<<<< HEAD
-        Me.BtnAceptar.Size = New System.Drawing.Size(125, 55)
-        Me.BtnAceptar.TabIndex = 4
-=======
         Me.BtnAceptar.Size = New System.Drawing.Size(83, 36)
         Me.BtnAceptar.TabIndex = 44
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
@@ -152,19 +127,11 @@ Partial Class FrmAltaServicio
         '
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
-<<<<<<< HEAD
-        Me.CmbTipo.Location = New System.Drawing.Point(206, 258)
-        Me.CmbTipo.MaxLength = 50
-        Me.CmbTipo.Name = "CmbTipo"
-        Me.CmbTipo.Size = New System.Drawing.Size(205, 28)
-        Me.CmbTipo.TabIndex = 3
-=======
         Me.CmbTipo.Location = New System.Drawing.Point(137, 168)
         Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(138, 21)
         Me.CmbTipo.TabIndex = 56
->>>>>>> fd7ea9b2ada3a319401239f9a3342e83f6396a1b
         '
         'FrmAltaServicio
         '

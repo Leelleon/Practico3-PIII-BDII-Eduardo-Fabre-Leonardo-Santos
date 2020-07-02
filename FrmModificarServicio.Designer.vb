@@ -23,7 +23,7 @@ Partial Class FrmModificarServicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LblId = New System.Windows.Forms.Label()
-        Me.CmbId = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtCosto = New System.Windows.Forms.TextBox()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
@@ -45,14 +45,14 @@ Partial Class FrmModificarServicio
         Me.LblId.TabIndex = 0
         Me.LblId.Text = "Seleccione el ID del servicio a modificar"
         '
-        'CmbId
+        'ComboBox1
         '
-        Me.CmbId.FormattingEnabled = True
-        Me.CmbId.Location = New System.Drawing.Point(411, 85)
-        Me.CmbId.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.CmbId.Name = "CmbId"
-        Me.CmbId.Size = New System.Drawing.Size(103, 28)
-        Me.CmbId.TabIndex = 1
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(411, 85)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(103, 28)
+        Me.ComboBox1.TabIndex = 1
         '
         'TxtNombre
         '
@@ -72,6 +72,7 @@ Partial Class FrmModificarServicio
         '
         'CmbTipo
         '
+        Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
         Me.CmbTipo.Location = New System.Drawing.Point(222, 417)
@@ -154,7 +155,7 @@ Partial Class FrmModificarServicio
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtNombre)
-        Me.Controls.Add(Me.CmbId)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.LblId)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FrmModificarServicio"
@@ -165,7 +166,7 @@ Partial Class FrmModificarServicio
     End Sub
 
     Friend WithEvents LblId As Label
-    Friend WithEvents CmbId As ComboBox
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtCosto As TextBox
     Friend WithEvents CmbTipo As ComboBox

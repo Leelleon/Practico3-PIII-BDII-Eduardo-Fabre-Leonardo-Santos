@@ -90,10 +90,22 @@
     <Compile Include="FrmEliminarPersona.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmEliminarServicio.Designer.vb">
+      <DependentUpon>FrmEliminarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmListarPersona.Designer.vb">
       <DependentUpon>FrmListarPersona.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmListarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarServicio.Designer.vb">
+      <DependentUpon>FrmListarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarServicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMenuPrincipal.vb">
@@ -141,8 +153,14 @@
     <EmbeddedResource Include="FrmEliminarPersona.resx">
       <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarServicio.resx">
+      <DependentUpon>FrmEliminarServicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListarPersona.resx">
       <DependentUpon>FrmListarPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarServicio.resx">
+      <DependentUpon>FrmListarServicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
@@ -177,6 +195,9 @@
       <Project>{c14949d0-3d03-4f84-ba3e-97a8f1fb6e19}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ascendente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
