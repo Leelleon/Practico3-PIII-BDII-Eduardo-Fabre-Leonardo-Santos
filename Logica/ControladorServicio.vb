@@ -31,4 +31,18 @@ Public Module ControladorServicio
 
         Return s.ObtenerIDs
     End Function
+
+    Public Function ListarPersonas()
+        Dim s As New ModeloServicio
+
+        Return s.Listar()
+    End Function
+
+    Public Sub BajarUsuario(id As String)
+        Dim s As New ModeloServicio With {
+            .Id = id
+        }
+
+        s.BajarUsuario()
+    End Sub
 End Module

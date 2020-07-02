@@ -55,4 +55,36 @@
         Return Reader
     End Function
 
+    Public Function Listar()
+        Command.CommandText = "
+            SELECT 
+                nombre, costo_mensual, tipo
+            FROM
+                servicio
+            WHERE
+                activo = 1
+        "
+        Reader = Command.ExecuteReader
+        Return Reader
+
+    End Function
+
+    Public Sub BajarUsuario()
+        Try
+            Command.CommandText = "
+            UPDATE
+                servicio
+            SET
+                activo = 0
+            WHERE 
+                id = " + Me.Id + "
+        "
+
+            Command.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+
+    End Sub
 End Class
