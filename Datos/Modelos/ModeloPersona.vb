@@ -19,5 +19,6 @@
         Command.CommandText = "INSERT INTO persona (nombre, apellido, mail) VALUES ('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "')"
         Command.ExecuteNonQuery()
 
+        Command.CommandText = "INSERT INTO telefono (id, telefono) VALUES (" + (SELECT id_persona FROM persona ORDER BY DESC LIMIT 1) +",'" + Me.Telefono"')"
     End Sub
 End Class
