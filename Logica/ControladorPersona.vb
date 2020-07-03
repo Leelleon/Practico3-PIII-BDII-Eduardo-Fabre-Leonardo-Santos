@@ -17,4 +17,12 @@ Public Module ControladorPersona
 
     End Sub
 
+    Public Sub TelefonoNuevaPersona()
+        Dim p As New ModeloPersona
+
+        p.Telefono = Telefono
+        p.InsertarTelefono()
+
+
+    End Sub
 End Module
