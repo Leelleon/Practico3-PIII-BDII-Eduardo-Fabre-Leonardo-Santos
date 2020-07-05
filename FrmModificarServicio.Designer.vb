@@ -58,6 +58,7 @@ Partial Class FrmModificarServicio
         '
         Me.TxtNombre.Location = New System.Drawing.Point(222, 208)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(180, 26)
         Me.TxtNombre.TabIndex = 1
@@ -66,6 +67,7 @@ Partial Class FrmModificarServicio
         '
         Me.TxtCosto.Location = New System.Drawing.Point(222, 315)
         Me.TxtCosto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtCosto.MaxLength = 11
         Me.TxtCosto.Name = "TxtCosto"
         Me.TxtCosto.Size = New System.Drawing.Size(180, 26)
         Me.TxtCosto.TabIndex = 2

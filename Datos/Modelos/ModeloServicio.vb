@@ -7,6 +7,7 @@
     Public Tipo As String
 
     Public Function ObtenerUltimoID()
+
         Command.CommandText = "
             SELECT 
                 MAX(id) + 1
