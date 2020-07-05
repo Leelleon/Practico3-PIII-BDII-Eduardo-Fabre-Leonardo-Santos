@@ -5,6 +5,8 @@
     Public Nombre As String
     Public CostoMensual As String
     Public Tipo As String
+    Public Desde As String
+    Public Hasta As String
 
     Public Function ObtenerUltimoID()
 
@@ -67,7 +69,7 @@
             FROM
                 servicio
             WHERE
-                activo = 1
+                activo = 1 
         "
         Reader = Command.ExecuteReader
         Return Reader

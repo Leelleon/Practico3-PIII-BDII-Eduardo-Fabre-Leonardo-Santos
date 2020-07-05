@@ -34,7 +34,6 @@ Public Module ControladorServicio
 
     Public Function ListarServicio()
         Dim s As New ModeloServicio
-
         Return s.Listar()
     End Function
 
