@@ -3,7 +3,11 @@
 Public Class FrmAltaServicio
     Private Sub FrmAltaServicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        TxtId.Text = ObtenerUltimoID.ToString()
+        Dim LectorId As IDataReader
+        LectorId = ControladorServicio.ObtenerUltimoID()
+        While LectorId.Read
+            TxtId.Text = LectorId.GetValue(0)
+        End While
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
@@ -23,7 +27,7 @@ Public Class FrmAltaServicio
     End Sub
 
     Private Sub CmbTipo_TextChanged(sender As Object, e As EventArgs) Handles CmbTipo.TextChanged
-        PermitirAceptar()
+
     End Sub
 
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
@@ -53,5 +57,7 @@ Public Class FrmAltaServicio
         End If
     End Sub
 
-
+    Private Sub CmbTipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbTipo.SelectedIndexChanged
+        PermitirAceptar()
+    End Sub
 End Class

@@ -121,6 +121,7 @@ Partial Class FrmAltaServicio
         '
         'CmbTipo
         '
+        Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
         Me.CmbTipo.Location = New System.Drawing.Point(206, 258)

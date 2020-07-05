@@ -9,7 +9,7 @@
     Public Function ObtenerUltimoID()
         Command.CommandText = "
             SELECT 
-                MAX(id)
+                MAX(id) + 1
             FROM
                 servicio
         "
@@ -73,7 +73,7 @@
 
     End Function
 
-    Public Sub BajarUsuario()
+    Public Sub BajarServicio()
         Try
             Command.CommandText = "
             UPDATE

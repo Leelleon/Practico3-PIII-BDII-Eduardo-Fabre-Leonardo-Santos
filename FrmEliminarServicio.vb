@@ -5,7 +5,7 @@ Public Class FrmEliminarServicio
         MsgBox("Seguro quiere eliminar al usuario?", MsgBoxStyle.YesNo)
         If MsgBoxResult.Yes Then
             Try
-                ControladorServicio.BajarUsuario(TxtId.Text)
+                ControladorServicio.BajarServicio(TxtId.Text)
             Catch ex As Exception
                 MsgBox(ex.ToString())
             End Try
