@@ -33,7 +33,16 @@ Public Class FrmAltaServicio
         Servicio(1) = TxtCosto.Text
         Servicio(2) = CmbTipo.Text
 
-        ControladorServicio.InsertarServicio(Servicio)
+        Try
+            ControladorServicio.InsertarServicio(Servicio)
+            TxtNombre.Text = ""
+            TxtCosto.Text = ""
+            CmbTipo.Text = ""
+            MsgBox("Ingreso exitoso!", MsgBoxStyle.Information)
+        Catch ex As Exception
+            MsgBox("No se pudo ingresar el servicio" + ex.ToString(), MsgBoxStyle.Critical)
+        End Try
+
     End Sub
 
     Public Sub PermitirAceptar()

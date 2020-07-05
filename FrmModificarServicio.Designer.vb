@@ -23,7 +23,7 @@ Partial Class FrmModificarServicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LblId = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CmbId = New System.Windows.Forms.ComboBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtCosto = New System.Windows.Forms.TextBox()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
@@ -45,14 +45,14 @@ Partial Class FrmModificarServicio
         Me.LblId.TabIndex = 0
         Me.LblId.Text = "Seleccione el ID del servicio a modificar"
         '
-        'ComboBox1
+        'CmbId
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(411, 85)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(103, 28)
-        Me.ComboBox1.TabIndex = 1
+        Me.CmbId.FormattingEnabled = True
+        Me.CmbId.Location = New System.Drawing.Point(411, 85)
+        Me.CmbId.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.CmbId.Name = "CmbId"
+        Me.CmbId.Size = New System.Drawing.Size(103, 28)
+        Me.CmbId.TabIndex = 0
         '
         'TxtNombre
         '
@@ -60,7 +60,7 @@ Partial Class FrmModificarServicio
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(180, 26)
-        Me.TxtNombre.TabIndex = 2
+        Me.TxtNombre.TabIndex = 1
         '
         'TxtCosto
         '
@@ -68,7 +68,7 @@ Partial Class FrmModificarServicio
         Me.TxtCosto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TxtCosto.Name = "TxtCosto"
         Me.TxtCosto.Size = New System.Drawing.Size(180, 26)
-        Me.TxtCosto.TabIndex = 3
+        Me.TxtCosto.TabIndex = 2
         '
         'CmbTipo
         '
@@ -79,7 +79,7 @@ Partial Class FrmModificarServicio
         Me.CmbTipo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(180, 28)
-        Me.CmbTipo.TabIndex = 4
+        Me.CmbTipo.TabIndex = 3
         '
         'LblNombre
         '
@@ -117,7 +117,7 @@ Partial Class FrmModificarServicio
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(140, 48)
-        Me.BtnAceptar.TabIndex = 8
+        Me.BtnAceptar.TabIndex = 4
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
@@ -127,7 +127,7 @@ Partial Class FrmModificarServicio
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(140, 48)
-        Me.BtnCancelar.TabIndex = 9
+        Me.BtnCancelar.TabIndex = 5
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
@@ -137,7 +137,7 @@ Partial Class FrmModificarServicio
         Me.BtnVolver.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(140, 48)
-        Me.BtnVolver.TabIndex = 10
+        Me.BtnVolver.TabIndex = 6
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
@@ -155,7 +155,7 @@ Partial Class FrmModificarServicio
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtNombre)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CmbId)
         Me.Controls.Add(Me.LblId)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FrmModificarServicio"
@@ -166,7 +166,7 @@ Partial Class FrmModificarServicio
     End Sub
 
     Friend WithEvents LblId As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CmbId As ComboBox
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtCosto As TextBox
     Friend WithEvents CmbTipo As ComboBox

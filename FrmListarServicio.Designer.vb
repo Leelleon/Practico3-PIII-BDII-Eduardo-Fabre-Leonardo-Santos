@@ -37,7 +37,7 @@ Partial Class FrmListarServicio
         '
         'DgvServicios
         '
-        Me.DgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvServicios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.DgvServicios.Location = New System.Drawing.Point(46, 142)
         Me.DgvServicios.Name = "DgvServicios"
         Me.DgvServicios.RowHeadersVisible = False

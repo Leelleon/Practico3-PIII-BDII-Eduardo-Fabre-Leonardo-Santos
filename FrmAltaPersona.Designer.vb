@@ -39,99 +39,99 @@ Partial Class FrmAltaPersona
         'LblTelefono
         '
         Me.LblTelefono.AutoSize = True
-        Me.LblTelefono.Location = New System.Drawing.Point(77, 211)
+        Me.LblTelefono.Location = New System.Drawing.Point(87, 258)
         Me.LblTelefono.Name = "LblTelefono"
-        Me.LblTelefono.Size = New System.Drawing.Size(64, 17)
+        Me.LblTelefono.Size = New System.Drawing.Size(71, 20)
         Me.LblTelefono.TabIndex = 42
         Me.LblTelefono.Text = "Telefono"
         '
         'LblMail
         '
         Me.LblMail.AutoSize = True
-        Me.LblMail.Location = New System.Drawing.Point(77, 169)
+        Me.LblMail.Location = New System.Drawing.Point(87, 211)
         Me.LblMail.Name = "LblMail"
-        Me.LblMail.Size = New System.Drawing.Size(33, 17)
+        Me.LblMail.Size = New System.Drawing.Size(37, 20)
         Me.LblMail.TabIndex = 41
         Me.LblMail.Text = "Mail"
         '
         'LblApellido
         '
         Me.LblApellido.AutoSize = True
-        Me.LblApellido.Location = New System.Drawing.Point(77, 135)
+        Me.LblApellido.Location = New System.Drawing.Point(87, 165)
         Me.LblApellido.Name = "LblApellido"
-        Me.LblApellido.Size = New System.Drawing.Size(58, 17)
+        Me.LblApellido.Size = New System.Drawing.Size(65, 20)
         Me.LblApellido.TabIndex = 40
         Me.LblApellido.Text = "Apellido"
         '
         'LblPersonaNombre
         '
         Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(77, 93)
+        Me.LblPersonaNombre.Location = New System.Drawing.Point(87, 116)
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(58, 17)
+        Me.LblPersonaNombre.Size = New System.Drawing.Size(65, 20)
         Me.LblPersonaNombre.TabIndex = 39
         Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
         Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(77, 61)
+        Me.LblPersonaId.Location = New System.Drawing.Point(87, 66)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(19, 17)
+        Me.LblPersonaId.Size = New System.Drawing.Size(23, 20)
         Me.LblPersonaId.TabIndex = 38
         Me.LblPersonaId.Text = "Id"
         '
         'TxtTelefono
         '
-        Me.TxtTelefono.Location = New System.Drawing.Point(181, 211)
+        Me.TxtTelefono.Location = New System.Drawing.Point(204, 258)
         Me.TxtTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(183, 22)
+        Me.TxtTelefono.Size = New System.Drawing.Size(205, 26)
         Me.TxtTelefono.TabIndex = 37
         '
         'TxtMail
         '
-        Me.TxtMail.Location = New System.Drawing.Point(181, 169)
+        Me.TxtMail.Location = New System.Drawing.Point(204, 211)
         Me.TxtMail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtMail.MaxLength = 50
         Me.TxtMail.Name = "TxtMail"
-        Me.TxtMail.Size = New System.Drawing.Size(183, 22)
+        Me.TxtMail.Size = New System.Drawing.Size(205, 26)
         Me.TxtMail.TabIndex = 36
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(181, 93)
+        Me.TxtNombre.Location = New System.Drawing.Point(204, 116)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(183, 22)
+        Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
         Me.TxtNombre.TabIndex = 35
         '
         'TxtApellido
         '
-        Me.TxtApellido.Location = New System.Drawing.Point(181, 132)
+        Me.TxtApellido.Location = New System.Drawing.Point(204, 165)
         Me.TxtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtApellido.MaxLength = 20
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
+        Me.TxtApellido.Size = New System.Drawing.Size(205, 26)
         Me.TxtApellido.TabIndex = 34
         '
         'TxtPersonaId
         '
         Me.TxtPersonaId.Enabled = False
-        Me.TxtPersonaId.Location = New System.Drawing.Point(181, 61)
+        Me.TxtPersonaId.Location = New System.Drawing.Point(204, 66)
         Me.TxtPersonaId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtPersonaId.Name = "TxtPersonaId"
-        Me.TxtPersonaId.Size = New System.Drawing.Size(61, 22)
+        Me.TxtPersonaId.Size = New System.Drawing.Size(68, 26)
         Me.TxtPersonaId.TabIndex = 33
         '
         'BtnAceptar
         '
         Me.BtnAceptar.Enabled = False
-        Me.BtnAceptar.Location = New System.Drawing.Point(69, 282)
+        Me.BtnAceptar.Location = New System.Drawing.Point(78, 352)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
+        Me.BtnAceptar.Size = New System.Drawing.Size(114, 48)
         Me.BtnAceptar.TabIndex = 32
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
@@ -139,20 +139,20 @@ Partial Class FrmAltaPersona
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(244, 282)
+        Me.BtnCancelar.Location = New System.Drawing.Point(274, 352)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
+        Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
         Me.BtnCancelar.TabIndex = 43
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
         'FrmAltaPersona
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.BtnCancelar
-        Me.ClientSize = New System.Drawing.Size(445, 450)
+        Me.ClientSize = New System.Drawing.Size(501, 562)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblMail)
@@ -165,6 +165,7 @@ Partial Class FrmAltaPersona
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.TxtPersonaId)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmAltaPersona"
         Me.Text = "FrmAltaPersona"
         Me.ResumeLayout(False)

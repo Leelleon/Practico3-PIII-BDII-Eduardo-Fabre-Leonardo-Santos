@@ -31,7 +31,9 @@
     Public Function ObtenerDatos()
         Command.CommandText = "
             SELECT 
-                nombre, costo_mensual, tipo
+                nombre, 
+                costo_mensual AS Costo, 
+                tipo AS Tipo
             FROM
                 servicio
             WHERE
@@ -58,7 +60,9 @@
     Public Function Listar()
         Command.CommandText = "
             SELECT 
-                nombre, costo_mensual, tipo
+                nombre AS Nombre, 
+                costo_mensual AS Costo, 
+                tipo AS Tipo
             FROM
                 servicio
             WHERE
@@ -85,6 +89,26 @@
             MsgBox(ex.ToString)
         End Try
 
+
+    End Sub
+
+    Public Sub ModificarServicio()
+        Try
+            Command.CommandText = "
+            UPDATE 
+                Servicio
+            SET
+                nombre = '" + Me.Nombre + "',
+                costo_mensual = '" + Me.CostoMensual + "',
+                tipo = '" + Me.Tipo + "'
+            WHERE
+                id = " + Me.Id + "
+        "
+            Command.ExecuteNonQuery()
+            MsgBox("Servicio modificado con exito!", MsgBoxStyle.Information)
+        Catch ex As Exception
+            MsgBox("Error #" + ex.ToString + ", No se pudo modificar el servicio", MsgBoxStyle.Critical)
+        End Try
 
     End Sub
 End Class

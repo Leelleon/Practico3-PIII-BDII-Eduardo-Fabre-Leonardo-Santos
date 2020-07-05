@@ -34,7 +34,7 @@ Partial Class FrmEliminarServicio
         Me.LblId.Name = "LblId"
         Me.LblId.Size = New System.Drawing.Size(178, 20)
         Me.LblId.TabIndex = 0
-        Me.LblId.Text = "ID del usuario a eliminar"
+        Me.LblId.Text = "ID del servicio a eliminar"
         '
         'TxtId
         '
