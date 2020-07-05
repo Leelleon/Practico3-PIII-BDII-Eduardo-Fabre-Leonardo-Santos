@@ -1,16 +1,12 @@
 ﻿Imports Logica
 
 Public Class FrmEliminarServicio
+
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         MsgBox("Seguro quiere eliminar al usuario?", MsgBoxStyle.YesNo)
         If MsgBoxResult.Yes Then
-            Try
-                ControladorServicio.BajarServicio(TxtId.Text)
-            Catch ex As Exception
-                MsgBox(ex.ToString())
-            End Try
+            ControladorServicio.BajarServicio(TxtId.Text)
         End If
-
 
     End Sub
 
