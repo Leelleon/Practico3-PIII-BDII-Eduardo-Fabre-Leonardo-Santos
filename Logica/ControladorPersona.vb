@@ -7,22 +7,17 @@ Public Module ControladorPersona
         Return p.ListarDatosPersona()
     End Function
 
-    Public Sub NuevaPersona(Nombre As String, Apellido As String, Mail As String)
+    Public Sub NuevaPersona(Nombre As String, Apellido As String, Mail As String, Telefono As List(Of String))
         Dim p As New ModeloPersona
 
         p.Nombre = Nombre
         p.Apellido = Apellido
         p.Mail = Mail
+        p.Telefono = Telefono
+
         p.Insertar()
 
     End Sub
 
-    Public Sub TelefonoNuevaPersona()
-        Dim p As New ModeloPersona
 
-        p.Telefono = Telefono
-        p.InsertarTelefono()
-
-
-    End Sub
 End Module
