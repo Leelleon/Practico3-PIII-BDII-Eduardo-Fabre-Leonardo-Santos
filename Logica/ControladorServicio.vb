@@ -31,4 +31,28 @@ Public Module ControladorServicio
 
         Return s.ObtenerIDs
     End Function
+
+    Public Function ListarServicio()
+        Dim s As New ModeloServicio
+        Return s.Listar()
+    End Function
+
+    Public Sub BajarServicio(id As String)
+        Dim s As New ModeloServicio With {
+            .Id = id
+        }
+
+        s.BajarServicio()
+    End Sub
+
+    Public Sub ModificarServicio(servicio() As String)
+        Dim s As New ModeloServicio With {
+            .Id = servicio(0),
+            .Nombre = servicio(1),
+            .CostoMensual = servicio(2),
+            .Tipo = servicio(3)
+        }
+
+        s.ModificarServicio()
+    End Sub
 End Module

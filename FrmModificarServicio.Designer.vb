@@ -23,7 +23,7 @@ Partial Class FrmModificarServicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LblId = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CmbId = New System.Windows.Forms.ComboBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtCosto = New System.Windows.Forms.TextBox()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
@@ -38,102 +38,116 @@ Partial Class FrmModificarServicio
         'LblId
         '
         Me.LblId.AutoSize = True
-        Me.LblId.Location = New System.Drawing.Point(31, 58)
+        Me.LblId.Location = New System.Drawing.Point(46, 89)
+        Me.LblId.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblId.Name = "LblId"
-        Me.LblId.Size = New System.Drawing.Size(195, 13)
+        Me.LblId.Size = New System.Drawing.Size(286, 20)
         Me.LblId.TabIndex = 0
         Me.LblId.Text = "Seleccione el ID del servicio a modificar"
         '
-        'ComboBox1
+        'CmbId
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(274, 55)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(70, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.CmbId.FormattingEnabled = True
+        Me.CmbId.Location = New System.Drawing.Point(411, 85)
+        Me.CmbId.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.CmbId.Name = "CmbId"
+        Me.CmbId.Size = New System.Drawing.Size(103, 28)
+        Me.CmbId.TabIndex = 0
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(148, 135)
+        Me.TxtNombre.Location = New System.Drawing.Point(222, 208)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(121, 20)
-        Me.TxtNombre.TabIndex = 2
+        Me.TxtNombre.Size = New System.Drawing.Size(180, 26)
+        Me.TxtNombre.TabIndex = 1
         '
         'TxtCosto
         '
-        Me.TxtCosto.Location = New System.Drawing.Point(148, 205)
+        Me.TxtCosto.Location = New System.Drawing.Point(222, 315)
+        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtCosto.MaxLength = 11
         Me.TxtCosto.Name = "TxtCosto"
-        Me.TxtCosto.Size = New System.Drawing.Size(121, 20)
-        Me.TxtCosto.TabIndex = 3
+        Me.TxtCosto.Size = New System.Drawing.Size(180, 26)
+        Me.TxtCosto.TabIndex = 2
         '
         'CmbTipo
         '
+        Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
-        Me.CmbTipo.Location = New System.Drawing.Point(148, 271)
+        Me.CmbTipo.Location = New System.Drawing.Point(222, 417)
+        Me.CmbTipo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CmbTipo.Name = "CmbTipo"
-        Me.CmbTipo.Size = New System.Drawing.Size(121, 21)
-        Me.CmbTipo.TabIndex = 4
+        Me.CmbTipo.Size = New System.Drawing.Size(180, 28)
+        Me.CmbTipo.TabIndex = 3
         '
         'LblNombre
         '
         Me.LblNombre.AutoSize = True
-        Me.LblNombre.Location = New System.Drawing.Point(69, 118)
+        Me.LblNombre.Location = New System.Drawing.Point(104, 182)
+        Me.LblNombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblNombre.Name = "LblNombre"
-        Me.LblNombre.Size = New System.Drawing.Size(44, 13)
+        Me.LblNombre.Size = New System.Drawing.Size(65, 20)
         Me.LblNombre.TabIndex = 5
         Me.LblNombre.Text = "Nombre"
         '
         'LblCosto
         '
         Me.LblCosto.AutoSize = True
-        Me.LblCosto.Location = New System.Drawing.Point(69, 184)
+        Me.LblCosto.Location = New System.Drawing.Point(104, 283)
+        Me.LblCosto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblCosto.Name = "LblCosto"
-        Me.LblCosto.Size = New System.Drawing.Size(77, 13)
+        Me.LblCosto.Size = New System.Drawing.Size(115, 20)
         Me.LblCosto.TabIndex = 6
         Me.LblCosto.Text = "Costo Menusal"
         '
         'LblTipo
         '
         Me.LblTipo.AutoSize = True
-        Me.LblTipo.Location = New System.Drawing.Point(69, 243)
+        Me.LblTipo.Location = New System.Drawing.Point(104, 374)
+        Me.LblTipo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(28, 13)
+        Me.LblTipo.Size = New System.Drawing.Size(39, 20)
         Me.LblTipo.TabIndex = 7
         Me.LblTipo.Text = "Tipo"
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Location = New System.Drawing.Point(53, 337)
+        Me.BtnAceptar.Location = New System.Drawing.Point(80, 518)
+        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(93, 31)
-        Me.BtnAceptar.TabIndex = 8
+        Me.BtnAceptar.Size = New System.Drawing.Size(140, 48)
+        Me.BtnAceptar.TabIndex = 4
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
         'BtnCancelar
         '
-        Me.BtnCancelar.Location = New System.Drawing.Point(152, 337)
+        Me.BtnCancelar.Location = New System.Drawing.Point(228, 518)
+        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(93, 31)
-        Me.BtnCancelar.TabIndex = 9
+        Me.BtnCancelar.Size = New System.Drawing.Size(140, 48)
+        Me.BtnCancelar.TabIndex = 5
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(251, 337)
+        Me.BtnVolver.Location = New System.Drawing.Point(376, 518)
+        Me.BtnVolver.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(93, 31)
-        Me.BtnVolver.TabIndex = 10
+        Me.BtnVolver.Size = New System.Drawing.Size(140, 48)
+        Me.BtnVolver.TabIndex = 6
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'FrmModificarServicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(402, 430)
+        Me.ClientSize = New System.Drawing.Size(603, 662)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.BtnAceptar)
@@ -143,8 +157,9 @@ Partial Class FrmModificarServicio
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtNombre)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CmbId)
         Me.Controls.Add(Me.LblId)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FrmModificarServicio"
         Me.Text = "FrmModificarServicio"
         Me.ResumeLayout(False)
@@ -153,7 +168,7 @@ Partial Class FrmModificarServicio
     End Sub
 
     Friend WithEvents LblId As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CmbId As ComboBox
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtCosto As TextBox
     Friend WithEvents CmbTipo As ComboBox

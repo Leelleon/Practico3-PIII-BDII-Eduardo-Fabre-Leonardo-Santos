@@ -3,8 +3,8 @@ Public Class FrmAltaPersona
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
 
         Try
-            ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim)
-            ControladorPersona.TelefonoNuevaPersona()
+            ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, LstTelefono)
+
         Catch ex As Exception
 
         End Try
@@ -20,4 +20,5 @@ Public Class FrmAltaPersona
         LstTelefono.Items.Add(TxtTelefono.Text)
 
     End Sub
+
 End Class

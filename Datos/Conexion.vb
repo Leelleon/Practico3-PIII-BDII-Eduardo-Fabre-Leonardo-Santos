@@ -4,9 +4,9 @@ Public MustInherit Class Conexion
 
     Public Driver As String = "Mysql ODBC 8.0 Unicode Driver"
     Public Uid As String = "root"
-    Public Pwd As String = ""
+    Public Pwd As String = "root"
     Public Port As String = "3306"
-    Public NombreBBDD As String = "practico3"
+    Public NombreBBDD As String = "practico_3"
     Public Host As String = "localhost"
 
     Public Connect As New OdbcConnection(

@@ -82,25 +82,25 @@ Partial Class FrmMenuPrincipal
         'NToolStripMenuItem
         '
         Me.NToolStripMenuItem.Name = "NToolStripMenuItem"
-        Me.NToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.NToolStripMenuItem.Size = New System.Drawing.Size(171, 30)
         Me.NToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(171, 30)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(171, 30)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'ListarToolStripMenuItem
         '
         Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(171, 30)
         Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'ServiciosToolStripMenuItem
