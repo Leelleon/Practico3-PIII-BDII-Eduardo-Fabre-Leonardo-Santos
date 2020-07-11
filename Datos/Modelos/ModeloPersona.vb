@@ -16,21 +16,48 @@
     End Function
 
     Public Sub Insertar()
-        Command.CommandText = " 
-            BEGIN;
-            LOCK TABLE persona WRTIE;
-            LOCK TABLE persona READ;
-            LOCK TABLE persona_tel WRITE;
-            LOCK TABLE persona_tel READ;
-        "
-        Command.CommandText = "
-            INSERT INTO 
-                persona (nombre, apellido, mail, activo) 
-            VALUES ('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "1")
-        ""
+        Try
+            Command.CommandText = "SET AUTOCOMMIT = OFF"
+            Command.ExecuteNonQuery()
+            Command.CommandText = "START TRANSACTION"
+            Command.ExecuteNonQuery()
+            MsgBox("transaccion iniciada")
+            Try
+                Command.CommandText = "Lock TABLE persona WRTIE;
+                                       Lock TABLE persona READ;
+                                       Lock TABLE persona_tel WRITE;
+                                       Lock TABLE persona_tel READ;"
+                MsgBox("tabla bloqueada")
 
-        Command.ExecuteNonQuery()
+                Try
+                    Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
+                                           VALUES('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','1')"
+                    Command.ExecuteNonQuery()
+                    MsgBox("Persona atroden")
 
+                    For Each Numero In Telefono
+                        Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
+                                           VALUES((SELECT MAX(id) FROM persona),('" + Numero + "'))"
+                        Command.ExecuteNonQuery()
+                    Next
+                    Command.CommandText = "commit"
+                    Command.ExecuteNonQuery()
+                    MsgBox("todo pa dentro")
+
+                Catch ex As Exception
+                    Command.CommandText = "ROLLBACK"
+                    Command.ExecuteNonQuery()
+                    MsgBox(ex.ToString)
+
+                End Try
+            Catch ex As Exception
+                MsgBox("no te bloqueo naranja")
+
+            End Try
+        Catch ex As Exception
+            MsgBox("no transaciono naaa pelaá")
+
+        End Try
 
     End Sub
 End Class

@@ -1,12 +1,15 @@
 ﻿Imports Logica
 Public Class FrmAltaPersona
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
-
+        Dim Telefonos As New List(Of String)
+        For x = 0 To LstTelefono.Items.Count - 1
+            Telefonos.Add(LstTelefono.Items(x).ToString)
+        Next
         Try
-            ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, LstTelefono)
+            ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)
 
         Catch ex As Exception
-
+            MsgBox(ex.ToString)
         End Try
     End Sub
 
@@ -21,4 +24,7 @@ Public Class FrmAltaPersona
 
     End Sub
 
+    Private Sub FrmAltaPersona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
