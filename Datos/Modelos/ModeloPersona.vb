@@ -23,32 +23,23 @@
             Command.ExecuteNonQuery()
             Return True
             Try
-                Command.CommandText = "Lock TABLE persona WRTIE;
-                                       Lock TABLE persona READ;
-                                       Lock TABLE persona_tel WRITE;
-                                       Lock TABLE persona_tel READ;"
-                Return True
-                Try
-                    Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
+                Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
                                            VALUES('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','1')"
-                    Command.ExecuteNonQuery()
+                Command.ExecuteNonQuery()
 
-                    For Each Numero In Telefono
-                        Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
+                For Each Numero In Telefono
+                    Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
                                            VALUES((SELECT MAX(id) FROM persona),('" + Numero + "'))"
-                        Command.ExecuteNonQuery()
-                    Next
-                    Command.CommandText = "COMMIT"
                     Command.ExecuteNonQuery()
-                    Return True
-                Catch ex As Exception
-                    Command.CommandText = "ROLLBACK"
-                    Command.ExecuteNonQuery()
-                    Return 3
-
-                End Try
+                Next
+                Command.CommandText = "COMMIT"
+                Command.ExecuteNonQuery()
+                Return True
             Catch ex As Exception
-                Return 2
+                Command.CommandText = "ROLLBACK"
+                Command.ExecuteNonQuery()
+                Return 3
+
             End Try
         Catch ex As Exception
             Return 1
@@ -121,9 +112,10 @@
             Command.CommandText = "UPDATE persona
                                    SET activo = 0
                                    WHERE id = '" + Me.IdPersona + "'"
-
+            Command.ExecuteNonQuery()
+            Return True
         Catch ex As Exception
-
+            Return False
         End Try
     End Function
 End Class
