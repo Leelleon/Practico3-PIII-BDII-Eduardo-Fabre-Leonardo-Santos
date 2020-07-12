@@ -31,7 +31,7 @@ Partial Class FrmAltaPersona
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtApellido = New System.Windows.Forms.TextBox()
         Me.BtnAceptar = New System.Windows.Forms.Button()
-        Me.BtnCancelar = New System.Windows.Forms.Button()
+        Me.BtnVolver = New System.Windows.Forms.Button()
         Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.LstTelefono = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
@@ -109,7 +109,7 @@ Partial Class FrmAltaPersona
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Location = New System.Drawing.Point(15, 401)
+        Me.BtnAceptar.Location = New System.Drawing.Point(63, 414)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
@@ -117,16 +117,16 @@ Partial Class FrmAltaPersona
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
-        'BtnCancelar
+        'BtnVolver
         '
-        Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(203, 401)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
-        Me.BtnCancelar.TabIndex = 6
-        Me.BtnCancelar.Text = "Cancelar"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
+        Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BtnVolver.Location = New System.Drawing.Point(232, 414)
+        Me.BtnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(96, 38)
+        Me.BtnVolver.TabIndex = 6
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'BtnAgregar
         '
@@ -150,11 +150,11 @@ Partial Class FrmAltaPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.BtnCancelar
-        Me.ClientSize = New System.Drawing.Size(445, 450)
+        Me.CancelButton = Me.BtnVolver
+        Me.ClientSize = New System.Drawing.Size(445, 483)
         Me.Controls.Add(Me.LstTelefono)
         Me.Controls.Add(Me.BtnAgregar)
-        Me.Controls.Add(Me.BtnCancelar)
+        Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblMail)
         Me.Controls.Add(Me.LblApellido)
@@ -180,7 +180,7 @@ Partial Class FrmAltaPersona
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtApellido As TextBox
     Friend WithEvents BtnAceptar As Button
-    Friend WithEvents BtnCancelar As Button
+    Friend WithEvents BtnVolver As Button
     Friend WithEvents BtnAgregar As Button
     Friend WithEvents LstTelefono As ListBox
 End Class

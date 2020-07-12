@@ -28,29 +28,29 @@ Partial Class FrmEliminarPersona
         Me.LblApellido = New System.Windows.Forms.Label()
         Me.LblPersonaNombre = New System.Windows.Forms.Label()
         Me.LblPersonaId = New System.Windows.Forms.Label()
-        Me.TxtTelefono = New System.Windows.Forms.TextBox()
         Me.TxtMail = New System.Windows.Forms.TextBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtApellido = New System.Windows.Forms.TextBox()
-        Me.TxtPersonaId = New System.Windows.Forms.TextBox()
-        Me.BtnAceptar = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.LstTelefono = New System.Windows.Forms.ListBox()
+        Me.CmbIdPersona = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(221, 272)
+        Me.BtnCancelar.Location = New System.Drawing.Point(245, 380)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
         Me.BtnCancelar.TabIndex = 67
-        Me.BtnCancelar.Text = "Cancelar"
+        Me.BtnCancelar.Text = "Volver"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
         'LblTelefono
         '
         Me.LblTelefono.AutoSize = True
-        Me.LblTelefono.Location = New System.Drawing.Point(54, 201)
+        Me.LblTelefono.Location = New System.Drawing.Point(54, 198)
         Me.LblTelefono.Name = "LblTelefono"
         Me.LblTelefono.Size = New System.Drawing.Size(64, 17)
         Me.LblTelefono.TabIndex = 66
@@ -88,17 +88,9 @@ Partial Class FrmEliminarPersona
         Me.LblPersonaId.AutoSize = True
         Me.LblPersonaId.Location = New System.Drawing.Point(54, 51)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(19, 17)
+        Me.LblPersonaId.Size = New System.Drawing.Size(213, 17)
         Me.LblPersonaId.TabIndex = 62
-        Me.LblPersonaId.Text = "Id"
-        '
-        'TxtTelefono
-        '
-        Me.TxtTelefono.Location = New System.Drawing.Point(158, 201)
-        Me.TxtTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(183, 22)
-        Me.TxtTelefono.TabIndex = 61
+        Me.LblPersonaId.Text = "Seleccione la persona a eliminar"
         '
         'TxtMail
         '
@@ -127,43 +119,50 @@ Partial Class FrmEliminarPersona
         Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
         Me.TxtApellido.TabIndex = 58
         '
-        'TxtPersonaId
+        'BtnEliminar
         '
-        Me.TxtPersonaId.Enabled = False
-        Me.TxtPersonaId.Location = New System.Drawing.Point(158, 51)
-        Me.TxtPersonaId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtPersonaId.Name = "TxtPersonaId"
-        Me.TxtPersonaId.Size = New System.Drawing.Size(61, 22)
-        Me.TxtPersonaId.TabIndex = 57
+        Me.BtnEliminar.Location = New System.Drawing.Point(57, 380)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(101, 38)
+        Me.BtnEliminar.TabIndex = 56
+        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
         '
-        'BtnAceptar
+        'LstTelefono
         '
-        Me.BtnAceptar.Enabled = False
-        Me.BtnAceptar.Location = New System.Drawing.Point(46, 272)
-        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
-        Me.BtnAceptar.TabIndex = 56
-        Me.BtnAceptar.Text = "Aceptar"
-        Me.BtnAceptar.UseVisualStyleBackColor = True
+        Me.LstTelefono.FormattingEnabled = True
+        Me.LstTelefono.ItemHeight = 16
+        Me.LstTelefono.Location = New System.Drawing.Point(158, 198)
+        Me.LstTelefono.Name = "LstTelefono"
+        Me.LstTelefono.Size = New System.Drawing.Size(183, 148)
+        Me.LstTelefono.TabIndex = 68
+        '
+        'CmbIdPersona
+        '
+        Me.CmbIdPersona.FormattingEnabled = True
+        Me.CmbIdPersona.Location = New System.Drawing.Point(273, 51)
+        Me.CmbIdPersona.Name = "CmbIdPersona"
+        Me.CmbIdPersona.Size = New System.Drawing.Size(68, 24)
+        Me.CmbIdPersona.TabIndex = 69
         '
         'FrmEliminarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 450)
+        Me.Controls.Add(Me.CmbIdPersona)
+        Me.Controls.Add(Me.LstTelefono)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblMail)
         Me.Controls.Add(Me.LblApellido)
         Me.Controls.Add(Me.LblPersonaNombre)
         Me.Controls.Add(Me.LblPersonaId)
-        Me.Controls.Add(Me.TxtTelefono)
         Me.Controls.Add(Me.TxtMail)
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
-        Me.Controls.Add(Me.TxtPersonaId)
-        Me.Controls.Add(Me.BtnAceptar)
+        Me.Controls.Add(Me.BtnEliminar)
         Me.Name = "FrmEliminarPersona"
         Me.Text = "FrmEliminarPersona"
         Me.ResumeLayout(False)
@@ -177,10 +176,10 @@ Partial Class FrmEliminarPersona
     Friend WithEvents LblApellido As Label
     Friend WithEvents LblPersonaNombre As Label
     Friend WithEvents LblPersonaId As Label
-    Friend WithEvents TxtTelefono As TextBox
     Friend WithEvents TxtMail As TextBox
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtApellido As TextBox
-    Friend WithEvents TxtPersonaId As TextBox
-    Friend WithEvents BtnAceptar As Button
+    Friend WithEvents BtnEliminar As Button
+    Friend WithEvents LstTelefono As ListBox
+    Friend WithEvents CmbIdPersona As ComboBox
 End Class

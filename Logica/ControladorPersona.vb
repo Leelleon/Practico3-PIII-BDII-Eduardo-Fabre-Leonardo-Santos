@@ -40,6 +40,14 @@ Public Module ControladorPersona
         p.Telefono = Telefono
 
         Return p.Modificar()
+    End Function
+    Public Function EliminarPersona(IdPersona As String)
+        Dim p As New ModeloPersona
+
+        p.IdPersona = IdPersona
+
+        Return p.Eliminar()
 
     End Function
+
 End Module

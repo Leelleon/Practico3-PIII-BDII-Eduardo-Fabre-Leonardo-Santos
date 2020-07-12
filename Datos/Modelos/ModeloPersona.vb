@@ -115,4 +115,15 @@
         End Try
 
     End Function
+
+    Public Function Eliminar()
+        Try
+            Command.CommandText = "UPDATE persona
+                                   SET activo = 0
+                                   WHERE id = '" + Me.IdPersona + "'"
+
+        Catch ex As Exception
+
+        End Try
+    End Function
 End Class

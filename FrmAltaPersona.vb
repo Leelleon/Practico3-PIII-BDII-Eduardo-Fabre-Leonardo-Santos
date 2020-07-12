@@ -1,6 +1,7 @@
 ﻿Imports Logica
 Public Class FrmAltaPersona
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
+        HabilitarBotonAceptar()
         Dim Telefonos As New List(Of String)
         For x = 0 To LstTelefono.Items.Count - 1
             Telefonos.Add(LstTelefono.Items(x).ToString)
@@ -14,9 +15,10 @@ Public Class FrmAltaPersona
         ElseIf (ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 3 Then
             MsgBox("Hubo un error en la creación de la persona")
         End If
+
     End Sub
 
-    Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+    Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles BtnVolver.Click
         FrmMenuPrincipal.Show()
         Me.Close()
 
@@ -24,10 +26,21 @@ Public Class FrmAltaPersona
 
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
         LstTelefono.Items.Add(TxtTelefono.Text)
+        TxtTelefono.Clear()
 
     End Sub
 
     Private Sub FrmAltaPersona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        HabilitarBotonAceptar()
+
+
+    End Sub
+    Private Sub HabilitarBotonAceptar()
+        If (TxtNombre.Text = "") Or (TxtApellido.Text = "") Or (LstTelefono.Items.ToString = "") Then
+            BtnAceptar.Enabled = False
+        Else
+            BtnAceptar.Enabled = True
+        End If
 
     End Sub
 End Class
