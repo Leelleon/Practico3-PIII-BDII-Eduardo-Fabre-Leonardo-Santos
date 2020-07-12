@@ -15,25 +15,23 @@
 
     End Function
 
-    Public Sub Insertar()
+    Public Function Insertar()
         Try
             Command.CommandText = "SET AUTOCOMMIT = OFF"
             Command.ExecuteNonQuery()
             Command.CommandText = "START TRANSACTION"
             Command.ExecuteNonQuery()
-            MsgBox("transaccion iniciada")
+            Return True
             Try
                 Command.CommandText = "Lock TABLE persona WRTIE;
                                        Lock TABLE persona READ;
                                        Lock TABLE persona_tel WRITE;
                                        Lock TABLE persona_tel READ;"
-                MsgBox("tabla bloqueada")
-
+                Return True
                 Try
                     Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
                                            VALUES('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','1')"
                     Command.ExecuteNonQuery()
-                    MsgBox("Persona atroden")
 
                     For Each Numero In Telefono
                         Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
@@ -42,22 +40,34 @@
                     Next
                     Command.CommandText = "commit"
                     Command.ExecuteNonQuery()
-                    MsgBox("todo pa dentro")
-
+                    Return True
                 Catch ex As Exception
                     Command.CommandText = "ROLLBACK"
                     Command.ExecuteNonQuery()
-                    MsgBox(ex.ToString)
+                    Return 3
 
                 End Try
             Catch ex As Exception
-                MsgBox("no te bloqueo naranja")
-
+                Return 2
             End Try
         Catch ex As Exception
-            MsgBox("no transaciono naaa pelaá")
-
+            Return 1
         End Try
 
-    End Sub
+    End Function
+
+    Public Function ObtenerIdPersona()
+        Command.CommandText = "SELECT id FROM persona WHERE activo = 1"
+        Reader = Command.ExecuteReader
+        Return Reader
+    End Function
+
+    Public Function TraerDatos()
+        Command.CommandText = "SELECT nombre, apellido, mail, telefono 
+                                FROM persona, persona_tel 
+                                WHERE id = '" + Me.IdPersona + "' AND activo = 1 AND id_persona = '" + Me.IdPersona + "'"
+        Reader = Command.ExecuteReader
+        Return Reader
+    End Function
+
 End Class
