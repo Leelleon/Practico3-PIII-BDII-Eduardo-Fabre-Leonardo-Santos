@@ -22,12 +22,19 @@ Public Class FrmModificarPersona
     Private Sub CmbIdPersona_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbIdPersona.SelectedIndexChanged
         Dim LeerDatosDePersona As IDataReader
         LeerDatosDePersona = ControladorPersona.TraerDatosDePersona(CmbIdPersona.Text)
+
+        LstTelefono.Items.Clear()
+
         While LeerDatosDePersona.Read
+
             TxtNombre.Text = LeerDatosDePersona.GetValue(0)
             TxtApellido.Text = LeerDatosDePersona.GetValue(1)
             TxtMail.Text = LeerDatosDePersona.GetValue(2)
+            LstTelefono.Items.Add(LeerDatosDePersona.GetValue(3))
 
 
         End While
+
+
     End Sub
 End Class
