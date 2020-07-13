@@ -34,17 +34,12 @@ Partial Class FrmModificarPersona
         Me.BtnAceptar = New System.Windows.Forms.Button()
         Me.CmbIdPersona = New System.Windows.Forms.ComboBox()
         Me.LstTelefono = New System.Windows.Forms.ListBox()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.BtnModificar = New System.Windows.Forms.Button()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.TxtTelefono = New System.Windows.Forms.TextBox()
-        Me.BtnVolver = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(432, 89)
+        Me.BtnCancelar.Location = New System.Drawing.Point(261, 367)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
@@ -55,7 +50,7 @@ Partial Class FrmModificarPersona
         'LblTelefono
         '
         Me.LblTelefono.AutoSize = True
-        Me.LblTelefono.Location = New System.Drawing.Point(46, 230)
+        Me.LblTelefono.Location = New System.Drawing.Point(46, 207)
         Me.LblTelefono.Name = "LblTelefono"
         Me.LblTelefono.Size = New System.Drawing.Size(64, 17)
         Me.LblTelefono.TabIndex = 54
@@ -64,7 +59,7 @@ Partial Class FrmModificarPersona
         'LblMail
         '
         Me.LblMail.AutoSize = True
-        Me.LblMail.Location = New System.Drawing.Point(46, 170)
+        Me.LblMail.Location = New System.Drawing.Point(46, 165)
         Me.LblMail.Name = "LblMail"
         Me.LblMail.Size = New System.Drawing.Size(33, 17)
         Me.LblMail.TabIndex = 53
@@ -126,10 +121,11 @@ Partial Class FrmModificarPersona
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Location = New System.Drawing.Point(432, 30)
+        Me.BtnAceptar.Enabled = False
+        Me.BtnAceptar.Location = New System.Drawing.Point(49, 367)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(96, 38)
+        Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
         Me.BtnAceptar.TabIndex = 44
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
@@ -146,64 +142,16 @@ Partial Class FrmModificarPersona
         '
         Me.LstTelefono.FormattingEnabled = True
         Me.LstTelefono.ItemHeight = 16
-        Me.LstTelefono.Location = New System.Drawing.Point(174, 265)
+        Me.LstTelefono.Location = New System.Drawing.Point(174, 207)
         Me.LstTelefono.Name = "LstTelefono"
-        Me.LstTelefono.Size = New System.Drawing.Size(155, 148)
+        Me.LstTelefono.Size = New System.Drawing.Size(183, 116)
         Me.LstTelefono.TabIndex = 57
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(344, 230)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(75, 40)
-        Me.BtnAgregar.TabIndex = 58
-        Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
-        '
-        'BtnModificar
-        '
-        Me.BtnModificar.Location = New System.Drawing.Point(344, 291)
-        Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(75, 33)
-        Me.BtnModificar.TabIndex = 59
-        Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Location = New System.Drawing.Point(344, 346)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 33)
-        Me.BtnEliminar.TabIndex = 60
-        Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
-        'TxtTelefono
-        '
-        Me.TxtTelefono.Location = New System.Drawing.Point(174, 225)
-        Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(155, 22)
-        Me.TxtTelefono.TabIndex = 61
-        '
-        'BtnVolver
-        '
-        Me.BtnVolver.Location = New System.Drawing.Point(432, 147)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(96, 40)
-        Me.BtnVolver.TabIndex = 62
-        Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'FrmModificarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(566, 464)
-        Me.Controls.Add(Me.BtnVolver)
-        Me.Controls.Add(Me.TxtTelefono)
-        Me.Controls.Add(Me.BtnEliminar)
-        Me.Controls.Add(Me.BtnModificar)
-        Me.Controls.Add(Me.BtnAgregar)
+        Me.ClientSize = New System.Drawing.Size(439, 450)
         Me.Controls.Add(Me.LstTelefono)
         Me.Controls.Add(Me.CmbIdPersona)
         Me.Controls.Add(Me.BtnCancelar)
@@ -235,9 +183,4 @@ Partial Class FrmModificarPersona
     Friend WithEvents BtnAceptar As Button
     Friend WithEvents CmbIdPersona As ComboBox
     Friend WithEvents LstTelefono As ListBox
-    Friend WithEvents BtnAgregar As Button
-    Friend WithEvents BtnModificar As Button
-    Friend WithEvents BtnEliminar As Button
-    Friend WithEvents TxtTelefono As TextBox
-    Friend WithEvents BtnVolver As Button
 End Class
