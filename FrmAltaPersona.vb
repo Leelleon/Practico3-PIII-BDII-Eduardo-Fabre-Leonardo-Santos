@@ -6,15 +6,15 @@ Public Class FrmAltaPersona
         For x = 0 To LstTelefono.Items.Count - 1
             Telefonos.Add(LstTelefono.Items(x).ToString)
         Next
-        ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)
-        'If (ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) Then
-        '    MsgBox("Alta creada exitosamente")
-        'ElseIf (ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 1 Then
-        '    MsgBox("Error en comienzo de transacción")
+        If ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 2 Then
+            MsgBox("Alta creada exitosamente")
+        ElseIf ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 1 Then
+            MsgBox("Error en comienzo de transacción")
 
-        'ElseIf (ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 3 Then
-        '    MsgBox("Hubo un error en la creación de la persona")
-        'End If
+        ElseIf ControladorPersona.NuevaPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 3 Then
+            MsgBox("Hubo un error en la creación de la persona")
+        End If
+        Limpiar()
 
     End Sub
 
@@ -52,7 +52,6 @@ Public Class FrmAltaPersona
 
     Private Sub HabilitarBotonAgregar(Telefono As String)
         If IsNumeric(Telefono) Then
-            'BtnAgregar.Enabled = Not (BtnAgregar.Enabled)
             BtnAgregar.Enabled = True
         Else
             BtnAgregar.Enabled = False
@@ -67,5 +66,12 @@ Public Class FrmAltaPersona
         HabilitarBotonAceptar()
     End Sub
 
+    Private Sub Limpiar()
+        TxtNombre.Text = ""
+        TxtApellido.Text = ""
+        TxtMail.Text = ""
+        LstTelefono.Items.Clear()
+
+    End Sub
 
 End Class

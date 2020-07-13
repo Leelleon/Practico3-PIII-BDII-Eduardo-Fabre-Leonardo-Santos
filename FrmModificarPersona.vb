@@ -16,18 +16,22 @@ Public Class FrmModificarPersona
         For x = 0 To LstTelefono.Items.Count - 1
             Telefonos.Add(LstTelefono.Items(x).ToString)
         Next
-        If (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) Then
+        If ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 2 Then
             MsgBox("Modificacion exitosa")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 1 Then
+        ElseIf ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 1 Then
             MsgBox("Error en comienzo de transacción")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 2 Then
-            MsgBox("Las tablas no fueron bloqueadas")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 3 Then
+        ElseIf ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 3 Then
             MsgBox("Hubo un error en la modificación de la persona")
         End If
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+        Dim LectorId As IDataReader
+        LectorId = ControladorPersona.ObtenerIdPersona
+
+        While LectorId.Read
+            CmbIdPersona.Items.Add(LectorId.GetValue(0))
+        End While
 
     End Sub
 
@@ -69,5 +73,10 @@ Public Class FrmModificarPersona
         End If
 
 
+    End Sub
+
+    Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles BtnVolver.Click
+        FrmMenuPrincipal.Show()
+        Me.Close()
     End Sub
 End Class

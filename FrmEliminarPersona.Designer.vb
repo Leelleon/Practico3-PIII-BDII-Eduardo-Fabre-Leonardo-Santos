@@ -140,6 +140,7 @@ Partial Class FrmEliminarPersona
         '
         'CmbIdPersona
         '
+        Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbIdPersona.FormattingEnabled = True
         Me.CmbIdPersona.Location = New System.Drawing.Point(273, 51)
         Me.CmbIdPersona.Name = "CmbIdPersona"

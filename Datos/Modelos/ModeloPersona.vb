@@ -21,7 +21,7 @@
             Command.ExecuteNonQuery()
             Command.CommandText = "START TRANSACTION"
             Command.ExecuteNonQuery()
-            Return True
+
             Try
                 Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
                                            VALUES('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','1')"
@@ -34,13 +34,14 @@
                 Next
                 Command.CommandText = "COMMIT"
                 Command.ExecuteNonQuery()
-                Return True
+                Return 2
+
             Catch ex As Exception
                 Command.CommandText = "ROLLBACK"
                 Command.ExecuteNonQuery()
                 Return 3
-
             End Try
+
         Catch ex As Exception
             Return 1
         End Try
@@ -67,40 +68,32 @@
             Command.ExecuteNonQuery()
             Command.CommandText = "START TRANSACTION"
             Command.ExecuteNonQuery()
-            Return True
+
             Try
-                Command.CommandText = "Lock TABLE persona WRTIE;
-                                       Lock TABLE persona READ;
-                                       Lock TABLE persona_tel WRITE;
-                                       Lock TABLE persona_tel READ;"
-                Return True
-                Try
-                    Command.CommandText = "UPDATE persona
+                Command.CommandText = "UPDATE persona
                                            SET nombre = '" + Me.Nombre + "',
                                                apellido = '" + Me.Apellido + "',
                                                mail = '" + Me.Mail + "','1') 
                                            WHERE id='" + Me.IdPersona + "'"
-                    Command.ExecuteNonQuery()
+                Command.ExecuteNonQuery()
 
-                    For Each Numero In Telefono
-                        Command.CommandText = "UPDATE persona_tel
+                For Each Numero In Telefono
+                    Command.CommandText = "UPDATE persona_tel
                                            SET id_persona = '" + Me.IdPersona + "'
                                                Telefono = '" + Numero + "'
                                            WHERE id_persona = '" + Me.IdPersona + "'"
-                        Command.ExecuteNonQuery()
-                    Next
-                    Command.CommandText = "COMMIT"
                     Command.ExecuteNonQuery()
-                    Return True
-                Catch ex As Exception
-                    Command.CommandText = "ROLLBACK"
-                    Command.ExecuteNonQuery()
-                    Return 3
-
-                End Try
-            Catch ex As Exception
+                Next
+                Command.CommandText = "COMMIT"
+                Command.ExecuteNonQuery()
                 Return 2
+            Catch ex As Exception
+                Command.CommandText = "ROLLBACK"
+                Command.ExecuteNonQuery()
+                Return 3
+
             End Try
+
         Catch ex As Exception
             Return 1
         End Try
