@@ -15,22 +15,107 @@
 
     End Function
 
-    Public Sub Insertar()
-        Command.CommandText = " 
-            BEGIN;
-            LOCK TABLE persona WRTIE;
-            LOCK TABLE persona READ;
-            LOCK TABLE persona_tel WRITE;
-            LOCK TABLE persona_tel READ;
-        "
-        Command.CommandText = "
-            INSERT INTO 
-                persona (nombre, apellido, mail, activo) 
-            VALUES ('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "1")
-        ""
+    Public Function Insertar()
+        Try
+            Command.CommandText = "SET AUTOCOMMIT = OFF"
+            Command.ExecuteNonQuery()
+            Command.CommandText = "START TRANSACTION"
+            Command.ExecuteNonQuery()
+            Return True
+            Try
+                Command.CommandText = "INSERT INTO persona(Nombre, Apellido, Mail, activo)
+                                           VALUES('" + Me.Nombre + "','" + Me.Apellido + "','" + Me.Mail + "','1')"
+                Command.ExecuteNonQuery()
 
-        Command.ExecuteNonQuery()
+                For Each Numero In Telefono
+                    Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
+                                           VALUES((SELECT MAX(id) FROM persona),('" + Numero + "'))"
+                    Command.ExecuteNonQuery()
+                Next
+                Command.CommandText = "COMMIT"
+                Command.ExecuteNonQuery()
+                Return True
+            Catch ex As Exception
+                Command.CommandText = "ROLLBACK"
+                Command.ExecuteNonQuery()
+                Return 3
 
+            End Try
+        Catch ex As Exception
+            Return 1
+        End Try
 
-    End Sub
+    End Function
+
+    Public Function ObtenerIdPersona()
+        Command.CommandText = "SELECT id FROM persona WHERE activo = 1"
+        Reader = Command.ExecuteReader
+        Return Reader
+    End Function
+
+    Public Function TraerDatos()
+        Command.CommandText = "SELECT nombre, apellido, mail, telefono 
+                                FROM persona, persona_tel 
+                                WHERE id = '" + Me.IdPersona + "' AND activo = 1 AND id_persona = '" + Me.IdPersona + "'"
+        Reader = Command.ExecuteReader
+        Return Reader
+    End Function
+
+    Public Function Modificar()
+        Try
+            Command.CommandText = "SET AUTOCOMMIT = OFF"
+            Command.ExecuteNonQuery()
+            Command.CommandText = "START TRANSACTION"
+            Command.ExecuteNonQuery()
+            Return True
+            Try
+                Command.CommandText = "Lock TABLE persona WRTIE;
+                                       Lock TABLE persona READ;
+                                       Lock TABLE persona_tel WRITE;
+                                       Lock TABLE persona_tel READ;"
+                Return True
+                Try
+                    Command.CommandText = "UPDATE persona
+                                           SET nombre = '" + Me.Nombre + "',
+                                               apellido = '" + Me.Apellido + "',
+                                               mail = '" + Me.Mail + "','1') 
+                                           WHERE id='" + Me.IdPersona + "'"
+                    Command.ExecuteNonQuery()
+
+                    For Each Numero In Telefono
+                        Command.CommandText = "UPDATE persona_tel
+                                           SET id_persona = '" + Me.IdPersona + "'
+                                               Telefono = '" + Numero + "'
+                                           WHERE id_persona = '" + Me.IdPersona + "'"
+                        Command.ExecuteNonQuery()
+                    Next
+                    Command.CommandText = "COMMIT"
+                    Command.ExecuteNonQuery()
+                    Return True
+                Catch ex As Exception
+                    Command.CommandText = "ROLLBACK"
+                    Command.ExecuteNonQuery()
+                    Return 3
+
+                End Try
+            Catch ex As Exception
+                Return 2
+            End Try
+        Catch ex As Exception
+            Return 1
+        End Try
+
+    End Function
+
+    Public Function Eliminar()
+        Try
+            Command.CommandText = "UPDATE persona
+                                   SET activo = 0
+                                   WHERE id = '" + Me.IdPersona + "'"
+            Command.ExecuteNonQuery()
+            Return True
+        Catch ex As Exception
+            Return False
+        End Try
+    End Function
 End Class
