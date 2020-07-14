@@ -59,7 +59,7 @@ Partial Class FrmEliminarServicio
         Me.TxtId.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(68, 20)
-        Me.TxtId.TabIndex = 1
+        Me.TxtId.TabIndex = 0
         '
         'BtnEliminar
         '
@@ -71,7 +71,7 @@ Partial Class FrmEliminarServicio
         Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(259, 43)
-        Me.BtnEliminar.TabIndex = 2
+        Me.BtnEliminar.TabIndex = 1
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = False
         '
@@ -110,7 +110,7 @@ Partial Class FrmEliminarServicio
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(151, 23)
-        Me.BtnCancelar.TabIndex = 62
+        Me.BtnCancelar.TabIndex = 3
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
@@ -229,7 +229,7 @@ Partial Class FrmEliminarServicio
         Me.BtnLimpiar.Location = New System.Drawing.Point(30, 314)
         Me.BtnLimpiar.Name = "BtnLimpiar"
         Me.BtnLimpiar.Size = New System.Drawing.Size(75, 23)
-        Me.BtnLimpiar.TabIndex = 72
+        Me.BtnLimpiar.TabIndex = 2
         Me.BtnLimpiar.Text = "Limpiar"
         Me.BtnLimpiar.UseVisualStyleBackColor = False
         '
@@ -259,6 +259,7 @@ Partial Class FrmEliminarServicio
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmEliminarServicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " Eliminar Servicio"
         CType(Me.PcbBusqueda, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

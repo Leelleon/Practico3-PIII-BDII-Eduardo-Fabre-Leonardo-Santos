@@ -63,7 +63,7 @@ Partial Class FrmModificarServicio
         Me.BtnCancelar.Location = New System.Drawing.Point(161, 370)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(145, 21)
-        Me.BtnCancelar.TabIndex = 5
+        Me.BtnCancelar.TabIndex = 6
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
@@ -75,7 +75,7 @@ Partial Class FrmModificarServicio
         Me.BtnLimpiar.Location = New System.Drawing.Point(52, 370)
         Me.BtnLimpiar.Name = "BtnLimpiar"
         Me.BtnLimpiar.Size = New System.Drawing.Size(103, 21)
-        Me.BtnLimpiar.TabIndex = 6
+        Me.BtnLimpiar.TabIndex = 5
         Me.BtnLimpiar.Text = "Limpiar"
         Me.BtnLimpiar.UseVisualStyleBackColor = False
         '
@@ -91,7 +91,7 @@ Partial Class FrmModificarServicio
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(257, 44)
-        Me.BtnAceptar.TabIndex = 8
+        Me.BtnAceptar.TabIndex = 4
         Me.BtnAceptar.Text = "Modificar"
         Me.BtnAceptar.UseVisualStyleBackColor = False
         '
@@ -123,7 +123,7 @@ Partial Class FrmModificarServicio
         Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2)
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(257, 21)
-        Me.CmbTipo.TabIndex = 59
+        Me.CmbTipo.TabIndex = 3
         '
         'Label3
         '
@@ -173,7 +173,7 @@ Partial Class FrmModificarServicio
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(257, 16)
-        Me.TxtNombre.TabIndex = 56
+        Me.TxtNombre.TabIndex = 1
         Me.TxtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxtCosto
@@ -189,7 +189,7 @@ Partial Class FrmModificarServicio
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
         Me.TxtCosto.Size = New System.Drawing.Size(257, 16)
-        Me.TxtCosto.TabIndex = 60
+        Me.TxtCosto.TabIndex = 2
         Me.TxtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FrmModificarServicio
@@ -214,6 +214,7 @@ Partial Class FrmModificarServicio
         Me.Enabled = False
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmModificarServicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modificacion del Servicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

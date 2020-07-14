@@ -48,7 +48,7 @@ Partial Class FrmAltaServicio
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(72, 38)
-        Me.BtnCancelar.TabIndex = 5
+        Me.BtnCancelar.TabIndex = 4
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
@@ -128,7 +128,7 @@ Partial Class FrmAltaServicio
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
         Me.TxtCosto.Size = New System.Drawing.Size(267, 16)
-        Me.TxtCosto.TabIndex = 2
+        Me.TxtCosto.TabIndex = 1
         Me.TxtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxtId
@@ -170,7 +170,7 @@ Partial Class FrmAltaServicio
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
         Me.CmbTipo.Location = New System.Drawing.Point(43, 259)
-        Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2)
         Me.CmbTipo.Name = "CmbTipo"
         Me.CmbTipo.Size = New System.Drawing.Size(257, 24)
         Me.CmbTipo.TabIndex = 2
@@ -220,8 +220,9 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.BtnAceptar)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmAltaServicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Alta de Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
