@@ -22,7 +22,7 @@ Partial Class FrmEliminarPersona
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BtnCancelar = New System.Windows.Forms.Button()
+        Me.BtnVolver = New System.Windows.Forms.Button()
         Me.LblTelefono = New System.Windows.Forms.Label()
         Me.LblMail = New System.Windows.Forms.Label()
         Me.LblApellido = New System.Windows.Forms.Label()
@@ -36,16 +36,16 @@ Partial Class FrmEliminarPersona
         Me.CmbIdPersona = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'BtnCancelar
+        'BtnVolver
         '
-        Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(245, 380)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
-        Me.BtnCancelar.TabIndex = 67
-        Me.BtnCancelar.Text = "Volver"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
+        Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BtnVolver.Location = New System.Drawing.Point(245, 380)
+        Me.BtnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(96, 38)
+        Me.BtnVolver.TabIndex = 67
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'LblTelefono
         '
@@ -94,6 +94,7 @@ Partial Class FrmEliminarPersona
         '
         'TxtMail
         '
+        Me.TxtMail.Enabled = False
         Me.TxtMail.Location = New System.Drawing.Point(158, 159)
         Me.TxtMail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtMail.MaxLength = 50
@@ -103,6 +104,7 @@ Partial Class FrmEliminarPersona
         '
         'TxtNombre
         '
+        Me.TxtNombre.Enabled = False
         Me.TxtNombre.Location = New System.Drawing.Point(158, 83)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtNombre.MaxLength = 20
@@ -112,6 +114,7 @@ Partial Class FrmEliminarPersona
         '
         'TxtApellido
         '
+        Me.TxtApellido.Enabled = False
         Me.TxtApellido.Location = New System.Drawing.Point(158, 122)
         Me.TxtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtApellido.MaxLength = 20
@@ -131,6 +134,7 @@ Partial Class FrmEliminarPersona
         '
         'LstTelefono
         '
+        Me.LstTelefono.Enabled = False
         Me.LstTelefono.FormattingEnabled = True
         Me.LstTelefono.ItemHeight = 16
         Me.LstTelefono.Location = New System.Drawing.Point(158, 198)
@@ -154,7 +158,7 @@ Partial Class FrmEliminarPersona
         Me.ClientSize = New System.Drawing.Size(395, 450)
         Me.Controls.Add(Me.CmbIdPersona)
         Me.Controls.Add(Me.LstTelefono)
-        Me.Controls.Add(Me.BtnCancelar)
+        Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblMail)
         Me.Controls.Add(Me.LblApellido)
@@ -171,7 +175,7 @@ Partial Class FrmEliminarPersona
 
     End Sub
 
-    Friend WithEvents BtnCancelar As Button
+    Friend WithEvents BtnVolver As Button
     Friend WithEvents LblTelefono As Label
     Friend WithEvents LblMail As Label
     Friend WithEvents LblApellido As Label

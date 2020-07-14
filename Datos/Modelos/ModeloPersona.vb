@@ -6,6 +6,8 @@
     Public Apellido As String
     Public Mail As String
     Public Telefono As List(Of String)
+    Public TelefonoViejo As List(Of String)
+    Public Indice As Integer = 0
 
     Public Function ListarDatosPersona()
         Command.CommandText = "SELECT * FROM persona WHERE activo = 1"
@@ -73,23 +75,28 @@
                 Command.CommandText = "UPDATE persona
                                            SET nombre = '" + Me.Nombre + "',
                                                apellido = '" + Me.Apellido + "',
-                                               mail = '" + Me.Mail + "','1') 
-                                           WHERE id='" + Me.IdPersona + "'"
+                                               mail = '" + Me.Mail + "' 
+                                           WHERE id = " + Me.IdPersona + ""
                 Command.ExecuteNonQuery()
 
                 For Each Numero In Telefono
-                    Command.CommandText = "UPDATE persona_tel
-                                           SET id_persona = '" + Me.IdPersona + "'
-                                               Telefono = '" + Numero + "'
-                                           WHERE id_persona = '" + Me.IdPersona + "'"
-                    Command.ExecuteNonQuery()
+
+                    'Command.CommandText = "UPDATE persona_tel
+                    '                       SET 
+                    '                        Telefono = " + Numero + "
+                    '                       WHERE Telefono = " + Me.TelefonoViejo(Me.Indice) + ""
+                    'Command.ExecuteNonQuery()
+                    'Indice += 1
                 Next
                 Command.CommandText = "COMMIT"
                 Command.ExecuteNonQuery()
+
+
                 Return 2
             Catch ex As Exception
                 Command.CommandText = "ROLLBACK"
                 Command.ExecuteNonQuery()
+                MsgBox(ex.ToString)
                 Return 3
 
             End Try
@@ -104,7 +111,7 @@
         Try
             Command.CommandText = "UPDATE persona
                                    SET activo = 0
-                                   WHERE id = '" + Me.IdPersona + "'"
+                                   WHERE id = " + Me.IdPersona + ""
             Command.ExecuteNonQuery()
             Return True
         Catch ex As Exception
