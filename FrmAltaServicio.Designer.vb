@@ -219,9 +219,10 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.BtnAceptar)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmAltaServicio"
-        Me.Text = " "
+        Me.Text = "Alta de Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
