@@ -62,7 +62,8 @@
 
     Public Function Listar()
         Command.CommandText = "
-            SELECT 
+            SELECT
+                id AS ID,
                 nombre AS Nombre, 
                 costo_mensual AS Costo, 
                 tipo AS Tipo

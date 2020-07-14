@@ -28,18 +28,18 @@ Partial Class FrmModificarPersona
         Me.LblApellido = New System.Windows.Forms.Label()
         Me.LblPersonaNombre = New System.Windows.Forms.Label()
         Me.LblPersonaId = New System.Windows.Forms.Label()
-        Me.TxtTelefono = New System.Windows.Forms.TextBox()
         Me.TxtMail = New System.Windows.Forms.TextBox()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtApellido = New System.Windows.Forms.TextBox()
-        Me.TxtPersonaId = New System.Windows.Forms.TextBox()
         Me.BtnAceptar = New System.Windows.Forms.Button()
+        Me.CmbIdPersona = New System.Windows.Forms.ComboBox()
+        Me.LstTelefono = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'BtnCancelar
         '
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(213, 278)
+        Me.BtnCancelar.Location = New System.Drawing.Point(261, 367)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
@@ -86,23 +86,15 @@ Partial Class FrmModificarPersona
         'LblPersonaId
         '
         Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(46, 57)
+        Me.LblPersonaId.Location = New System.Drawing.Point(12, 41)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(19, 17)
+        Me.LblPersonaId.Size = New System.Drawing.Size(274, 17)
         Me.LblPersonaId.TabIndex = 50
-        Me.LblPersonaId.Text = "Id"
-        '
-        'TxtTelefono
-        '
-        Me.TxtTelefono.Location = New System.Drawing.Point(150, 207)
-        Me.TxtTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(183, 22)
-        Me.TxtTelefono.TabIndex = 49
+        Me.LblPersonaId.Text = "Seleccione el ID de la Persona a Modificar"
         '
         'TxtMail
         '
-        Me.TxtMail.Location = New System.Drawing.Point(150, 165)
+        Me.TxtMail.Location = New System.Drawing.Point(174, 165)
         Me.TxtMail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtMail.MaxLength = 50
         Me.TxtMail.Name = "TxtMail"
@@ -111,7 +103,7 @@ Partial Class FrmModificarPersona
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(150, 89)
+        Me.TxtNombre.Location = New System.Drawing.Point(174, 89)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
@@ -120,26 +112,17 @@ Partial Class FrmModificarPersona
         '
         'TxtApellido
         '
-        Me.TxtApellido.Location = New System.Drawing.Point(150, 128)
+        Me.TxtApellido.Location = New System.Drawing.Point(174, 128)
         Me.TxtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtApellido.MaxLength = 20
         Me.TxtApellido.Name = "TxtApellido"
         Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
         Me.TxtApellido.TabIndex = 46
         '
-        'TxtPersonaId
-        '
-        Me.TxtPersonaId.Enabled = False
-        Me.TxtPersonaId.Location = New System.Drawing.Point(150, 57)
-        Me.TxtPersonaId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtPersonaId.Name = "TxtPersonaId"
-        Me.TxtPersonaId.Size = New System.Drawing.Size(61, 22)
-        Me.TxtPersonaId.TabIndex = 45
-        '
         'BtnAceptar
         '
         Me.BtnAceptar.Enabled = False
-        Me.BtnAceptar.Location = New System.Drawing.Point(38, 278)
+        Me.BtnAceptar.Location = New System.Drawing.Point(49, 367)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
@@ -147,22 +130,39 @@ Partial Class FrmModificarPersona
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
+        'CmbIdPersona
+        '
+        Me.CmbIdPersona.FormattingEnabled = True
+        Me.CmbIdPersona.Location = New System.Drawing.Point(309, 41)
+        Me.CmbIdPersona.Name = "CmbIdPersona"
+        Me.CmbIdPersona.Size = New System.Drawing.Size(48, 24)
+        Me.CmbIdPersona.TabIndex = 56
+        '
+        'LstTelefono
+        '
+        Me.LstTelefono.FormattingEnabled = True
+        Me.LstTelefono.ItemHeight = 16
+        Me.LstTelefono.Location = New System.Drawing.Point(174, 207)
+        Me.LstTelefono.Name = "LstTelefono"
+        Me.LstTelefono.Size = New System.Drawing.Size(183, 116)
+        Me.LstTelefono.TabIndex = 57
+        '
         'FrmModificarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 450)
+        Me.ClientSize = New System.Drawing.Size(439, 450)
+        Me.Controls.Add(Me.LstTelefono)
+        Me.Controls.Add(Me.CmbIdPersona)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTelefono)
         Me.Controls.Add(Me.LblMail)
         Me.Controls.Add(Me.LblApellido)
         Me.Controls.Add(Me.LblPersonaNombre)
         Me.Controls.Add(Me.LblPersonaId)
-        Me.Controls.Add(Me.TxtTelefono)
         Me.Controls.Add(Me.TxtMail)
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
-        Me.Controls.Add(Me.TxtPersonaId)
         Me.Controls.Add(Me.BtnAceptar)
         Me.Name = "FrmModificarPersona"
         Me.Text = "FrmModificacion"
@@ -177,10 +177,10 @@ Partial Class FrmModificarPersona
     Friend WithEvents LblApellido As Label
     Friend WithEvents LblPersonaNombre As Label
     Friend WithEvents LblPersonaId As Label
-    Friend WithEvents TxtTelefono As TextBox
     Friend WithEvents TxtMail As TextBox
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtApellido As TextBox
-    Friend WithEvents TxtPersonaId As TextBox
     Friend WithEvents BtnAceptar As Button
+    Friend WithEvents CmbIdPersona As ComboBox
+    Friend WithEvents LstTelefono As ListBox
 End Class

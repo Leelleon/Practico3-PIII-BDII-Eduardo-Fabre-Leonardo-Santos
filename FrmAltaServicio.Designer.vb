@@ -32,108 +32,182 @@ Partial Class FrmAltaServicio
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.BtnAceptar = New System.Windows.Forms.Button()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
+        Me.LblLinea2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BtnCancelar
         '
+        Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(280, 362)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnCancelar.ForeColor = System.Drawing.Color.White
+        Me.BtnCancelar.Location = New System.Drawing.Point(228, 366)
+        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
-        Me.BtnCancelar.TabIndex = 5
+        Me.BtnCancelar.Size = New System.Drawing.Size(72, 38)
+        Me.BtnCancelar.TabIndex = 4
         Me.BtnCancelar.Text = "Cancelar"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
+        Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'LblTipo
         '
         Me.LblTipo.AutoSize = True
-        Me.LblTipo.Location = New System.Drawing.Point(88, 268)
+        Me.LblTipo.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTipo.ForeColor = System.Drawing.Color.White
+        Me.LblTipo.Location = New System.Drawing.Point(40, 239)
+        Me.LblTipo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(39, 20)
+        Me.LblTipo.Size = New System.Drawing.Size(33, 18)
         Me.LblTipo.TabIndex = 53
         Me.LblTipo.Text = "Tipo"
         '
         'LblCosto
         '
         Me.LblCosto.AutoSize = True
-        Me.LblCosto.Location = New System.Drawing.Point(88, 202)
+        Me.LblCosto.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCosto.ForeColor = System.Drawing.Color.White
+        Me.LblCosto.Location = New System.Drawing.Point(40, 171)
+        Me.LblCosto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblCosto.Name = "LblCosto"
-        Me.LblCosto.Size = New System.Drawing.Size(51, 20)
+        Me.LblCosto.Size = New System.Drawing.Size(41, 18)
         Me.LblCosto.TabIndex = 52
         Me.LblCosto.Text = "Costo"
         '
         'LblPersonaNombre
         '
         Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(88, 129)
+        Me.LblPersonaNombre.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPersonaNombre.ForeColor = System.Drawing.Color.White
+        Me.LblPersonaNombre.Location = New System.Drawing.Point(40, 104)
+        Me.LblPersonaNombre.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(65, 20)
+        Me.LblPersonaNombre.Size = New System.Drawing.Size(53, 18)
         Me.LblPersonaNombre.TabIndex = 51
         Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
         Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(88, 60)
+        Me.LblPersonaId.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPersonaId.ForeColor = System.Drawing.Color.White
+        Me.LblPersonaId.Location = New System.Drawing.Point(107, 31)
+        Me.LblPersonaId.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(23, 20)
+        Me.LblPersonaId.Size = New System.Drawing.Size(19, 18)
         Me.LblPersonaId.TabIndex = 50
         Me.LblPersonaId.Text = "Id"
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(206, 129)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TxtNombre.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
+        Me.TxtNombre.ForeColor = System.Drawing.Color.White
+        Me.TxtNombre.Location = New System.Drawing.Point(43, 129)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
-        Me.TxtNombre.TabIndex = 1
+        Me.TxtNombre.Size = New System.Drawing.Size(257, 16)
+        Me.TxtNombre.TabIndex = 0
+        Me.TxtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxtCosto
         '
-        Me.TxtCosto.Location = New System.Drawing.Point(206, 195)
-        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtCosto.AcceptsTab = True
+        Me.TxtCosto.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtCosto.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtCosto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TxtCosto.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCosto.ForeColor = System.Drawing.Color.White
+        Me.TxtCosto.Location = New System.Drawing.Point(43, 190)
+        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtCosto.MaxLength = 20
         Me.TxtCosto.Name = "TxtCosto"
-        Me.TxtCosto.Size = New System.Drawing.Size(205, 26)
-        Me.TxtCosto.TabIndex = 2
+        Me.TxtCosto.Size = New System.Drawing.Size(267, 16)
+        Me.TxtCosto.TabIndex = 1
+        Me.TxtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TxtId
         '
+        Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtId.Enabled = False
-        Me.TxtId.Location = New System.Drawing.Point(206, 60)
-        Me.TxtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtId.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtId.ForeColor = System.Drawing.Color.White
+        Me.TxtId.Location = New System.Drawing.Point(149, 36)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(68, 26)
+        Me.TxtId.Size = New System.Drawing.Size(47, 25)
         Me.TxtId.TabIndex = 0
+        Me.TxtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnAceptar
         '
+        Me.BtnAceptar.BackColor = System.Drawing.Color.Gainsboro
+        Me.BtnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnAceptar.Enabled = False
-        Me.BtnAceptar.Location = New System.Drawing.Point(134, 358)
-        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAceptar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAceptar.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.BtnAceptar.Location = New System.Drawing.Point(39, 309)
+        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(124, 55)
-        Me.BtnAceptar.TabIndex = 4
+        Me.BtnAceptar.Size = New System.Drawing.Size(261, 44)
+        Me.BtnAceptar.TabIndex = 3
         Me.BtnAceptar.Text = "Aceptar"
-        Me.BtnAceptar.UseVisualStyleBackColor = True
+        Me.BtnAceptar.UseVisualStyleBackColor = False
         '
         'CmbTipo
         '
+        Me.CmbTipo.BackColor = System.Drawing.Color.White
         Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CmbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CmbTipo.ForeColor = System.Drawing.Color.Black
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
-        Me.CmbTipo.Location = New System.Drawing.Point(206, 258)
+        Me.CmbTipo.Location = New System.Drawing.Point(43, 259)
+        Me.CmbTipo.Margin = New System.Windows.Forms.Padding(2)
         Me.CmbTipo.Name = "CmbTipo"
-        Me.CmbTipo.Size = New System.Drawing.Size(205, 28)
-        Me.CmbTipo.TabIndex = 3
+        Me.CmbTipo.Size = New System.Drawing.Size(257, 24)
+        Me.CmbTipo.TabIndex = 2
+        '
+        'LblLinea2
+        '
+        Me.LblLinea2.BackColor = System.Drawing.Color.White
+        Me.LblLinea2.Location = New System.Drawing.Point(43, 205)
+        Me.LblLinea2.Name = "LblLinea2"
+        Me.LblLinea2.Size = New System.Drawing.Size(257, 1)
+        Me.LblLinea2.TabIndex = 54
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(43, 144)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(257, 1)
+        Me.Label1.TabIndex = 55
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(97, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(151, 1)
+        Me.Label2.TabIndex = 1
         '
         'FrmAltaServicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(508, 462)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(339, 414)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LblLinea2)
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTipo)
@@ -144,8 +218,12 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmAltaServicio"
-        Me.Text = "FrmAltaServicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alta de Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +239,7 @@ Partial Class FrmAltaServicio
     Friend WithEvents TxtId As TextBox
     Friend WithEvents BtnAceptar As Button
     Friend WithEvents CmbTipo As ComboBox
+    Friend WithEvents LblLinea2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
