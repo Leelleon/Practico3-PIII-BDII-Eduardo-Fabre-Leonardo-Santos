@@ -3,10 +3,17 @@
 Public Class FrmEliminarServicio
 
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
-        MsgBox("Seguro quiere eliminar al usuario?", MsgBoxStyle.YesNo)
-        If MsgBoxResult.Yes Then
-            ControladorServicio.BajarServicio(TxtId.Text)
-        End If
+
+        Select Case MsgBox("Seguro quiere eliminar al usuario?", MsgBoxStyle.YesNo)
+            Case MsgBoxResult.Yes
+                Try
+                    ControladorServicio.BajarServicio(TxtId.Text)
+                Catch ex As Exception
+                    MsgBox("No se pudo eliminar a la persona", MsgBoxStyle.Critical)
+                End Try
+            Case MsgBoxResult.No
+                TxtId.Text = ""
+        End Select
 
     End Sub
 
