@@ -211,7 +211,6 @@ Partial Class FrmModificarServicio
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.CmbId)
         Me.Controls.Add(Me.LblId)
-        Me.Enabled = False
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmModificarServicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
