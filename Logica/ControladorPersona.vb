@@ -31,6 +31,7 @@ Public Module ControladorPersona
 
     End Function
 
+
     Public Function ModificarPersona(IdPersona As String, Nombre As String, Apellido As String, Mail As String, Telefono As List(Of String), TelefonosViejos As List(Of String))
         Dim p As New ModeloPersona
         p.IdPersona = IdPersona
@@ -49,6 +50,7 @@ Public Module ControladorPersona
         Return p.Eliminar()
 
     End Function
+
 
 
 End Module

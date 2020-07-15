@@ -12,4 +12,12 @@ Public Class FrmListarServicio
         DgvServicios.DataSource = Listado
     End Sub
 
+    Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles BtnVolver.Click
+        Me.Close()
+    End Sub
+
+    Private Sub BtnRefrescar_Click(sender As Object, e As EventArgs) Handles BtnRefrescar.Click
+        IniciarListado()
+    End Sub
+
 End Class

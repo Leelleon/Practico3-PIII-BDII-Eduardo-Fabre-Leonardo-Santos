@@ -32,6 +32,7 @@
                 For Each Numero In Telefono
                     Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
                                            VALUES((SELECT MAX(id) FROM persona),('" + Numero + "'))"
+
                     Command.ExecuteNonQuery()
                 Next
                 Command.CommandText = "COMMIT"
@@ -63,6 +64,7 @@
         Reader = Command.ExecuteReader
         Return Reader
     End Function
+
 
     Public Function Modificar()
         Try
@@ -118,4 +120,5 @@
             Return False
         End Try
     End Function
+
 End Class

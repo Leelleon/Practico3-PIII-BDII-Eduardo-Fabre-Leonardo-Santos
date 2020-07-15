@@ -22,6 +22,7 @@ Partial Class FrmAltaServicio
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAltaServicio))
         Me.BtnCancelar = New System.Windows.Forms.Button()
         Me.LblTipo = New System.Windows.Forms.Label()
         Me.LblCosto = New System.Windows.Forms.Label()
@@ -32,108 +33,117 @@ Partial Class FrmAltaServicio
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.BtnAceptar = New System.Windows.Forms.Button()
         Me.CmbTipo = New System.Windows.Forms.ComboBox()
+        Me.LblLinea2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BtnCancelar
         '
+        Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(280, 362)
-        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        resources.ApplyResources(Me.BtnCancelar, "BtnCancelar")
+        Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(108, 48)
-        Me.BtnCancelar.TabIndex = 5
-        Me.BtnCancelar.Text = "Cancelar"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
+        Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'LblTipo
         '
-        Me.LblTipo.AutoSize = True
-        Me.LblTipo.Location = New System.Drawing.Point(88, 268)
+        resources.ApplyResources(Me.LblTipo, "LblTipo")
+        Me.LblTipo.ForeColor = System.Drawing.Color.White
         Me.LblTipo.Name = "LblTipo"
-        Me.LblTipo.Size = New System.Drawing.Size(39, 20)
-        Me.LblTipo.TabIndex = 53
-        Me.LblTipo.Text = "Tipo"
         '
         'LblCosto
         '
-        Me.LblCosto.AutoSize = True
-        Me.LblCosto.Location = New System.Drawing.Point(88, 202)
+        resources.ApplyResources(Me.LblCosto, "LblCosto")
+        Me.LblCosto.ForeColor = System.Drawing.Color.White
         Me.LblCosto.Name = "LblCosto"
-        Me.LblCosto.Size = New System.Drawing.Size(51, 20)
-        Me.LblCosto.TabIndex = 52
-        Me.LblCosto.Text = "Costo"
         '
         'LblPersonaNombre
         '
-        Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(88, 129)
+        resources.ApplyResources(Me.LblPersonaNombre, "LblPersonaNombre")
+        Me.LblPersonaNombre.ForeColor = System.Drawing.Color.White
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(65, 20)
-        Me.LblPersonaNombre.TabIndex = 51
-        Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
-        Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(88, 60)
+        resources.ApplyResources(Me.LblPersonaId, "LblPersonaId")
+        Me.LblPersonaId.ForeColor = System.Drawing.Color.White
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(23, 20)
-        Me.LblPersonaId.TabIndex = 50
-        Me.LblPersonaId.Text = "Id"
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(206, 129)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtNombre.MaxLength = 20
+        Me.TxtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        resources.ApplyResources(Me.TxtNombre, "TxtNombre")
+        Me.TxtNombre.ForeColor = System.Drawing.Color.White
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(205, 26)
-        Me.TxtNombre.TabIndex = 1
         '
         'TxtCosto
         '
-        Me.TxtCosto.Location = New System.Drawing.Point(206, 195)
-        Me.TxtCosto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtCosto.MaxLength = 20
+        Me.TxtCosto.AcceptsTab = True
+        Me.TxtCosto.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtCosto.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtCosto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        resources.ApplyResources(Me.TxtCosto, "TxtCosto")
+        Me.TxtCosto.ForeColor = System.Drawing.Color.White
         Me.TxtCosto.Name = "TxtCosto"
-        Me.TxtCosto.Size = New System.Drawing.Size(205, 26)
-        Me.TxtCosto.TabIndex = 2
         '
         'TxtId
         '
-        Me.TxtId.Enabled = False
-        Me.TxtId.Location = New System.Drawing.Point(206, 60)
-        Me.TxtId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.TxtId, "TxtId")
+        Me.TxtId.ForeColor = System.Drawing.Color.White
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(68, 26)
-        Me.TxtId.TabIndex = 0
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Enabled = False
-        Me.BtnAceptar.Location = New System.Drawing.Point(134, 358)
-        Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnAceptar.BackColor = System.Drawing.Color.Gainsboro
+        Me.BtnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        resources.ApplyResources(Me.BtnAceptar, "BtnAceptar")
+        Me.BtnAceptar.ForeColor = System.Drawing.SystemColors.ControlText
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(124, 55)
-        Me.BtnAceptar.TabIndex = 4
-        Me.BtnAceptar.Text = "Aceptar"
-        Me.BtnAceptar.UseVisualStyleBackColor = True
+        Me.BtnAceptar.UseVisualStyleBackColor = False
         '
         'CmbTipo
         '
+        Me.CmbTipo.BackColor = System.Drawing.Color.White
         Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        resources.ApplyResources(Me.CmbTipo, "CmbTipo")
+        Me.CmbTipo.ForeColor = System.Drawing.Color.Black
         Me.CmbTipo.FormattingEnabled = True
-        Me.CmbTipo.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
-        Me.CmbTipo.Location = New System.Drawing.Point(206, 258)
+        Me.CmbTipo.Items.AddRange(New Object() {resources.GetString("CmbTipo.Items"), resources.GetString("CmbTipo.Items1"), resources.GetString("CmbTipo.Items2"), resources.GetString("CmbTipo.Items3"), resources.GetString("CmbTipo.Items4")})
         Me.CmbTipo.Name = "CmbTipo"
-        Me.CmbTipo.Size = New System.Drawing.Size(205, 28)
-        Me.CmbTipo.TabIndex = 3
+        '
+        'LblLinea2
+        '
+        Me.LblLinea2.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.LblLinea2, "LblLinea2")
+        Me.LblLinea2.Name = "LblLinea2"
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.Name = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.Name = "Label2"
         '
         'FrmAltaServicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(508, 462)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LblLinea2)
         Me.Controls.Add(Me.CmbTipo)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.LblTipo)
@@ -144,8 +154,8 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmAltaServicio"
-        Me.Text = "FrmAltaServicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +171,7 @@ Partial Class FrmAltaServicio
     Friend WithEvents TxtId As TextBox
     Friend WithEvents BtnAceptar As Button
     Friend WithEvents CmbTipo As ComboBox
+    Friend WithEvents LblLinea2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
