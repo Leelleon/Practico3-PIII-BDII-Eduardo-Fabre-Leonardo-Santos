@@ -1,6 +1,9 @@
 ﻿Imports Logica
 
 Public Class FrmModificarPersona
+
+    Public TelefonosViejos As List(Of String)
+
     Private Sub FrmModificarPersona_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim LectorId As IDataReader
         LectorId = ControladorPersona.ObtenerIdPersona
@@ -16,32 +19,22 @@ Public Class FrmModificarPersona
         For x = 0 To LstTelefono.Items.Count - 1
             Telefonos.Add(LstTelefono.Items(x).ToString)
         Next
-        If (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) Then
+        If ControladorPersona.ModificarPersona(CmbIdPersona.Text, TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos, TelefonosViejos) = 2 Then
             MsgBox("Modificacion exitosa")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 1 Then
+        ElseIf ControladorPersona.ModificarPersona(CmbIdPersona.Text, TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos, TelefonosViejos) = 1 Then
             MsgBox("Error en comienzo de transacción")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 2 Then
-            MsgBox("Las tablas no fueron bloqueadas")
-        ElseIf (ControladorPersona.ModificarPersona(TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos)) = 3 Then
+        ElseIf ControladorPersona.ModificarPersona(CmbIdPersona.Text, TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos, TelefonosViejos) = 3 Then
             MsgBox("Hubo un error en la modificación de la persona")
         End If
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
+        TraerDatosDePersonas()
 
     End Sub
 
     Private Sub CmbIdPersona_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbIdPersona.SelectedIndexChanged
-        Dim LeerDatosDePersona As IDataReader
-        LeerDatosDePersona = ControladorPersona.TraerDatosDePersona(CmbIdPersona.Text)
-        LstTelefono.Items.Clear()
-
-        While LeerDatosDePersona.Read
-            TxtNombre.Text = LeerDatosDePersona.GetValue(0)
-            TxtApellido.Text = LeerDatosDePersona.GetValue(1)
-            TxtMail.Text = LeerDatosDePersona.GetValue(2)
-            LstTelefono.Items.Add(LeerDatosDePersona.GetValue(3))
-        End While
+        TraerDatosDePersonas()
 
     End Sub
 
@@ -68,6 +61,63 @@ Public Class FrmModificarPersona
             MsgBox("Seleccione el telefono de la lista a eliminar")
         End If
 
+    End Sub
+
+    Private Sub BtnVolver_Click(sender As Object, e As EventArgs) Handles BtnVolver.Click
+        FrmMenuPrincipal.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub TraerDatosDePersonas()
+        Dim LeerDatosDePersona As IDataReader
+        LeerDatosDePersona = ControladorPersona.TraerDatosDePersona(CmbIdPersona.Text)
+        LstTelefono.Items.Clear()
+        CargarDatos(LeerDatosDePersona)
 
     End Sub
+
+    Private Sub CargarDatos(LeerDatosDePersona As IDataReader)
+
+        While LeerDatosDePersona.Read
+            TxtNombre.Text = LeerDatosDePersona.GetValue(0)
+            TxtApellido.Text = LeerDatosDePersona.GetValue(1)
+            TxtMail.Text = LeerDatosDePersona.GetValue(2)
+            LstTelefono.Items.Add(LeerDatosDePersona.GetValue(3))
+        End While
+        GuardarTelefonosViejos(LstTelefono)
+
+    End Sub
+
+    Private Sub HabilitarBotonAgregar(Telefono As String)
+        If IsNumeric(Telefono) Then
+            BtnAgregar.Enabled = True
+            BtnModificar.Enabled = True
+        Else
+            BtnAgregar.Enabled = False
+            BtnModificar.Enabled = False
+        End If
+    End Sub
+
+    Private Sub TxtTelefono_TextChanged(sender As Object, e As EventArgs) Handles TxtTelefono.TextChanged
+        HabilitarBotonAgregar(TxtTelefono.Text)
+
+    End Sub
+
+    Public Sub GuardarTelefonosViejos(ListaTelefonosViejos As ListBox)
+
+        For x = 0 To ListaTelefonosViejos.Items.Count - 1
+            TelefonosViejos.Add(ListaTelefonosViejos.Items(x).ToString())
+        Next
+
+    End Sub
+
+
+    '  Private Sub HabilitarBotonAceptar()
+    ' If 
+    '            BtnAceptar.Enabled = True
+    'Else
+    '       BtnAceptar.Enabled = False
+    'End If
+
+    'End Sub
 End Class
