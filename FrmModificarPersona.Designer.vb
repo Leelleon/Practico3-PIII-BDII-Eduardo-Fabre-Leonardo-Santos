@@ -132,6 +132,7 @@ Partial Class FrmModificarPersona
         '
         'CmbIdPersona
         '
+        Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbIdPersona.FormattingEnabled = True
         Me.CmbIdPersona.Location = New System.Drawing.Point(309, 41)
         Me.CmbIdPersona.Name = "CmbIdPersona"

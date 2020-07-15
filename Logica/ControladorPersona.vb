@@ -30,4 +30,27 @@ Public Module ControladorPersona
         Return p.TraerDatos()
 
     End Function
+
+
+    Public Function ModificarPersona(IdPersona As String, Nombre As String, Apellido As String, Mail As String, Telefono As List(Of String), TelefonosViejos As List(Of String))
+        Dim p As New ModeloPersona
+        p.IdPersona = IdPersona
+        p.Nombre = Nombre
+        p.Apellido = Apellido
+        p.Mail = Mail
+        p.Telefono = Telefono
+        p.TelefonoViejo = TelefonosViejos
+        Return p.Modificar()
+    End Function
+    Public Function EliminarPersona(IdPersona As String)
+        Dim p As New ModeloPersona
+
+        p.IdPersona = IdPersona
+
+        Return p.Eliminar()
+
+    End Function
+
+
+
 End Module
