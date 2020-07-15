@@ -15,7 +15,6 @@ Public Class FrmModificarPersona
     End Sub
 
     Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
-
         Dim Telefonos As New List(Of String)
         For x = 0 To LstTelefono.Items.Count - 1
             Telefonos.Add(LstTelefono.Items(x).ToString)
@@ -27,7 +26,6 @@ Public Class FrmModificarPersona
         ElseIf ControladorPersona.ModificarPersona(CmbIdPersona.Text, TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos, TelefonosViejos) = 3 Then
             MsgBox("Hubo un error en la modificación de la persona")
         End If
-
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
@@ -36,12 +34,32 @@ Public Class FrmModificarPersona
     End Sub
 
     Private Sub CmbIdPersona_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbIdPersona.SelectedIndexChanged
-
         TraerDatosDePersonas()
 
+    End Sub
 
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+        LstTelefono.Items.Add(TxtTelefono.Text)
+        TxtTelefono.Clear()
+    End Sub
 
-        End While
+    Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
+        If TxtTelefono.Text = "" Then
+            MsgBox("Debe seleccionar el telefono a modificar e ingresar el número nuevo")
+        Else
+            LstTelefono.Items.RemoveAt(LstTelefono.SelectedIndex)
+            LstTelefono.Items.Add(TxtTelefono.Text)
+            TxtTelefono.Clear()
+        End If
+
+    End Sub
+
+    Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
+        If LstTelefono.SelectedItem Then
+            LstTelefono.Items.RemoveAt(LstTelefono.SelectedIndex)
+        Else
+            MsgBox("Seleccione el telefono de la lista a eliminar")
+        End If
 
     End Sub
 
@@ -87,9 +105,9 @@ Public Class FrmModificarPersona
 
     Public Sub GuardarTelefonosViejos(ListaTelefonosViejos As ListBox)
 
-        For x = 0 To ListaTelefonosViejos.Items.Count - 1
-            TelefonosViejos.Add(ListaTelefonosViejos.Items(x).ToString())
-        Next
+        'For x = 0 To ListaTelefonosViejos.Items.Count - 1
+        '    TelefonosViejos.Add(ListaTelefonosViejos.Items(x).ToString())
+        'Next
 
     End Sub
 
