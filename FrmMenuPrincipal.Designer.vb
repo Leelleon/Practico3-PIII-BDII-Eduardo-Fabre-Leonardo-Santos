@@ -40,8 +40,11 @@ Partial Class FrmMenuPrincipal
         Me.ListarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnSalir = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -52,7 +55,7 @@ Partial Class FrmMenuPrincipal
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1018, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(857, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -154,16 +157,37 @@ Partial Class FrmMenuPrincipal
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 31)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1018, 435)
+        Me.PictureBox1.Size = New System.Drawing.Size(857, 435)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
+        '
+        'BtnSalir
+        '
+        Me.BtnSalir.Location = New System.Drawing.Point(632, 57)
+        Me.BtnSalir.Name = "BtnSalir"
+        Me.BtnSalir.Size = New System.Drawing.Size(128, 38)
+        Me.BtnSalir.TabIndex = 2
+        Me.BtnSalir.Text = "Cerra y Vamo'"
+        Me.BtnSalir.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(524, 31)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(333, 134)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
         '
         'FrmMenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1018, 454)
+        Me.ClientSize = New System.Drawing.Size(857, 454)
+        Me.Controls.Add(Me.BtnSalir)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -172,6 +196,7 @@ Partial Class FrmMenuPrincipal
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,4 +219,6 @@ Partial Class FrmMenuPrincipal
     Friend WithEvents ListarToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BtnSalir As Button
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
