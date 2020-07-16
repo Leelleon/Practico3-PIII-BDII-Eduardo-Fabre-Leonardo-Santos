@@ -8,6 +8,10 @@ Public Class FrmAltaContrata
     Dim Costo As String = ""
 
     Private Sub FrmAltaContrata_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DtpDesde.Format = DateTimePickerFormat.Custom
+        DtpDesde.CustomFormat = "dd/MM/yyyy"
+        DtpHasta.Format = DateTimePickerFormat.Custom
+        DtpHasta.CustomFormat = "dd/MM/yyyy"
         CargarIdPersonas()
         CargarIdServicios()
 
@@ -82,17 +86,6 @@ Public Class FrmAltaContrata
 
     End Sub
 
-    Private Sub ObtenerCosto()
-        If Servicio <> "" And Desde <> "" And Hasta <> "" Then
-            Dim ContrataDesde As String = DtpDesde.Value.Year.ToString()
-            Dim Contratahasta As Date = DtpHasta.Value.ToShortDateString()
-            MsgBox(ContrataDesde + "," + Contratahasta)
-
-            Dim LectorCosto As IDataReader
-            LectorCosto = ControladorContrata.ObtenerCosto(Servicio, DtpDesde.Value.ToShortDateString, DtpHasta.Value.ToShortDateString)
-        End If
-    End Sub
-
     Private Sub ModificarLabel()
         LblDescripcion.Text = "
             La persona: " + Persona + " contratara el servicio: " + Servicio + "
@@ -102,7 +95,7 @@ Public Class FrmAltaContrata
     End Sub
 
     Private Sub HabilitarConfirmacion()
-        If Persona = "" Or Servicio = "" Or Desde = "" Or Hasta = "" Then
+        If Persona = "" Or Servicio = "" Or Desde = "" Or Hasta = "" Or CalcularDias() < 0 Then
             ChbConfirmar.Enabled = False
             ChbConfirmar.Checked = False
         Else
@@ -110,6 +103,36 @@ Public Class FrmAltaContrata
         End If
 
     End Sub
+
+    Private Sub ObtenerCosto()
+        If Servicio <> "" And Desde <> "" And Hasta <> "" Then
+
+            Dim Diferencia As String = DateDiff(DateInterval.Month, DtpDesde.Value.Date, DtpHasta.Value.Date) + 1
+
+            Dim LectorCosto As IDataReader
+            If CalcularDias() >= 0 Then
+                Try
+                    LectorCosto = ControladorContrata.ObtenerCosto(Diferencia, CmbServicio.Text)
+                    While LectorCosto.Read
+                        Costo = LectorCosto.GetValue(0)
+                        ModificarLabel()
+                    End While
+                Catch ex As Exception
+                    MsgBox("No se pudo calcular el costo", MsgBoxStyle.Critical)
+                End Try
+            Else
+                MsgBox("El fin del contrato no puede terminar antes de empezar!", MsgBoxStyle.Information)
+
+            End If
+        End If
+
+    End Sub
+
+    Private Function CalcularDias()
+        Dim DiferenciaDias As String = DateDiff(DateInterval.Day, DtpDesde.Value.Date, DtpHasta.Value.Date)
+        Return DiferenciaDias
+
+    End Function
 
     Private Sub ChbConfirmar_CheckedChanged(sender As Object, e As EventArgs) Handles ChbConfirmar.CheckedChanged
         If ChbConfirmar.Checked Then
@@ -132,6 +155,18 @@ Public Class FrmAltaContrata
         Me.Close()
     End Sub
 
+    Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
+        Dim ContrataDesde As String = DtpDesde.Value.Year.ToString() + "-" + DtpDesde.Value.Month.ToString() + "-" + DtpDesde.Value.Day.ToString()
+        Dim ContrataHasta As String = DtpHasta.Value.Year.ToString() + "-" + DtpHasta.Value.Month.ToString() + "-" + DtpHasta.Value.Day.ToString()
+        Try
+            ControladorContrata.GuardarContratacion(CmbUsuario.Text, CmbServicio.Text, ContrataDesde, ContrataHasta)
+            MsgBox("Contrato realizado con exito!", MsgBoxStyle.Information)
+        Catch ex As Exception
+            MsgBox("Error al ingresar el contrato")
+
+        End Try
+    End Sub
+
     Private Sub LimpiarTextBoxes()
         Persona = ""
         Servicio = ""
@@ -143,5 +178,4 @@ Public Class FrmAltaContrata
         HabilitarConfirmacion()
 
     End Sub
-
 End Class

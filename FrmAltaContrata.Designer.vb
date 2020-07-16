@@ -40,7 +40,7 @@ Partial Class FrmAltaContrata
         'LblDescripcion
         '
         Me.LblDescripcion.AutoSize = True
-        Me.LblDescripcion.Location = New System.Drawing.Point(56, 214)
+        Me.LblDescripcion.Location = New System.Drawing.Point(53, 182)
         Me.LblDescripcion.Name = "LblDescripcion"
         Me.LblDescripcion.Size = New System.Drawing.Size(0, 18)
         Me.LblDescripcion.TabIndex = 0
@@ -50,27 +50,27 @@ Partial Class FrmAltaContrata
         Me.CmbUsuario.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CmbUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbUsuario.FormattingEnabled = True
-        Me.CmbUsuario.Location = New System.Drawing.Point(59, 107)
+        Me.CmbUsuario.Location = New System.Drawing.Point(56, 88)
         Me.CmbUsuario.Name = "CmbUsuario"
         Me.CmbUsuario.Size = New System.Drawing.Size(140, 26)
-        Me.CmbUsuario.TabIndex = 1
+        Me.CmbUsuario.TabIndex = 0
         '
         'CmbServicio
         '
         Me.CmbServicio.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbServicio.FormattingEnabled = True
-        Me.CmbServicio.Location = New System.Drawing.Point(238, 107)
+        Me.CmbServicio.Location = New System.Drawing.Point(235, 88)
         Me.CmbServicio.Name = "CmbServicio"
         Me.CmbServicio.Size = New System.Drawing.Size(140, 26)
-        Me.CmbServicio.TabIndex = 2
+        Me.CmbServicio.TabIndex = 1
         '
         'LblPersona
         '
         Me.LblPersona.AutoSize = True
         Me.LblPersona.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPersona.ForeColor = System.Drawing.Color.White
-        Me.LblPersona.Location = New System.Drawing.Point(103, 61)
+        Me.LblPersona.Location = New System.Drawing.Point(100, 42)
         Me.LblPersona.Name = "LblPersona"
         Me.LblPersona.Size = New System.Drawing.Size(52, 18)
         Me.LblPersona.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class FrmAltaContrata
         Me.LblServicio.AutoSize = True
         Me.LblServicio.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblServicio.ForeColor = System.Drawing.Color.White
-        Me.LblServicio.Location = New System.Drawing.Point(276, 61)
+        Me.LblServicio.Location = New System.Drawing.Point(273, 42)
         Me.LblServicio.Name = "LblServicio"
         Me.LblServicio.Size = New System.Drawing.Size(55, 18)
         Me.LblServicio.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class FrmAltaContrata
         Me.LblDesde.AutoSize = True
         Me.LblDesde.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDesde.ForeColor = System.Drawing.Color.White
-        Me.LblDesde.Location = New System.Drawing.Point(472, 62)
+        Me.LblDesde.Location = New System.Drawing.Point(469, 43)
         Me.LblDesde.Name = "LblDesde"
         Me.LblDesde.Size = New System.Drawing.Size(43, 18)
         Me.LblDesde.TabIndex = 5
@@ -103,7 +103,7 @@ Partial Class FrmAltaContrata
         Me.LblHasta.AutoSize = True
         Me.LblHasta.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblHasta.ForeColor = System.Drawing.Color.White
-        Me.LblHasta.Location = New System.Drawing.Point(641, 63)
+        Me.LblHasta.Location = New System.Drawing.Point(638, 44)
         Me.LblHasta.Name = "LblHasta"
         Me.LblHasta.Size = New System.Drawing.Size(42, 18)
         Me.LblHasta.TabIndex = 6
@@ -113,28 +113,28 @@ Partial Class FrmAltaContrata
         '
         Me.DtpDesde.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DtpDesde.CustomFormat = ""
-        Me.DtpDesde.Location = New System.Drawing.Point(422, 108)
+        Me.DtpDesde.Location = New System.Drawing.Point(419, 89)
         Me.DtpDesde.Name = "DtpDesde"
         Me.DtpDesde.Size = New System.Drawing.Size(134, 23)
-        Me.DtpDesde.TabIndex = 8
+        Me.DtpDesde.TabIndex = 2
         '
         'DtpHasta
         '
         Me.DtpHasta.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DtpHasta.CustomFormat = ""
-        Me.DtpHasta.Location = New System.Drawing.Point(589, 108)
+        Me.DtpHasta.Location = New System.Drawing.Point(586, 89)
         Me.DtpHasta.Name = "DtpHasta"
         Me.DtpHasta.Size = New System.Drawing.Size(138, 23)
-        Me.DtpHasta.TabIndex = 9
+        Me.DtpHasta.TabIndex = 3
         '
         'ChbConfirmar
         '
         Me.ChbConfirmar.AutoSize = True
         Me.ChbConfirmar.Enabled = False
-        Me.ChbConfirmar.Location = New System.Drawing.Point(612, 225)
+        Me.ChbConfirmar.Location = New System.Drawing.Point(612, 195)
         Me.ChbConfirmar.Name = "ChbConfirmar"
         Me.ChbConfirmar.Size = New System.Drawing.Size(112, 22)
-        Me.ChbConfirmar.TabIndex = 10
+        Me.ChbConfirmar.TabIndex = 4
         Me.ChbConfirmar.Text = "Confirmar Alta"
         Me.ChbConfirmar.UseVisualStyleBackColor = True
         '
@@ -143,10 +143,10 @@ Partial Class FrmAltaContrata
         Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancelar.Location = New System.Drawing.Point(400, 378)
+        Me.BtnCancelar.Location = New System.Drawing.Point(387, 345)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(145, 30)
-        Me.BtnCancelar.TabIndex = 13
+        Me.BtnCancelar.TabIndex = 7
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
@@ -156,10 +156,10 @@ Partial Class FrmAltaContrata
         Me.BtnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnLimpiar.ForeColor = System.Drawing.Color.White
-        Me.BtnLimpiar.Location = New System.Drawing.Point(257, 376)
+        Me.BtnLimpiar.Location = New System.Drawing.Point(244, 343)
         Me.BtnLimpiar.Name = "BtnLimpiar"
         Me.BtnLimpiar.Size = New System.Drawing.Size(125, 35)
-        Me.BtnLimpiar.TabIndex = 14
+        Me.BtnLimpiar.TabIndex = 6
         Me.BtnLimpiar.Text = "Limpiar"
         Me.BtnLimpiar.UseVisualStyleBackColor = False
         '
@@ -171,12 +171,12 @@ Partial Class FrmAltaContrata
         Me.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAceptar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAceptar.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.BtnAceptar.Location = New System.Drawing.Point(257, 318)
+        Me.BtnAceptar.Location = New System.Drawing.Point(244, 283)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(288, 44)
-        Me.BtnAceptar.TabIndex = 15
-        Me.BtnAceptar.Text = "Modificar"
+        Me.BtnAceptar.TabIndex = 5
+        Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = False
         '
         'FrmAltaContrata
@@ -201,8 +201,10 @@ Partial Class FrmAltaContrata
         Me.Controls.Add(Me.LblDescripcion)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.White
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmAltaContrata"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAltaContrata"
         Me.ResumeLayout(False)
         Me.PerformLayout()

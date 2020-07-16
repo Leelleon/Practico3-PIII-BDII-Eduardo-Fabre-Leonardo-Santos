@@ -5,6 +5,7 @@
     Public Servicio As String
     Public Desde As String
     Public Hasta As String
+    Public DiferenciaDesdeHasta As String
 
     Public Function ObtenerPersonas()
         Command.CommandText = "
@@ -62,10 +63,25 @@
 
     Public Function ObtenerCosto()
         Command.CommandText = "
-        
+            SELECT
+                costo_mensual * " + (Me.DiferenciaDesdeHasta) + " As 'Costo'
+            FROM
+                servicio
+            WHERE
+                id = " + Me.Servicio + "
         "
         Reader = Command.ExecuteReader()
         Return Reader
 
     End Function
+
+    Public Sub GuardarContratacion()
+        Command.CommandText = "
+            INSERT INTO
+                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contrato)
+            VALUES
+                (" + Me.Usuario + "," + Me.Servicio + ",CURDATE(), '" + Me.Desde + "', '" + Me.Hasta + "');
+        "
+        Command.ExecuteNonQuery()
+    End Sub
 End Class

@@ -29,15 +29,23 @@ Public Module ControladorContrata
         Return c.ObtenerIdServicio
     End Function
 
-    Public Function ObtenerCosto(servicio As String, desde As String, hasta As String)
+    Public Function ObtenerCosto(diferencia As String, servicio As String)
         Dim c As New ModeloContrata With {
-            .Servicio = servicio,
-            .Desde = desde,
-            .Hasta = hasta
+            .DiferenciaDesdeHasta = diferencia,
+            .Servicio = servicio
         }
 
         Return c.ObtenerCosto()
     End Function
 
+    Public Sub GuardarContratacion(usuario As String, servicio As String, desde As String, hasta As String)
+        Dim c As New ModeloContrata With {
+            .Usuario = usuario,
+            .Servicio = servicio,
+            .Desde = desde,
+            .Hasta = hasta
+        }
 
+        c.GuardarContratacion()
+    End Sub
 End Module
