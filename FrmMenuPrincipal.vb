@@ -50,6 +50,8 @@
     Private Sub NuevoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem1.Click
         FrmAltaContrata.Show()
 
+    End Sub
+
     Private Sub ListarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem2.Click
         FrmListarContrata.Show()
 
@@ -59,5 +61,9 @@
         FrmEliminarContrata.Show()
 
 
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem2.Click
+        FrmModificarContrata.Show()
     End Sub
 End Class

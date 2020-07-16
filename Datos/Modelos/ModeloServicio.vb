@@ -40,7 +40,8 @@
             FROM
                 servicio
             WHERE
-                id = " + Me.Id + " AND
+                id = " + Me.Id + " 
+                AND
                 activo = 1
         "
         Reader = Command.ExecuteReader()

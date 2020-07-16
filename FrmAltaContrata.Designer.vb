@@ -40,9 +40,10 @@ Partial Class FrmAltaContrata
         'LblDescripcion
         '
         Me.LblDescripcion.AutoSize = True
-        Me.LblDescripcion.Location = New System.Drawing.Point(53, 182)
+        Me.LblDescripcion.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDescripcion.Location = New System.Drawing.Point(12, 156)
         Me.LblDescripcion.Name = "LblDescripcion"
-        Me.LblDescripcion.Size = New System.Drawing.Size(0, 18)
+        Me.LblDescripcion.Size = New System.Drawing.Size(0, 20)
         Me.LblDescripcion.TabIndex = 0
         '
         'CmbUsuario

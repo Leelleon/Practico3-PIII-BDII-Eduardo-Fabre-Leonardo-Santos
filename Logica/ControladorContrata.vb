@@ -3,14 +3,28 @@ Public Module ControladorContrata
 
     Public Function ObtenerIdPersonas()
         Dim c As New ModeloContrata
+        Return c.ObtenerIdPersonas()
 
-        Return c.ObtenerPersonas()
     End Function
 
-    Public Function ObtenerIdServicios()
-        Dim c As New ModeloContrata
+    Public Function ObtenerIdServicios(id As String)
+        Dim c As New ModeloContrata With {
+            .Usuario = id
+        }
+        Return c.ObtenerIdServicios()
 
-        Return c.ObtenerServicios()
+    End Function
+
+    Public Function ObtenerTodosIdPersonas()
+        Dim c As New ModeloContrata
+        Return c.ObtenerTodosIdPersonas()
+
+    End Function
+
+    Public Function ObtenerTodosIdServicios()
+        Dim c As New ModeloContrata
+        Return c.ObtenerTodosIdServicios()
+
     End Function
 
     Public Function ObtenerNombrePersona(id As String)
@@ -18,7 +32,7 @@ Public Module ControladorContrata
             .Usuario = id
         }
 
-        Return c.ObtenerIdPersona
+        Return c.ObtenerNombrePersona()
     End Function
 
     Public Function ObtenerNombreServicio(id As String)
@@ -26,7 +40,7 @@ Public Module ControladorContrata
             .Servicio = id
         }
 
-        Return c.ObtenerIdServicio
+        Return c.ObtenerNombreServicio()
     End Function
 
     Public Function ObtenerCosto(diferencia As String, servicio As String)
@@ -47,5 +61,45 @@ Public Module ControladorContrata
         }
 
         c.GuardarContratacion()
+    End Sub
+
+    Public Function ObtenerServiciosContratados()
+        Dim c As New ModeloContrata
+
+        Return c.ObtenerServiciosContratados()
+    End Function
+
+    Public Function ObtenerContratos(nombre As String)
+        Dim c As New ModeloContrata With {
+            .Servicio = nombre
+        }
+
+        Return c.ObtenerServiciosContratadosPorNombre()
+    End Function
+
+    Public Function ObtenerContratoYPersonas(usuario As String, servicio As String, fecha As String)
+        Dim c As New ModeloContrata With {
+            .Usuario = usuario,
+            .Servicio = servicio,
+            .FechaContratacion = fecha
+        }
+
+        Return c.ObtenerContratoYPersonas()
+    End Function
+
+    Public Function ListarContratos()
+        Dim c As New ModeloContrata
+        Return c.ListarContratos()
+
+    End Function
+
+    Public Sub EliminarContratacion(persona As String, servicio As String, fecha As String)
+        Dim c As New ModeloContrata With {
+            .Usuario = persona,
+            .Servicio = servicio,
+            .FechaContratacion = fecha
+        }
+
+        c.EliminarContratacion()
     End Sub
 End Module

@@ -133,6 +133,12 @@
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmModificarContrata.Designer.vb">
+      <DependentUpon>FrmModificarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmModificarPersona.Designer.vb">
       <DependentUpon>FrmModificarPersona.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarContrata.resx">
+      <DependentUpon>FrmModificarContrata.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarPersona.resx">
       <DependentUpon>FrmModificarPersona.vb</DependentUpon>

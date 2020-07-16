@@ -3,14 +3,15 @@
 
     Public Usuario As String
     Public Servicio As String
+    Public FechaContratacion As String
     Public Desde As String
     Public Hasta As String
     Public DiferenciaDesdeHasta As String
 
-    Public Function ObtenerPersonas()
+    Public Function ObtenerTodosIdPersonas()
         Command.CommandText = "
             SELECT
-                id, nombre
+                id
             FROM
                 persona
             WHERE
@@ -18,22 +19,56 @@
         "
         Reader = Command.ExecuteReader()
         Return Reader
+
     End Function
 
-    Public Function ObtenerServicios()
+    Public Function ObtenerTodosIdServicios()
         Command.CommandText = "
             SELECT
-                id, nombre
+                id
             FROM
-                Servicio
+                servicio
             WHERE
                 activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
+
     End Function
 
-    Public Function ObtenerIdPersona()
+    Public Function ObtenerIdPersonas()
+        Command.CommandText = "
+            SELECT
+                DISTINCT(p.id)
+            FROM
+                persona p, contrata c
+            WHERE
+                p.id = c.id_persona
+                AND
+                c.activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+    End Function
+
+    Public Function ObtenerIdServicios()
+        Command.CommandText = "
+             SELECT 
+                DISTINCT(c.id_servicio) 
+             FROM  
+                servicio s, contrata c 
+            WHERE 
+                c.id_servicio = s.id 
+                AND 
+                c.id_persona = " + Me.Usuario + "
+                AND
+                c.activo = 1;
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+    End Function
+
+    Public Function ObtenerNombrePersona()
         Command.CommandText = "
             SELECT 
                 nombre
@@ -47,7 +82,7 @@
 
     End Function
 
-    Public Function ObtenerIdServicio()
+    Public Function ObtenerNombreServicio()
         Command.CommandText = "
             SELECT 
                 nombre
@@ -78,10 +113,109 @@
     Public Sub GuardarContratacion()
         Command.CommandText = "
             INSERT INTO
-                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contrato)
+                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contrato, activo)
             VALUES
-                (" + Me.Usuario + "," + Me.Servicio + ",CURDATE(), '" + Me.Desde + "', '" + Me.Hasta + "');
+                (" + Me.Usuario + "," + Me.Servicio + ",CURDATE(), '" + Me.Desde + "', '" + Me.Hasta + "', 1);
         "
         Command.ExecuteNonQuery()
     End Sub
+
+    Public Function ObtenerServiciosContratados()
+        Command.CommandText = "
+            SELECT 
+                DISTINCT(s.tipo)
+            FROM
+                servicio s, contrata c
+            WHERE
+                s.id = c.id_servicio
+                AND
+                c.activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
+    Public Function ObtenerServiciosContratadosPorNombre()
+        Command.CommandText = "
+            SELECT
+                id_persona AS Usuario, 
+                id_servicio As Servicio, 
+                fecha_creacion As Creado, 
+                fecha_contratacion As Inicia, 
+                fecha_fin_contratacion As Termina
+            FROM
+                contrata c
+            WHERE
+                c.id_servicio = SELECT id FROM servicio WHERE Tipo = '" + Me.Servicio + "';
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+    End Function
+
+    Public Function ObtenerContratoYPersonas()
+        Command.CommandText = "
+            SELECT 
+                p.nombre, 
+                s.nombre, 
+                c.fecha_contratacion, 
+                c.fecha_fin_contrato 
+            FROM 
+                persona p 
+                JOIN 
+                contrata c ON p.id = c.id_persona 
+                JOIN 
+                servicio s ON c.id_servicio = s.id 
+            WHERE 
+                c.id_servicio = " + Me.Servicio + "
+                AND         
+                c.id_persona = " + Me.Usuario + "
+                AND 
+                c.fecha_creacion = '" + Me.FechaContratacion + "'
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
+    Public Sub EliminarContratacion()
+        MsgBox("IdUser = " + Me.Usuario + ", IdSer = " + Me.Servicio + ", Fecha = " + Me.FechaContratacion)
+        Command.CommandText = "
+            UPDATE 
+                contrata 
+            SET 
+                activo = 0 
+            WHERE 
+                id_persona = 1 
+                AND 
+                id_servicio = 3 
+                AND 
+                fecha_creacion = '2020-7-16'
+        "
+    End Sub
+
+    Public Function ListarContratos()
+        Command.CommandText = "
+            SELECT 
+                p.id As Id,
+                p.nombre As Usuario,
+                s.id As Id,
+                s.nombre As Servicio,
+                c.fecha_creacion As Efectuado,
+                c.fecha_contratacion As Empieza, 
+                c.fecha_fin_contrato As Termina 
+            FROM 
+                persona p 
+                JOIN 
+                contrata c ON p.id = c.id_persona 
+                JOIN 
+                servicio s ON c.id_servicio = s.id 
+            WHERE
+                c.activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
 End Class
