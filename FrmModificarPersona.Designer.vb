@@ -46,7 +46,7 @@ Partial Class FrmModificarPersona
         Me.BtnVolver.Location = New System.Drawing.Point(535, 151)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(96, 40)
-        Me.BtnVolver.TabIndex = 79
+        Me.BtnVolver.TabIndex = 11
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
@@ -55,14 +55,14 @@ Partial Class FrmModificarPersona
         Me.TxtTelefono.Location = New System.Drawing.Point(277, 229)
         Me.TxtTelefono.Name = "TxtTelefono"
         Me.TxtTelefono.Size = New System.Drawing.Size(155, 22)
-        Me.TxtTelefono.TabIndex = 78
+        Me.TxtTelefono.TabIndex = 4
         '
         'BtnEliminar
         '
         Me.BtnEliminar.Location = New System.Drawing.Point(447, 350)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(75, 33)
-        Me.BtnEliminar.TabIndex = 77
+        Me.BtnEliminar.TabIndex = 7
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
@@ -71,7 +71,7 @@ Partial Class FrmModificarPersona
         Me.BtnModificar.Location = New System.Drawing.Point(447, 295)
         Me.BtnModificar.Name = "BtnModificar"
         Me.BtnModificar.Size = New System.Drawing.Size(75, 33)
-        Me.BtnModificar.TabIndex = 76
+        Me.BtnModificar.TabIndex = 6
         Me.BtnModificar.Text = "Modificar"
         Me.BtnModificar.UseVisualStyleBackColor = True
         '
@@ -80,7 +80,7 @@ Partial Class FrmModificarPersona
         Me.BtnAgregar.Location = New System.Drawing.Point(447, 234)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(75, 40)
-        Me.BtnAgregar.TabIndex = 75
+        Me.BtnAgregar.TabIndex = 5
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
@@ -91,7 +91,7 @@ Partial Class FrmModificarPersona
         Me.LstTelefono.Location = New System.Drawing.Point(277, 269)
         Me.LstTelefono.Name = "LstTelefono"
         Me.LstTelefono.Size = New System.Drawing.Size(155, 148)
-        Me.LstTelefono.TabIndex = 74
+        Me.LstTelefono.TabIndex = 8
         '
         'CmbIdPersona
         '
@@ -100,7 +100,7 @@ Partial Class FrmModificarPersona
         Me.CmbIdPersona.Location = New System.Drawing.Point(412, 45)
         Me.CmbIdPersona.Name = "CmbIdPersona"
         Me.CmbIdPersona.Size = New System.Drawing.Size(48, 24)
-        Me.CmbIdPersona.TabIndex = 73
+        Me.CmbIdPersona.TabIndex = 0
         '
         'BtnCancelar
         '
@@ -109,7 +109,7 @@ Partial Class FrmModificarPersona
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
-        Me.BtnCancelar.TabIndex = 72
+        Me.BtnCancelar.TabIndex = 10
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = True
         '
@@ -165,7 +165,7 @@ Partial Class FrmModificarPersona
         Me.TxtMail.MaxLength = 50
         Me.TxtMail.Name = "TxtMail"
         Me.TxtMail.Size = New System.Drawing.Size(183, 22)
-        Me.TxtMail.TabIndex = 66
+        Me.TxtMail.TabIndex = 3
         '
         'TxtNombre
         '
@@ -174,7 +174,7 @@ Partial Class FrmModificarPersona
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(183, 22)
-        Me.TxtNombre.TabIndex = 65
+        Me.TxtNombre.TabIndex = 1
         '
         'TxtApellido
         '
@@ -183,7 +183,7 @@ Partial Class FrmModificarPersona
         Me.TxtApellido.MaxLength = 20
         Me.TxtApellido.Name = "TxtApellido"
         Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
-        Me.TxtApellido.TabIndex = 64
+        Me.TxtApellido.TabIndex = 2
         '
         'BtnAceptar
         '
@@ -191,7 +191,7 @@ Partial Class FrmModificarPersona
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(96, 38)
-        Me.BtnAceptar.TabIndex = 63
+        Me.BtnAceptar.TabIndex = 9
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
@@ -199,7 +199,10 @@ Partial Class FrmModificarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(746, 450)
+        Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(742, 467)
+        Me.ControlBox = False
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.TxtTelefono)
         Me.Controls.Add(Me.BtnEliminar)
@@ -217,8 +220,11 @@ Partial Class FrmModificarPersona
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmModificarPersona"
-        Me.Text = " "
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = " Modificar Persona"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

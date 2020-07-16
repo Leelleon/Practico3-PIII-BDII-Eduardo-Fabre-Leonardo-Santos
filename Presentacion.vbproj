@@ -159,6 +159,9 @@
     <EmbeddedResource Include="FrmAltaServicio.resx">
       <DependentUpon>FrmAltaServicio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarPersona.aa.resx">
+      <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarPersona.resx">
       <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
     </EmbeddedResource>

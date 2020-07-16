@@ -113,7 +113,7 @@ Partial Class FrmAltaPersona
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
         Me.BtnAceptar.Size = New System.Drawing.Size(101, 38)
-        Me.BtnAceptar.TabIndex = 5
+        Me.BtnAceptar.TabIndex = 6
         Me.BtnAceptar.Text = "Aceptar"
         Me.BtnAceptar.UseVisualStyleBackColor = True
         '
@@ -124,7 +124,7 @@ Partial Class FrmAltaPersona
         Me.BtnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(96, 38)
-        Me.BtnVolver.TabIndex = 6
+        Me.BtnVolver.TabIndex = 7
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
@@ -144,14 +144,16 @@ Partial Class FrmAltaPersona
         Me.LstTelefono.Location = New System.Drawing.Point(117, 200)
         Me.LstTelefono.Name = "LstTelefono"
         Me.LstTelefono.Size = New System.Drawing.Size(181, 180)
-        Me.LstTelefono.TabIndex = 45
+        Me.LstTelefono.TabIndex = 5
         '
         'FrmAltaPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
         Me.CancelButton = Me.BtnVolver
         Me.ClientSize = New System.Drawing.Size(445, 483)
+        Me.ControlBox = False
         Me.Controls.Add(Me.LstTelefono)
         Me.Controls.Add(Me.BtnAgregar)
         Me.Controls.Add(Me.BtnVolver)
@@ -165,7 +167,9 @@ Partial Class FrmAltaPersona
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.BtnAceptar)
         Me.Name = "FrmAltaPersona"
-        Me.Text = "FrmAltaPersona"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Ingresar Persona"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

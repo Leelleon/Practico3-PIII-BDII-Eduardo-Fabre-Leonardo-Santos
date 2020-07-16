@@ -31,15 +31,15 @@ Partial Class FrmListarPersona
         'DgvListaPersona
         '
         Me.DgvListaPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvListaPersona.Location = New System.Drawing.Point(43, 42)
+        Me.DgvListaPersona.Location = New System.Drawing.Point(12, 26)
         Me.DgvListaPersona.Name = "DgvListaPersona"
         Me.DgvListaPersona.RowTemplate.Height = 24
-        Me.DgvListaPersona.Size = New System.Drawing.Size(350, 380)
+        Me.DgvListaPersona.Size = New System.Drawing.Size(619, 307)
         Me.DgvListaPersona.TabIndex = 0
         '
         'BtnListar
         '
-        Me.BtnListar.Location = New System.Drawing.Point(461, 88)
+        Me.BtnListar.Location = New System.Drawing.Point(62, 372)
         Me.BtnListar.Name = "BtnListar"
         Me.BtnListar.Size = New System.Drawing.Size(140, 42)
         Me.BtnListar.TabIndex = 1
@@ -48,7 +48,8 @@ Partial Class FrmListarPersona
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(461, 201)
+        Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BtnVolver.Location = New System.Drawing.Point(440, 366)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(139, 48)
         Me.BtnVolver.TabIndex = 2
@@ -59,13 +60,15 @@ Partial Class FrmListarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
         Me.CancelButton = Me.BtnVolver
         Me.ClientSize = New System.Drawing.Size(643, 450)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnListar)
         Me.Controls.Add(Me.DgvListaPersona)
         Me.Name = "FrmListarPersona"
-        Me.Text = "FrmListarPersona"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Listar Personas"
         CType(Me.DgvListaPersona, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

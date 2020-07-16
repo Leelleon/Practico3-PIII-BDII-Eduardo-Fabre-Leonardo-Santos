@@ -6,11 +6,9 @@
     Public Apellido As String
     Public Mail As String
     Public Telefono As List(Of String)
-    Public TelefonoViejo As List(Of String)
-    Public Indice As Integer = 0
 
     Public Function ListarDatosPersona()
-        Command.CommandText = "SELECT * FROM persona WHERE activo = 1"
+        Command.CommandText = "SELECT id AS N°, nombre AS Nombre, apellido AS Apellido, mail AS Mail, fecha_hora_creacion AS Creado FROM persona WHERE activo = 1"
 
         Reader = Command.ExecuteReader
         Return Reader
@@ -81,14 +79,18 @@
                                            WHERE id = " + Me.IdPersona + ""
                 Command.ExecuteNonQuery()
 
+                Command.CommandText = "DELETE FROM persona_tel
+                                        WHERE id_persona = " + Me.IdPersona + ""
+                Command.ExecuteNonQuery()
+
+
                 For Each Numero In Telefono
 
-                    'Command.CommandText = "UPDATE persona_tel
-                    '                       SET 
-                    '                        Telefono = " + Numero + "
-                    '                       WHERE Telefono = " + Me.TelefonoViejo(Me.Indice) + ""
-                    'Command.ExecuteNonQuery()
-                    'Indice += 1
+                    Command.CommandText = "INSERT INTO persona_tel(id_persona, telefono)
+                                           VALUES (" + Me.IdPersona + "," + Numero + ")"
+
+                    Command.ExecuteNonQuery()
+
                 Next
                 Command.CommandText = "COMMIT"
                 Command.ExecuteNonQuery()
