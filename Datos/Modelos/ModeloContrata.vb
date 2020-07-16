@@ -179,7 +179,7 @@
     End Function
 
     Public Sub EliminarContratacion()
-        MsgBox("IdUser = " + Me.Usuario +", IdSer = " + Me.Servicio + ", Fecha = " + Me.FechaContratacion)
+        MsgBox("IdUser = " + Me.Usuario + ", IdSer = " + Me.Servicio + ", Fecha = " + Me.FechaContratacion)
         Command.CommandText = "
             UPDATE 
                 contrata 
@@ -193,4 +193,29 @@
                 fecha_creacion = '2020-7-16'
         "
     End Sub
+
+    Public Function ListarContratos()
+        Command.CommandText = "
+            SELECT 
+                p.id As Id,
+                p.nombre As Usuario,
+                s.id As Id,
+                s.nombre As Servicio,
+                c.fecha_creacion As Efectuado,
+                c.fecha_contratacion As Empieza, 
+                c.fecha_fin_contrato As Termina 
+            FROM 
+                persona p 
+                JOIN 
+                contrata c ON p.id = c.id_persona 
+                JOIN 
+                servicio s ON c.id_servicio = s.id 
+            WHERE
+                c.activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
 End Class

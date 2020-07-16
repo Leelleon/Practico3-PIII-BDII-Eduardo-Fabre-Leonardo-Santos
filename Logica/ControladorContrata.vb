@@ -87,6 +87,12 @@ Public Module ControladorContrata
         Return c.ObtenerContratoYPersonas()
     End Function
 
+    Public Function ListarContratos()
+        Dim c As New ModeloContrata
+        Return c.ListarContratos()
+
+    End Function
+
     Public Sub EliminarContratacion(persona As String, servicio As String, fecha As String)
         Dim c As New ModeloContrata With {
             .Usuario = persona,
