@@ -90,6 +90,12 @@
     <Compile Include="FrmAltaServicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmEliminarContrata.Designer.vb">
+      <DependentUpon>FrmEliminarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmEliminarPersona.Designer.vb">
       <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,12 @@
       <DependentUpon>FrmEliminarServicio.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmEliminarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarContrata.Designer.vb">
+      <DependentUpon>FrmListarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarContrata.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListarPersona.Designer.vb">
@@ -159,11 +171,20 @@
     <EmbeddedResource Include="FrmAltaServicio.resx">
       <DependentUpon>FrmAltaServicio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarContrata.resx">
+      <DependentUpon>FrmEliminarContrata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarPersona.aa.resx">
+      <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarPersona.resx">
       <DependentUpon>FrmEliminarPersona.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarServicio.resx">
       <DependentUpon>FrmEliminarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarContrata.resx">
+      <DependentUpon>FrmListarContrata.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListarPersona.resx">
       <DependentUpon>FrmListarPersona.vb</DependentUpon>

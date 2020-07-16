@@ -22,6 +22,7 @@ Partial Class FrmEliminarPersona
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEliminarPersona))
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.LblTelefono = New System.Windows.Forms.Label()
         Me.LblMail = New System.Windows.Forms.Label()
@@ -38,124 +39,76 @@ Partial Class FrmEliminarPersona
         '
         'BtnVolver
         '
+        resources.ApplyResources(Me.BtnVolver, "BtnVolver")
         Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnVolver.Location = New System.Drawing.Point(245, 380)
-        Me.BtnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(96, 38)
-        Me.BtnVolver.TabIndex = 67
-        Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'LblTelefono
         '
-        Me.LblTelefono.AutoSize = True
-        Me.LblTelefono.Location = New System.Drawing.Point(54, 198)
+        resources.ApplyResources(Me.LblTelefono, "LblTelefono")
         Me.LblTelefono.Name = "LblTelefono"
-        Me.LblTelefono.Size = New System.Drawing.Size(64, 17)
-        Me.LblTelefono.TabIndex = 66
-        Me.LblTelefono.Text = "Telefono"
         '
         'LblMail
         '
-        Me.LblMail.AutoSize = True
-        Me.LblMail.Location = New System.Drawing.Point(54, 159)
+        resources.ApplyResources(Me.LblMail, "LblMail")
         Me.LblMail.Name = "LblMail"
-        Me.LblMail.Size = New System.Drawing.Size(33, 17)
-        Me.LblMail.TabIndex = 65
-        Me.LblMail.Text = "Mail"
         '
         'LblApellido
         '
-        Me.LblApellido.AutoSize = True
-        Me.LblApellido.Location = New System.Drawing.Point(54, 125)
+        resources.ApplyResources(Me.LblApellido, "LblApellido")
         Me.LblApellido.Name = "LblApellido"
-        Me.LblApellido.Size = New System.Drawing.Size(58, 17)
-        Me.LblApellido.TabIndex = 64
-        Me.LblApellido.Text = "Apellido"
         '
         'LblPersonaNombre
         '
-        Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(54, 83)
+        resources.ApplyResources(Me.LblPersonaNombre, "LblPersonaNombre")
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(58, 17)
-        Me.LblPersonaNombre.TabIndex = 63
-        Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
-        Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(54, 51)
+        resources.ApplyResources(Me.LblPersonaId, "LblPersonaId")
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(213, 17)
-        Me.LblPersonaId.TabIndex = 62
-        Me.LblPersonaId.Text = "Seleccione la persona a eliminar"
         '
         'TxtMail
         '
-        Me.TxtMail.Enabled = False
-        Me.TxtMail.Location = New System.Drawing.Point(158, 159)
-        Me.TxtMail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtMail.MaxLength = 50
+        resources.ApplyResources(Me.TxtMail, "TxtMail")
         Me.TxtMail.Name = "TxtMail"
-        Me.TxtMail.Size = New System.Drawing.Size(183, 22)
-        Me.TxtMail.TabIndex = 60
         '
         'TxtNombre
         '
-        Me.TxtNombre.Enabled = False
-        Me.TxtNombre.Location = New System.Drawing.Point(158, 83)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtNombre.MaxLength = 20
+        resources.ApplyResources(Me.TxtNombre, "TxtNombre")
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(183, 22)
-        Me.TxtNombre.TabIndex = 59
         '
         'TxtApellido
         '
-        Me.TxtApellido.Enabled = False
-        Me.TxtApellido.Location = New System.Drawing.Point(158, 122)
-        Me.TxtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TxtApellido.MaxLength = 20
+        resources.ApplyResources(Me.TxtApellido, "TxtApellido")
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
-        Me.TxtApellido.TabIndex = 58
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(57, 380)
-        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(101, 38)
-        Me.BtnEliminar.TabIndex = 56
-        Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'LstTelefono
         '
-        Me.LstTelefono.Enabled = False
+        resources.ApplyResources(Me.LstTelefono, "LstTelefono")
         Me.LstTelefono.FormattingEnabled = True
-        Me.LstTelefono.ItemHeight = 16
-        Me.LstTelefono.Location = New System.Drawing.Point(158, 198)
         Me.LstTelefono.Name = "LstTelefono"
-        Me.LstTelefono.Size = New System.Drawing.Size(183, 148)
-        Me.LstTelefono.TabIndex = 68
         '
         'CmbIdPersona
         '
+        resources.ApplyResources(Me.CmbIdPersona, "CmbIdPersona")
         Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbIdPersona.FormattingEnabled = True
-        Me.CmbIdPersona.Location = New System.Drawing.Point(273, 51)
         Me.CmbIdPersona.Name = "CmbIdPersona"
-        Me.CmbIdPersona.Size = New System.Drawing.Size(68, 24)
-        Me.CmbIdPersona.TabIndex = 69
         '
         'FrmEliminarPersona
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(395, 450)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.ControlBox = False
         Me.Controls.Add(Me.CmbIdPersona)
         Me.Controls.Add(Me.LstTelefono)
         Me.Controls.Add(Me.BtnVolver)
@@ -169,7 +122,6 @@ Partial Class FrmEliminarPersona
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Name = "FrmEliminarPersona"
-        Me.Text = "FrmEliminarPersona"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
