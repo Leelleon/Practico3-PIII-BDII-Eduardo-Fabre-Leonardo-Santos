@@ -45,4 +45,8 @@
 
 
     End Sub
+
+    Private Sub NuevoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem1.Click
+        FrmAltaContrata.Show()
+    End Sub
 End Class

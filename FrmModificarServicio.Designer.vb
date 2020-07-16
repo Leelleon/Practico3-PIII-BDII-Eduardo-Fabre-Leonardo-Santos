@@ -50,6 +50,7 @@ Partial Class FrmModificarServicio
         '
         'CmbId
         '
+        Me.CmbId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbId.FormattingEnabled = True
         Me.CmbId.Location = New System.Drawing.Point(259, 31)
         Me.CmbId.Name = "CmbId"
@@ -59,6 +60,7 @@ Partial Class FrmModificarServicio
         'BtnCancelar
         '
         Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(117, Byte), Integer))
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCancelar.Location = New System.Drawing.Point(161, 370)
         Me.BtnCancelar.Name = "BtnCancelar"
@@ -70,6 +72,7 @@ Partial Class FrmModificarServicio
         'BtnLimpiar
         '
         Me.BtnLimpiar.BackColor = System.Drawing.Color.Gray
+        Me.BtnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnLimpiar.ForeColor = System.Drawing.Color.White
         Me.BtnLimpiar.Location = New System.Drawing.Point(52, 370)
