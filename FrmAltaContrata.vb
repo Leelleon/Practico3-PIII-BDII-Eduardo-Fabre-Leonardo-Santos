@@ -20,12 +20,12 @@ Public Class FrmAltaContrata
     Private Sub CargarIdPersonas()
         Dim LectorPersonas As IDataReader
         Try
-            LectorPersonas = ControladorContrata.ObtenerIdPersonas
+            LectorPersonas = ControladorContrata.ObtenerTodosIdPersonas()
             While LectorPersonas.Read
                 CmbUsuario.Items.Add(LectorPersonas.GetValue(0))
             End While
         Catch ex As Exception
-            MsgBox("No fue posible cargar a los usuarios del sistema!", MsgBoxStyle.Critical)
+            MsgBox(ex.ToString(), MsgBoxStyle.Critical)
         End Try
 
     End Sub
@@ -33,12 +33,12 @@ Public Class FrmAltaContrata
     Private Sub CargarIdServicios()
         Dim LectorServicios As IDataReader
         Try
-            LectorServicios = ControladorContrata.ObtenerIdServicios(CmbUsuario.Text)
+            LectorServicios = ControladorContrata.ObtenerTodosIdServicios()
             While LectorServicios.Read
                 CmbServicio.Items.Add(LectorServicios.GetValue(0))
             End While
         Catch ex As Exception
-            MsgBox("No fue posible cargar a los servicios del sistema!", MsgBoxStyle.Critical)
+            MsgBox(ex.ToString(), MsgBoxStyle.Critical)
         End Try
 
     End Sub

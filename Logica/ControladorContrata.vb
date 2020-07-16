@@ -3,16 +3,28 @@ Public Module ControladorContrata
 
     Public Function ObtenerIdPersonas()
         Dim c As New ModeloContrata
-
         Return c.ObtenerIdPersonas()
+
     End Function
 
     Public Function ObtenerIdServicios(id As String)
         Dim c As New ModeloContrata With {
             .Usuario = id
         }
-
         Return c.ObtenerIdServicios()
+
+    End Function
+
+    Public Function ObtenerTodosIdPersonas()
+        Dim c As New ModeloContrata
+        Return c.ObtenerTodosIdPersonas()
+
+    End Function
+
+    Public Function ObtenerTodosIdServicios()
+        Dim c As New ModeloContrata
+        Return c.ObtenerTodosIdServicios()
+
     End Function
 
     Public Function ObtenerNombrePersona(id As String)

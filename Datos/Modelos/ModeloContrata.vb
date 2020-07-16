@@ -8,6 +8,34 @@
     Public Hasta As String
     Public DiferenciaDesdeHasta As String
 
+    Public Function ObtenerTodosIdPersonas()
+        Command.CommandText = "
+            SELECT
+                id
+            FROM
+                persona
+            WHERE
+                activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
+    Public Function ObtenerTodosIdServicios()
+        Command.CommandText = "
+            SELECT
+                id
+            FROM
+                servicio
+            WHERE
+                activo = 1
+        "
+        Reader = Command.ExecuteReader()
+        Return Reader
+
+    End Function
+
     Public Function ObtenerIdPersonas()
         Command.CommandText = "
             SELECT
