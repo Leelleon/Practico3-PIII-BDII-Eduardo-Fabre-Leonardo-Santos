@@ -185,7 +185,7 @@ Partial Class FrmMenuPrincipal
         '
         'FrmMenuPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(857, 454)
         Me.ControlBox = False
