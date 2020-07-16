@@ -45,4 +45,14 @@
 
 
     End Sub
+
+    Private Sub ListarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem2.Click
+        FrmListarContrata.Show()
+
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem2.Click
+        FrmEliminarContrata.Show()
+
+    End Sub
 End Class

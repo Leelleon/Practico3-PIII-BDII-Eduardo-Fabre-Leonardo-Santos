@@ -63,6 +63,7 @@ Partial Class FrmListarPersona
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
         Me.CancelButton = Me.BtnVolver
         Me.ClientSize = New System.Drawing.Size(643, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnListar)
         Me.Controls.Add(Me.DgvListaPersona)

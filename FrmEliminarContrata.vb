@@ -1,3 +1,3 @@
-﻿Public Class FrmBajaContrata
+﻿Public Class FrmEliminarContrata
 
 End Class
