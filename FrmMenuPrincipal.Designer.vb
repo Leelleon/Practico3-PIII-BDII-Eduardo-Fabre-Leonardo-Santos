@@ -55,7 +55,7 @@ Partial Class FrmMenuPrincipal
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(857, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(857, 23)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -63,93 +63,93 @@ Partial Class FrmMenuPrincipal
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.ListarToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(78, 24)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(66, 19)
         Me.ToolStripMenuItem1.Text = "Personas"
         '
         'NToolStripMenuItem
         '
         Me.NToolStripMenuItem.Name = "NToolStripMenuItem"
-        Me.NToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.NToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.NToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'ListarToolStripMenuItem
         '
         Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ModificarToolStripMenuItem1, Me.EliminarToolStripMenuItem1, Me.ListarToolStripMenuItem1})
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(79, 24)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(65, 19)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
         '
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'EliminarToolStripMenuItem1
         '
         Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
-        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem1.Text = "Eliminar"
         '
         'ListarToolStripMenuItem1
         '
         Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
-        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(148, 26)
+        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ListarToolStripMenuItem1.Text = "Listar"
         '
         'ContratosToolStripMenuItem
         '
         Me.ContratosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.ModificarToolStripMenuItem2, Me.ListarToolStripMenuItem2, Me.EliminarToolStripMenuItem2})
         Me.ContratosToolStripMenuItem.Name = "ContratosToolStripMenuItem"
-        Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
+        Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(71, 19)
         Me.ContratosToolStripMenuItem.Text = "Contratos"
         '
         'NuevoToolStripMenuItem1
         '
         Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
-        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.NuevoToolStripMenuItem1.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem2
         '
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'ListarToolStripMenuItem2
         '
         Me.ListarToolStripMenuItem2.Name = "ListarToolStripMenuItem2"
-        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ListarToolStripMenuItem2.Text = "Listar"
         '
         'EliminarToolStripMenuItem2
         '
         Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
-        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'BtnSalir

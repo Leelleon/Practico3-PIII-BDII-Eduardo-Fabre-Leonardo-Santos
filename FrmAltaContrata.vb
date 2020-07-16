@@ -33,7 +33,7 @@ Public Class FrmAltaContrata
     Private Sub CargarIdServicios()
         Dim LectorServicios As IDataReader
         Try
-            LectorServicios = ControladorContrata.ObtenerIdServicios()
+            LectorServicios = ControladorContrata.ObtenerIdServicios(CmbUsuario.Text)
             While LectorServicios.Read
                 CmbServicio.Items.Add(LectorServicios.GetValue(0))
             End While
@@ -161,20 +161,17 @@ Public Class FrmAltaContrata
         Try
             ControladorContrata.GuardarContratacion(CmbUsuario.Text, CmbServicio.Text, ContrataDesde, ContrataHasta)
             MsgBox("Contrato realizado con exito!", MsgBoxStyle.Information)
+            LimpiarTextBoxes()
         Catch ex As Exception
-            MsgBox("Error al ingresar el contrato")
-
+            MsgBox("El Usuario seleccionado ya contrato este servicio en esta fecha!")
         End Try
+
     End Sub
 
     Private Sub LimpiarTextBoxes()
-        Persona = ""
-        Servicio = ""
-        Desde = ""
-        Hasta = ""
-        Costo = ""
         CmbUsuario.Text = ""
         CmbServicio.Text = ""
+        ModificarLabel()
         HabilitarConfirmacion()
 
     End Sub
