@@ -132,7 +132,7 @@ Partial Class FrmAltaContrata
         '
         Me.ChbConfirmar.AutoSize = True
         Me.ChbConfirmar.Enabled = False
-        Me.ChbConfirmar.Location = New System.Drawing.Point(612, 195)
+        Me.ChbConfirmar.Location = New System.Drawing.Point(84, 296)
         Me.ChbConfirmar.Name = "ChbConfirmar"
         Me.ChbConfirmar.Size = New System.Drawing.Size(112, 22)
         Me.ChbConfirmar.TabIndex = 4

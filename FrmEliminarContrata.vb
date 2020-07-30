@@ -98,6 +98,7 @@ Public Class FrmEliminarContrata
         Dim Fecha As String = DtpFechaCreacion.Value.Year.ToString() + "-" + DtpFechaCreacion.Value.Month.ToString() + "-" + DtpFechaCreacion.Value.Day.ToString()
         Try
             ControladorContrata.EliminarContratacion(CmbUsuarios.Text, CmbServicios.Text, Fecha)
+            LimpiarTextBoxes()
             MsgBox("Contato eliminado con exito!", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox("No se pudo eliminar el contrato", MsgBoxStyle.Critical)
@@ -128,6 +129,7 @@ Public Class FrmEliminarContrata
         TxtNombreServicio.Text = ""
         TxtFechaEmpieza.Text = ""
         TxtFechaTermina.Text = ""
+        DeshabilitarEliminar()
 
     End Sub
 

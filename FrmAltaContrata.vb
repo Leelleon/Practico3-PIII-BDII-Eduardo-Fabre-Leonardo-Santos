@@ -169,9 +169,7 @@ Public Class FrmAltaContrata
     End Sub
 
     Private Sub LimpiarTextBoxes()
-        CmbUsuario.Text = ""
-        CmbServicio.Text = ""
-        ModificarLabel()
+        ChbConfirmar.Checked = False
         HabilitarConfirmacion()
 
     End Sub

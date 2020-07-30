@@ -143,11 +143,15 @@
                 id_servicio As Servicio, 
                 fecha_creacion As Creado, 
                 fecha_contratacion As Inicia, 
-                fecha_fin_contratacion As Termina
+                fecha_fin_contrato As Termina
             FROM
                 contrata c
+                JOIN
+                servicio s ON c.id_servicio = s.id
             WHERE
-                c.id_servicio = SELECT id FROM servicio WHERE Tipo = '" + Me.Servicio + "';
+                s.tipo = '" + Me.Servicio + "'
+                AND
+                c.Activo = 1;
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -172,6 +176,8 @@
                 c.id_persona = " + Me.Usuario + "
                 AND 
                 c.fecha_creacion = '" + Me.FechaContratacion + "'
+                AND
+                c.activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -179,19 +185,19 @@
     End Function
 
     Public Sub EliminarContratacion()
-        MsgBox("IdUser = " + Me.Usuario + ", IdSer = " + Me.Servicio + ", Fecha = " + Me.FechaContratacion)
         Command.CommandText = "
             UPDATE 
                 contrata 
             SET 
                 activo = 0 
             WHERE 
-                id_persona = 1 
+                id_persona = " + Me.Usuario + "
                 AND 
-                id_servicio = 3 
+                id_servicio = " + Me.Servicio + " 
                 AND 
-                fecha_creacion = '2020-7-16'
+                fecha_creacion = '" + Me.FechaContratacion + "'
         "
+        Command.ExecuteNonQuery()
     End Sub
 
     Public Function ListarContratos()
@@ -218,4 +224,21 @@
 
     End Function
 
+    Public Sub ModificarContrato()
+        Command.CommandText = "
+            UPDATE
+                contrata
+            SET
+                fecha_contratacion = '" + Me.Desde + "',
+                fecha_fin_contrato = '" + Me.Hasta + "'
+            WHERE
+                id_persona = " + Me.Usuario + "
+                AND
+                id_servicio = " + Me.Servicio + "
+                AND
+                fecha_creacion = '" + Me.FechaContratacion + "'
+               
+        "
+        Command.ExecuteNonQuery()
+    End Sub
 End Class
