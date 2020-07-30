@@ -24,6 +24,8 @@ Public Class FrmModificarPersona
         ElseIf ControladorPersona.ModificarPersona(CmbIdPersona.Text, TxtNombre.Text.Trim, TxtApellido.Text.Trim, TxtMail.Text.Trim, Telefonos) = 3 Then
             MsgBox("Hubo un error en la modificación de la persona")
         End If
+
+
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
