@@ -169,7 +169,7 @@ Partial Class FrmEliminarServicio
         Me.TxtCosto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtCosto.Enabled = False
         Me.TxtCosto.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtCosto.ForeColor = System.Drawing.Color.Black
+        Me.TxtCosto.ForeColor = System.Drawing.Color.White
         Me.TxtCosto.Location = New System.Drawing.Point(97, 168)
         Me.TxtCosto.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtCosto.MaxLength = 20
@@ -186,7 +186,7 @@ Partial Class FrmEliminarServicio
         Me.TxtTipo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtTipo.Enabled = False
         Me.TxtTipo.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTipo.ForeColor = System.Drawing.Color.Black
+        Me.TxtTipo.ForeColor = System.Drawing.Color.White
         Me.TxtTipo.Location = New System.Drawing.Point(97, 213)
         Me.TxtTipo.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtTipo.MaxLength = 20
@@ -202,7 +202,7 @@ Partial Class FrmEliminarServicio
         Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombre.Enabled = False
         Me.TxtNombre.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtNombre.ForeColor = System.Drawing.Color.Black
+        Me.TxtNombre.ForeColor = System.Drawing.Color.White
         Me.TxtNombre.Location = New System.Drawing.Point(97, 118)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombre.MaxLength = 20
@@ -213,6 +213,7 @@ Partial Class FrmEliminarServicio
         '
         'PcbBusqueda
         '
+        Me.PcbBusqueda.Enabled = False
         Me.PcbBusqueda.Image = Global.Presentacion.My.Resources.Resources.Busqueda
         Me.PcbBusqueda.Location = New System.Drawing.Point(186, 64)
         Me.PcbBusqueda.Name = "PcbBusqueda"

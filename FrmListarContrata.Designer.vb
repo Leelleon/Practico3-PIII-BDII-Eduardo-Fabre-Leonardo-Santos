@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmListarContrata
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,60 +20,51 @@ Partial Class FrmListarContrata
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.DgvListarContrato = New System.Windows.Forms.DataGridView()
-        Me.BtnListar = New System.Windows.Forms.Button()
+        Me.DgvContratos = New System.Windows.Forms.DataGridView()
         Me.BtnVolver = New System.Windows.Forms.Button()
-        CType(Me.DgvListarContrato, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvContratos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DgvListarContrato
+        'DgvContratos
         '
-        Me.DgvListarContrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvListarContrato.Location = New System.Drawing.Point(30, 42)
-        Me.DgvListarContrato.Name = "DgvListarContrato"
-        Me.DgvListarContrato.RowTemplate.Height = 24
-        Me.DgvListarContrato.Size = New System.Drawing.Size(739, 303)
-        Me.DgvListarContrato.TabIndex = 0
-        '
-        'BtnListar
-        '
-        Me.BtnListar.Location = New System.Drawing.Point(114, 382)
-        Me.BtnListar.Name = "BtnListar"
-        Me.BtnListar.Size = New System.Drawing.Size(187, 39)
-        Me.BtnListar.TabIndex = 1
-        Me.BtnListar.Text = "Listar"
-        Me.BtnListar.UseVisualStyleBackColor = True
+        Me.DgvContratos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DgvContratos.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        Me.DgvContratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvContratos.Location = New System.Drawing.Point(21, 26)
+        Me.DgvContratos.MultiSelect = False
+        Me.DgvContratos.Name = "DgvContratos"
+        Me.DgvContratos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DgvContratos.RowHeadersVisible = False
+        Me.DgvContratos.Size = New System.Drawing.Size(765, 332)
+        Me.DgvContratos.TabIndex = 0
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(482, 382)
+        Me.BtnVolver.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnVolver.Location = New System.Drawing.Point(21, 374)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(187, 39)
-        Me.BtnVolver.TabIndex = 2
+        Me.BtnVolver.Size = New System.Drawing.Size(127, 43)
+        Me.BtnVolver.TabIndex = 1
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'FrmListarContrata
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.ControlBox = False
+        Me.ClientSize = New System.Drawing.Size(809, 429)
         Me.Controls.Add(Me.BtnVolver)
-        Me.Controls.Add(Me.BtnListar)
-        Me.Controls.Add(Me.DgvListarContrato)
+        Me.Controls.Add(Me.DgvContratos)
         Me.Name = "FrmListarContrata"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Listar Contrato"
-        CType(Me.DgvListarContrato, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "FrmListarContrata"
+        CType(Me.DgvContratos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DgvListarContrato As DataGridView
-    Friend WithEvents BtnListar As Button
+    Friend WithEvents DgvContratos As DataGridView
     Friend WithEvents BtnVolver As Button
 End Class

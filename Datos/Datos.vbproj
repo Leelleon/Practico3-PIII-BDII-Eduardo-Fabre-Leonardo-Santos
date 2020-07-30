@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="Modelos\ModeloContrata.vb" />
     <Compile Include="Modelos\ModeloPersona.vb" />
     <Compile Include="Modelos\ModeloServicio.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

@@ -3,7 +3,7 @@
 Public Class FrmEliminarServicio
 
     Private Sub TxtId_TextChanged(sender As Object, e As EventArgs) Handles TxtId.TextChanged
-        If TxtId.Text = "" Then
+        If TxtId.Text = String.Empty Then
             PcbBusqueda.Enabled = False
             PcbBusqueda.Cursor = Cursors.Arrow
         Else
@@ -38,18 +38,23 @@ Public Class FrmEliminarServicio
 
         Select Case MsgBox("Seguro quiere eliminar al usuario?", MsgBoxStyle.YesNo)
             Case MsgBoxResult.Yes
-                Try
-                    ControladorServicio.BajarServicio(TxtId.Text)
-                    LimpiarTextBoxes()
-                    BtnEliminar.Enabled = False
-                    BtnEliminar.Cursor = Cursors.Arrow
-                Catch ex As Exception
-                    MsgBox("No se pudo eliminar a la persona", MsgBoxStyle.Critical)
-                End Try
+                EliminarServicio()
             Case MsgBoxResult.No
                 TxtId.Text = ""
         End Select
 
+    End Sub
+
+    Private Sub EliminarServicio()
+        Try
+            ControladorServicio.BajarServicio(TxtId.Text)
+            LimpiarTextBoxes()
+            BtnEliminar.Enabled = False
+            BtnEliminar.Cursor = Cursors.Arrow
+            MsgBox("Servicio eliminado con exito!", MsgBoxStyle.Information)
+        Catch ex As Exception
+            MsgBox("No se pudo eliminar a la persona", MsgBoxStyle.Critical)
+        End Try
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click

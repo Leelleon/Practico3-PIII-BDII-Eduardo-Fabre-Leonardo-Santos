@@ -2,7 +2,11 @@
 
 Public Class FrmAltaServicio
     Private Sub FrmAltaServicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ObtenerUltimoID()
 
+    End Sub
+
+    Public Sub ObtenerUltimoID()
         Dim LectorId As IDataReader
         Try
             LectorId = ControladorServicio.ObtenerUltimoID()
@@ -17,7 +21,6 @@ Public Class FrmAltaServicio
             MsgBox("No se pudo traer el ID", MsgBoxStyle.Critical)
             TxtId.Text = "D:"
         End Try
-
     End Sub
 
     Public Sub PermitirAceptar()
@@ -53,6 +56,7 @@ Public Class FrmAltaServicio
         Try
             ControladorServicio.InsertarServicio(Servicio)
             LimpiarTextBoxes()
+            ObtenerUltimoID()
             MsgBox("Ingreso exitoso!", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox("No se pudo ingresar el servicio" + ex.ToString(), MsgBoxStyle.Critical)
@@ -61,7 +65,6 @@ Public Class FrmAltaServicio
     End Sub
 
     Private Sub LimpiarTextBoxes()
-        TxtId.Text = ""
         TxtNombre.Text = ""
         TxtCosto.Text = ""
         CmbTipo.Text = ""
@@ -71,6 +74,5 @@ Public Class FrmAltaServicio
         LimpiarTextBoxes()
         Me.Close()
     End Sub
-
 
 End Class
