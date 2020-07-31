@@ -113,7 +113,7 @@
     Public Sub GuardarContratacion()
         Command.CommandText = "
             INSERT INTO
-                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contrato, activo)
+                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contratacion, activo)
             VALUES
                 (" + Me.Usuario + "," + Me.Servicio + ",CURDATE(), '" + Me.Desde + "', '" + Me.Hasta + "', 1);
         "
@@ -143,7 +143,7 @@
                 id_servicio As Servicio, 
                 fecha_creacion As Creado, 
                 fecha_contratacion As Inicia, 
-                fecha_fin_contrato As Termina
+                fecha_fin_contratacion As Termina
             FROM
                 contrata c
                 JOIN
@@ -163,7 +163,7 @@
                 p.nombre, 
                 s.nombre, 
                 c.fecha_contratacion, 
-                c.fecha_fin_contrato 
+                c.fecha_fin_contratacion 
             FROM 
                 persona p 
                 JOIN 
@@ -209,7 +209,7 @@
                 s.nombre As Servicio,
                 c.fecha_creacion As Efectuado,
                 c.fecha_contratacion As Empieza, 
-                c.fecha_fin_contrato As Termina 
+                c.fecha_fin_contratacion As Termina 
             FROM 
                 persona p 
                 JOIN 
@@ -230,7 +230,7 @@
                 contrata
             SET
                 fecha_contratacion = '" + Me.Desde + "',
-                fecha_fin_contrato = '" + Me.Hasta + "'
+                fecha_fin_contratacion = '" + Me.Hasta + "'
             WHERE
                 id_persona = " + Me.Usuario + "
                 AND

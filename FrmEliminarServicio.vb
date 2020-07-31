@@ -2,16 +2,6 @@
 
 Public Class FrmEliminarServicio
 
-    Private Sub TxtId_TextChanged(sender As Object, e As EventArgs) Handles TxtId.TextChanged
-        If TxtId.Text = String.Empty Then
-            PcbBusqueda.Enabled = False
-            PcbBusqueda.Cursor = Cursors.Arrow
-        Else
-            BtnEliminar.Enabled = True
-            PcbBusqueda.Cursor = Cursors.Hand
-        End If
-    End Sub
-
     Private Sub PcbBusqueda_Click(sender As Object, e As EventArgs) Handles PcbBusqueda.Click
         Dim LectorDatos As IDataReader
         Try
