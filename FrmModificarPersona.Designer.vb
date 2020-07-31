@@ -201,7 +201,7 @@ Partial Class FrmModificarPersona
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(742, 467)
+        Me.ClientSize = New System.Drawing.Size(738, 463)
         Me.ControlBox = False
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.TxtTelefono)

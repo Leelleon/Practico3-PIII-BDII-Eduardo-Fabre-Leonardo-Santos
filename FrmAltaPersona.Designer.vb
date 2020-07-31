@@ -119,14 +119,17 @@ Partial Class FrmAltaPersona
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnVolver.ForeColor = System.Drawing.Color.White
         Me.BtnVolver.Location = New System.Drawing.Point(232, 414)
         Me.BtnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(96, 38)
         Me.BtnVolver.TabIndex = 7
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'BtnAgregar
         '
