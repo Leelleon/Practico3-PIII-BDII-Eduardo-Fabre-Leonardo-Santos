@@ -43,7 +43,7 @@ Partial Class FrmAltaContrata
         Me.LblDescripcion.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDescripcion.Location = New System.Drawing.Point(12, 156)
         Me.LblDescripcion.Name = "LblDescripcion"
-        Me.LblDescripcion.Size = New System.Drawing.Size(0, 20)
+        Me.LblDescripcion.Size = New System.Drawing.Size(0, 24)
         Me.LblDescripcion.TabIndex = 0
         '
         'CmbUsuario
@@ -53,7 +53,7 @@ Partial Class FrmAltaContrata
         Me.CmbUsuario.FormattingEnabled = True
         Me.CmbUsuario.Location = New System.Drawing.Point(56, 88)
         Me.CmbUsuario.Name = "CmbUsuario"
-        Me.CmbUsuario.Size = New System.Drawing.Size(140, 26)
+        Me.CmbUsuario.Size = New System.Drawing.Size(140, 30)
         Me.CmbUsuario.TabIndex = 0
         '
         'CmbServicio
@@ -63,7 +63,7 @@ Partial Class FrmAltaContrata
         Me.CmbServicio.FormattingEnabled = True
         Me.CmbServicio.Location = New System.Drawing.Point(235, 88)
         Me.CmbServicio.Name = "CmbServicio"
-        Me.CmbServicio.Size = New System.Drawing.Size(140, 26)
+        Me.CmbServicio.Size = New System.Drawing.Size(140, 30)
         Me.CmbServicio.TabIndex = 1
         '
         'LblPersona
@@ -73,7 +73,7 @@ Partial Class FrmAltaContrata
         Me.LblPersona.ForeColor = System.Drawing.Color.White
         Me.LblPersona.Location = New System.Drawing.Point(100, 42)
         Me.LblPersona.Name = "LblPersona"
-        Me.LblPersona.Size = New System.Drawing.Size(52, 18)
+        Me.LblPersona.Size = New System.Drawing.Size(68, 23)
         Me.LblPersona.TabIndex = 3
         Me.LblPersona.Text = "Usuario"
         '
@@ -84,7 +84,7 @@ Partial Class FrmAltaContrata
         Me.LblServicio.ForeColor = System.Drawing.Color.White
         Me.LblServicio.Location = New System.Drawing.Point(273, 42)
         Me.LblServicio.Name = "LblServicio"
-        Me.LblServicio.Size = New System.Drawing.Size(55, 18)
+        Me.LblServicio.Size = New System.Drawing.Size(70, 23)
         Me.LblServicio.TabIndex = 4
         Me.LblServicio.Text = "Servicio"
         '
@@ -95,7 +95,7 @@ Partial Class FrmAltaContrata
         Me.LblDesde.ForeColor = System.Drawing.Color.White
         Me.LblDesde.Location = New System.Drawing.Point(469, 43)
         Me.LblDesde.Name = "LblDesde"
-        Me.LblDesde.Size = New System.Drawing.Size(43, 18)
+        Me.LblDesde.Size = New System.Drawing.Size(55, 23)
         Me.LblDesde.TabIndex = 5
         Me.LblDesde.Text = "Desde"
         '
@@ -106,7 +106,7 @@ Partial Class FrmAltaContrata
         Me.LblHasta.ForeColor = System.Drawing.Color.White
         Me.LblHasta.Location = New System.Drawing.Point(638, 44)
         Me.LblHasta.Name = "LblHasta"
-        Me.LblHasta.Size = New System.Drawing.Size(42, 18)
+        Me.LblHasta.Size = New System.Drawing.Size(54, 23)
         Me.LblHasta.TabIndex = 6
         Me.LblHasta.Text = "Hasta"
         '
@@ -116,7 +116,7 @@ Partial Class FrmAltaContrata
         Me.DtpDesde.CustomFormat = ""
         Me.DtpDesde.Location = New System.Drawing.Point(419, 89)
         Me.DtpDesde.Name = "DtpDesde"
-        Me.DtpDesde.Size = New System.Drawing.Size(134, 23)
+        Me.DtpDesde.Size = New System.Drawing.Size(134, 26)
         Me.DtpDesde.TabIndex = 2
         '
         'DtpHasta
@@ -125,7 +125,7 @@ Partial Class FrmAltaContrata
         Me.DtpHasta.CustomFormat = ""
         Me.DtpHasta.Location = New System.Drawing.Point(586, 89)
         Me.DtpHasta.Name = "DtpHasta"
-        Me.DtpHasta.Size = New System.Drawing.Size(138, 23)
+        Me.DtpHasta.Size = New System.Drawing.Size(138, 26)
         Me.DtpHasta.TabIndex = 3
         '
         'ChbConfirmar
@@ -134,7 +134,7 @@ Partial Class FrmAltaContrata
         Me.ChbConfirmar.Enabled = False
         Me.ChbConfirmar.Location = New System.Drawing.Point(84, 296)
         Me.ChbConfirmar.Name = "ChbConfirmar"
-        Me.ChbConfirmar.Size = New System.Drawing.Size(112, 22)
+        Me.ChbConfirmar.Size = New System.Drawing.Size(144, 27)
         Me.ChbConfirmar.TabIndex = 4
         Me.ChbConfirmar.Text = "Confirmar Alta"
         Me.ChbConfirmar.UseVisualStyleBackColor = True
@@ -182,7 +182,7 @@ Partial Class FrmAltaContrata
         '
         'FrmAltaContrata
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
