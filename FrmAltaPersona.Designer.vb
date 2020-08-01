@@ -216,7 +216,7 @@ Partial Class FrmAltaPersona
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.BtnAceptar)
-        Me.ForeColor = System.Drawing.Color.MediumTurquoise
+        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "FrmAltaPersona"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
