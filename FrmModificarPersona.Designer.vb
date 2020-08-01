@@ -22,6 +22,7 @@ Partial Class FrmModificarPersona
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmModificarPersona))
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.TxtTelefono = New System.Windows.Forms.TextBox()
         Me.BtnEliminar = New System.Windows.Forms.Button()
@@ -43,165 +44,223 @@ Partial Class FrmModificarPersona
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(535, 151)
+        Me.BtnVolver.BackColor = System.Drawing.Color.Transparent
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnVolver.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnVolver.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.White
+        Me.BtnVolver.Location = New System.Drawing.Point(810, 247)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(96, 40)
+        Me.BtnVolver.Size = New System.Drawing.Size(178, 45)
         Me.BtnVolver.TabIndex = 11
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'TxtTelefono
         '
-        Me.TxtTelefono.Location = New System.Drawing.Point(277, 229)
+        Me.TxtTelefono.BackColor = System.Drawing.Color.LightBlue
+        Me.TxtTelefono.Location = New System.Drawing.Point(340, 261)
         Me.TxtTelefono.Name = "TxtTelefono"
         Me.TxtTelefono.Size = New System.Drawing.Size(155, 22)
         Me.TxtTelefono.TabIndex = 4
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(447, 350)
+        Me.BtnEliminar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnEliminar.BackgroundImage = CType(resources.GetObject("BtnEliminar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnEliminar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.White
+        Me.BtnEliminar.Location = New System.Drawing.Point(525, 363)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 33)
+        Me.BtnEliminar.Size = New System.Drawing.Size(152, 36)
         Me.BtnEliminar.TabIndex = 7
         Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
+        Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'BtnModificar
         '
-        Me.BtnModificar.Location = New System.Drawing.Point(447, 295)
+        Me.BtnModificar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnModificar.BackgroundImage = CType(resources.GetObject("BtnModificar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnModificar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnModificar.ForeColor = System.Drawing.Color.White
+        Me.BtnModificar.Location = New System.Drawing.Point(525, 312)
         Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(75, 33)
+        Me.BtnModificar.Size = New System.Drawing.Size(152, 36)
         Me.BtnModificar.TabIndex = 6
         Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
+        Me.BtnModificar.UseVisualStyleBackColor = False
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(447, 234)
+        Me.BtnAgregar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnAgregar.BackgroundImage = CType(resources.GetObject("BtnAgregar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnAgregar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnAgregar.ForeColor = System.Drawing.Color.White
+        Me.BtnAgregar.Location = New System.Drawing.Point(525, 261)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(75, 40)
+        Me.BtnAgregar.Size = New System.Drawing.Size(152, 36)
         Me.BtnAgregar.TabIndex = 5
         Me.BtnAgregar.Text = "Agregar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
+        Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'LstTelefono
         '
+        Me.LstTelefono.BackColor = System.Drawing.Color.LightBlue
+        Me.LstTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LstTelefono.FormattingEnabled = True
         Me.LstTelefono.ItemHeight = 16
-        Me.LstTelefono.Location = New System.Drawing.Point(277, 269)
+        Me.LstTelefono.Location = New System.Drawing.Point(340, 289)
         Me.LstTelefono.Name = "LstTelefono"
-        Me.LstTelefono.Size = New System.Drawing.Size(155, 148)
+        Me.LstTelefono.Size = New System.Drawing.Size(155, 194)
         Me.LstTelefono.TabIndex = 8
         '
         'CmbIdPersona
         '
+        Me.CmbIdPersona.BackColor = System.Drawing.Color.LightBlue
+        Me.CmbIdPersona.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbIdPersona.FormattingEnabled = True
-        Me.CmbIdPersona.Location = New System.Drawing.Point(412, 45)
+        Me.CmbIdPersona.Location = New System.Drawing.Point(607, 35)
         Me.CmbIdPersona.Name = "CmbIdPersona"
-        Me.CmbIdPersona.Size = New System.Drawing.Size(48, 24)
+        Me.CmbIdPersona.Size = New System.Drawing.Size(70, 24)
         Me.CmbIdPersona.TabIndex = 0
         '
         'BtnCancelar
         '
+        Me.BtnCancelar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCancelar.BackgroundImage = CType(resources.GetObject("BtnCancelar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BtnCancelar.Location = New System.Drawing.Point(535, 93)
+        Me.BtnCancelar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnCancelar.ForeColor = System.Drawing.Color.White
+        Me.BtnCancelar.Location = New System.Drawing.Point(810, 163)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(96, 38)
+        Me.BtnCancelar.Size = New System.Drawing.Size(178, 43)
         Me.BtnCancelar.TabIndex = 10
         Me.BtnCancelar.Text = "Cancelar"
-        Me.BtnCancelar.UseVisualStyleBackColor = True
+        Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'LblTelefono
         '
         Me.LblTelefono.AutoSize = True
-        Me.LblTelefono.Location = New System.Drawing.Point(149, 234)
+        Me.LblTelefono.BackColor = System.Drawing.Color.Transparent
+        Me.LblTelefono.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTelefono.ForeColor = System.Drawing.Color.White
+        Me.LblTelefono.Location = New System.Drawing.Point(201, 258)
         Me.LblTelefono.Name = "LblTelefono"
-        Me.LblTelefono.Size = New System.Drawing.Size(64, 17)
+        Me.LblTelefono.Size = New System.Drawing.Size(82, 24)
         Me.LblTelefono.TabIndex = 71
         Me.LblTelefono.Text = "Telefono"
         '
         'LblMail
         '
         Me.LblMail.AutoSize = True
-        Me.LblMail.Location = New System.Drawing.Point(149, 174)
+        Me.LblMail.BackColor = System.Drawing.Color.Transparent
+        Me.LblMail.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMail.ForeColor = System.Drawing.Color.White
+        Me.LblMail.Location = New System.Drawing.Point(201, 202)
         Me.LblMail.Name = "LblMail"
-        Me.LblMail.Size = New System.Drawing.Size(33, 17)
+        Me.LblMail.Size = New System.Drawing.Size(45, 24)
         Me.LblMail.TabIndex = 70
         Me.LblMail.Text = "Mail"
         '
         'LblApellido
         '
         Me.LblApellido.AutoSize = True
-        Me.LblApellido.Location = New System.Drawing.Point(149, 135)
+        Me.LblApellido.BackColor = System.Drawing.Color.Transparent
+        Me.LblApellido.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblApellido.ForeColor = System.Drawing.Color.White
+        Me.LblApellido.Location = New System.Drawing.Point(201, 153)
         Me.LblApellido.Name = "LblApellido"
-        Me.LblApellido.Size = New System.Drawing.Size(58, 17)
+        Me.LblApellido.Size = New System.Drawing.Size(80, 24)
         Me.LblApellido.TabIndex = 69
         Me.LblApellido.Text = "Apellido"
         '
         'LblPersonaNombre
         '
         Me.LblPersonaNombre.AutoSize = True
-        Me.LblPersonaNombre.Location = New System.Drawing.Point(149, 93)
+        Me.LblPersonaNombre.BackColor = System.Drawing.Color.Transparent
+        Me.LblPersonaNombre.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPersonaNombre.ForeColor = System.Drawing.Color.White
+        Me.LblPersonaNombre.Location = New System.Drawing.Point(201, 109)
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
-        Me.LblPersonaNombre.Size = New System.Drawing.Size(58, 17)
+        Me.LblPersonaNombre.Size = New System.Drawing.Size(76, 24)
         Me.LblPersonaNombre.TabIndex = 68
         Me.LblPersonaNombre.Text = "Nombre"
         '
         'LblPersonaId
         '
         Me.LblPersonaId.AutoSize = True
-        Me.LblPersonaId.Location = New System.Drawing.Point(115, 45)
+        Me.LblPersonaId.BackColor = System.Drawing.Color.Transparent
+        Me.LblPersonaId.Font = New System.Drawing.Font("Trebuchet MS", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPersonaId.ForeColor = System.Drawing.SystemColors.Window
+        Me.LblPersonaId.Location = New System.Drawing.Point(83, 35)
         Me.LblPersonaId.Name = "LblPersonaId"
-        Me.LblPersonaId.Size = New System.Drawing.Size(274, 17)
+        Me.LblPersonaId.Size = New System.Drawing.Size(494, 29)
         Me.LblPersonaId.TabIndex = 67
-        Me.LblPersonaId.Text = "Seleccione el ID de la Persona a Modificar"
+        Me.LblPersonaId.Text = "Seleccione el ID de la Persona a Modificar :"
         '
         'TxtMail
         '
-        Me.TxtMail.Location = New System.Drawing.Point(277, 169)
+        Me.TxtMail.BackColor = System.Drawing.Color.LightBlue
+        Me.TxtMail.Location = New System.Drawing.Point(340, 204)
         Me.TxtMail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtMail.MaxLength = 50
         Me.TxtMail.Name = "TxtMail"
-        Me.TxtMail.Size = New System.Drawing.Size(183, 22)
+        Me.TxtMail.Size = New System.Drawing.Size(337, 22)
         Me.TxtMail.TabIndex = 3
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(277, 93)
+        Me.TxtNombre.BackColor = System.Drawing.Color.LightBlue
+        Me.TxtNombre.Location = New System.Drawing.Point(340, 111)
         Me.TxtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtNombre.MaxLength = 20
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(183, 22)
+        Me.TxtNombre.Size = New System.Drawing.Size(242, 22)
         Me.TxtNombre.TabIndex = 1
         '
         'TxtApellido
         '
-        Me.TxtApellido.Location = New System.Drawing.Point(277, 132)
+        Me.TxtApellido.BackColor = System.Drawing.Color.LightBlue
+        Me.TxtApellido.Location = New System.Drawing.Point(340, 155)
         Me.TxtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtApellido.MaxLength = 20
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(183, 22)
+        Me.TxtApellido.Size = New System.Drawing.Size(242, 22)
         Me.TxtApellido.TabIndex = 2
         '
         'BtnAceptar
         '
-        Me.BtnAceptar.Location = New System.Drawing.Point(535, 34)
+        Me.BtnAceptar.BackColor = System.Drawing.Color.Transparent
+        Me.BtnAceptar.BackgroundImage = CType(resources.GetObject("BtnAceptar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BtnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnAceptar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!)
+        Me.BtnAceptar.ForeColor = System.Drawing.Color.White
+        Me.BtnAceptar.Location = New System.Drawing.Point(810, 78)
         Me.BtnAceptar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(96, 38)
+        Me.BtnAceptar.Size = New System.Drawing.Size(178, 43)
         Me.BtnAceptar.TabIndex = 9
         Me.BtnAceptar.Text = "Aceptar"
-        Me.BtnAceptar.UseVisualStyleBackColor = True
+        Me.BtnAceptar.UseVisualStyleBackColor = False
         '
         'FrmModificarPersona
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(738, 463)
+        Me.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1050, 532)
         Me.ControlBox = False
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.TxtTelefono)
@@ -220,9 +279,8 @@ Partial Class FrmModificarPersona
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtApellido)
         Me.Controls.Add(Me.BtnAceptar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.ForeColor = System.Drawing.Color.MediumTurquoise
         Me.Name = "FrmModificarPersona"
-        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " Modificar Persona"
         Me.ResumeLayout(False)

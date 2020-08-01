@@ -226,7 +226,7 @@ Partial Class FrmModificarContrata
         Me.BackColor = System.Drawing.Color.MediumTurquoise
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1083, 554)
+        Me.ClientSize = New System.Drawing.Size(1050, 532)
         Me.ControlBox = False
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.BtnModificar)
@@ -244,7 +244,8 @@ Partial Class FrmModificarContrata
         Me.ForeColor = System.Drawing.Color.MediumTurquoise
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmModificarContrata"
-        Me.Text = "FrmModificarContrata"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Modificar Contrato"
         CType(Me.DgvContratos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudDDesde, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NudMDesde, System.ComponentModel.ISupportInitialize).EndInit()
