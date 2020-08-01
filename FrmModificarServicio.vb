@@ -47,23 +47,27 @@ Public Class FrmModificarServicio
 
     End Sub
 
-    Private Sub BtnAceptar_Click(sender As Object, e As EventArgs)
+    Private Sub BtnAceptar_Click(sender As Object, e As EventArgs) Handles BtnAceptar.Click
         Dim Servicio(4) As String
         Servicio(0) = CmbId.Text
         Servicio(1) = TxtNombre.Text
         Servicio(2) = TxtCosto.Text
         Servicio(3) = CmbTipo.Text
+        ModificarServicio(Servicio)
+
+    End Sub
+
+    Private Sub ModificarServicio(Servicio() As String)
         Try
             ControladorServicio.ModificarServicio(Servicio)
             LimpiarTxt()
             BtnAceptar.Enabled = False
             BtnAceptar.Cursor = Cursors.Arrow
             BtnAceptar.BackColor = Color.Gainsboro
+            MsgBox("El servicio se modificó exitosamente!", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox("No se puede modificar al servicio deseado", MsgBoxStyle.Critical)
         End Try
-
-
     End Sub
 
     Private Sub BtnCancelar_Click(sender As Object, e As EventArgs) Handles BtnCancelar.Click
@@ -76,10 +80,10 @@ Public Class FrmModificarServicio
     End Sub
 
     Private Sub LimpiarTxt()
-        CmbId.Text = ""
+        CmbId.SelectedText = ""
         TxtNombre.Text = ""
         TxtCosto.Text = ""
-        CmbTipo.Text = ""
+        CmbTipo.SelectedText = ""
     End Sub
 
 End Class

@@ -102,4 +102,16 @@ Public Module ControladorContrata
 
         c.EliminarContratacion()
     End Sub
+
+    Public Sub ModificarContrato(usuario As String, servicio As String, fechaContratacion As String, desde As String, hasta As String)
+        Dim c As New ModeloContrata With {
+            .Usuario = usuario,
+            .Servicio = servicio,
+            .FechaContratacion = fechaContratacion,
+            .Desde = desde,
+            .Hasta = hasta
+        }
+
+        c.ModificarContrato()
+    End Sub
 End Module

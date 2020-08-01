@@ -79,8 +79,7 @@
     End Function
 
     Public Sub BajarServicio()
-        Try
-            Command.CommandText = "
+        Command.CommandText = "
             UPDATE
                 servicio
             SET
@@ -88,18 +87,12 @@
             WHERE 
                 id = " + Me.Id + "
         "
-
-            Command.ExecuteNonQuery()
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
-
+        Command.ExecuteNonQuery()
 
     End Sub
 
     Public Sub ModificarServicio()
-        Try
-            Command.CommandText = "
+        Command.CommandText = "
             UPDATE 
                 Servicio
             SET
@@ -109,11 +102,7 @@
             WHERE
                 id = " + Me.Id + "
         "
-            Command.ExecuteNonQuery()
-            MsgBox("Servicio modificado con exito!", MsgBoxStyle.Information)
-        Catch ex As Exception
-            MsgBox("Error #" + ex.ToString + ", No se pudo modificar el servicio", MsgBoxStyle.Critical)
-        End Try
+        Command.ExecuteNonQuery()
 
     End Sub
 End Class

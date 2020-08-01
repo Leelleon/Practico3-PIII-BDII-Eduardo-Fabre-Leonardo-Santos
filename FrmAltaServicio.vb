@@ -24,7 +24,7 @@ Public Class FrmAltaServicio
     End Sub
 
     Public Sub PermitirAceptar()
-        If ((TxtNombre.Text <> "") And (TxtCosto.Text <> "") And (CmbTipo.Text <> "")) Then
+        If ((TxtNombre.Text <> "") And (TxtCosto.Text <> "") And (IsNumeric(TxtCosto.Text)) And (CmbTipo.Text <> "")) Then
             BtnAceptar.Enabled = True
             BtnAceptar.BackColor = Color.GhostWhite
             BtnAceptar.Cursor = Cursors.Hand

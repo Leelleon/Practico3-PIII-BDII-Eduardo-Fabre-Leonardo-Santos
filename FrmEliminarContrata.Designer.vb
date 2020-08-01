@@ -54,7 +54,7 @@ Partial Class FrmEliminarContrata
         Me.TxtNombreUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombreUsuario.Enabled = False
         Me.TxtNombreUsuario.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtNombreUsuario.ForeColor = System.Drawing.Color.Black
+        Me.TxtNombreUsuario.ForeColor = System.Drawing.Color.White
         Me.TxtNombreUsuario.Location = New System.Drawing.Point(172, 128)
         Me.TxtNombreUsuario.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombreUsuario.MaxLength = 20
@@ -114,7 +114,7 @@ Partial Class FrmEliminarContrata
         Me.TxtNombreServicio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombreServicio.Enabled = False
         Me.TxtNombreServicio.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtNombreServicio.ForeColor = System.Drawing.Color.Black
+        Me.TxtNombreServicio.ForeColor = System.Drawing.Color.White
         Me.TxtNombreServicio.Location = New System.Drawing.Point(172, 178)
         Me.TxtNombreServicio.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtNombreServicio.MaxLength = 20
@@ -185,7 +185,7 @@ Partial Class FrmEliminarContrata
         Me.TxtFechaEmpieza.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtFechaEmpieza.Enabled = False
         Me.TxtFechaEmpieza.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtFechaEmpieza.ForeColor = System.Drawing.Color.Black
+        Me.TxtFechaEmpieza.ForeColor = System.Drawing.Color.White
         Me.TxtFechaEmpieza.Location = New System.Drawing.Point(172, 224)
         Me.TxtFechaEmpieza.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtFechaEmpieza.MaxLength = 20
@@ -260,7 +260,7 @@ Partial Class FrmEliminarContrata
         Me.TxtFechaTermina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtFechaTermina.Enabled = False
         Me.TxtFechaTermina.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Italic)
-        Me.TxtFechaTermina.ForeColor = System.Drawing.Color.Black
+        Me.TxtFechaTermina.ForeColor = System.Drawing.Color.White
         Me.TxtFechaTermina.Location = New System.Drawing.Point(172, 274)
         Me.TxtFechaTermina.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.TxtFechaTermina.MaxLength = 20
@@ -350,8 +350,6 @@ Partial Class FrmEliminarContrata
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TxtNombreUsuario As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents LblNombreServicio As Label
@@ -373,4 +371,5 @@ Partial Class FrmEliminarContrata
     Friend WithEvents LblId As Label
     Friend WithEvents CmbUsuarios As ComboBox
     Friend WithEvents CmbServicios As ComboBox
+    Friend WithEvents TxtNombreUsuario As TextBox
 End Class
