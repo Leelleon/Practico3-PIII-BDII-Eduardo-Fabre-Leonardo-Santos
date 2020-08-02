@@ -44,8 +44,6 @@
                 persona p, contrata c
             WHERE
                 p.id = c.id_persona
-                AND
-                c.activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -61,8 +59,6 @@
                 c.id_servicio = s.id 
                 AND 
                 c.id_persona = " + Me.Usuario + "
-                AND
-                c.activo = 1;
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -113,7 +109,7 @@
     Public Sub GuardarContratacion()
         Command.CommandText = "
             INSERT INTO
-                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contratacion, activo)
+                contrata(id_persona, id_servicio, fecha_creacion, fecha_contratacion, fecha_fin_contrato, activo)
             VALUES
                 (" + Me.Usuario + "," + Me.Servicio + ",CURDATE(), '" + Me.Desde + "', '" + Me.Hasta + "', 1);
         "
@@ -128,8 +124,6 @@
                 servicio s, contrata c
             WHERE
                 s.id = c.id_servicio
-                AND
-                c.activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -143,15 +137,13 @@
                 id_servicio As Servicio, 
                 fecha_creacion As Creado, 
                 fecha_contratacion As Inicia, 
-                fecha_fin_contratacion As Termina
+                fecha_fin_contrato As Termina
             FROM
                 contrata c
                 JOIN
                 servicio s ON c.id_servicio = s.id
             WHERE
                 s.tipo = '" + Me.Servicio + "'
-                AND
-                c.Activo = 1;
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -163,7 +155,7 @@
                 p.nombre, 
                 s.nombre, 
                 c.fecha_contratacion, 
-                c.fecha_fin_contratacion 
+                c.fecha_fin_contrato 
             FROM 
                 persona p 
                 JOIN 
@@ -176,8 +168,6 @@
                 c.id_persona = " + Me.Usuario + "
                 AND 
                 c.fecha_creacion = '" + Me.FechaContratacion + "'
-                AND
-                c.activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -186,10 +176,8 @@
 
     Public Sub EliminarContratacion()
         Command.CommandText = "
-            UPDATE 
+            DELETE FROM 
                 contrata 
-            SET 
-                activo = 0 
             WHERE 
                 id_persona = " + Me.Usuario + "
                 AND 
@@ -209,15 +197,13 @@
                 s.nombre As Servicio,
                 c.fecha_creacion As Efectuado,
                 c.fecha_contratacion As Empieza, 
-                c.fecha_fin_contratacion As Termina 
+                c.fecha_fin_contrato As Termina 
             FROM 
                 persona p 
                 JOIN 
                 contrata c ON p.id = c.id_persona 
                 JOIN 
                 servicio s ON c.id_servicio = s.id 
-            WHERE
-                c.activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
@@ -230,7 +216,7 @@
                 contrata
             SET
                 fecha_contratacion = '" + Me.Desde + "',
-                fecha_fin_contratacion = '" + Me.Hasta + "'
+                fecha_fin_contrato = '" + Me.Hasta + "'
             WHERE
                 id_persona = " + Me.Usuario + "
                 AND
