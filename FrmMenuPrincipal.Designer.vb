@@ -68,25 +68,25 @@ Partial Class FrmMenuPrincipal
         'NToolStripMenuItem
         '
         Me.NToolStripMenuItem.Name = "NToolStripMenuItem"
-        Me.NToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.NToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
         Me.NToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'ListarToolStripMenuItem
         '
         Me.ListarToolStripMenuItem.Name = "ListarToolStripMenuItem"
-        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ListarToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
         Me.ListarToolStripMenuItem.Text = "Listar"
         '
         'ServiciosToolStripMenuItem
@@ -100,25 +100,25 @@ Partial Class FrmMenuPrincipal
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
         '
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(146, 26)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'EliminarToolStripMenuItem1
         '
         Me.EliminarToolStripMenuItem1.Name = "EliminarToolStripMenuItem1"
-        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
+        Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(146, 26)
         Me.EliminarToolStripMenuItem1.Text = "Eliminar"
         '
         'ListarToolStripMenuItem1
         '
         Me.ListarToolStripMenuItem1.Name = "ListarToolStripMenuItem1"
-        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
+        Me.ListarToolStripMenuItem1.Size = New System.Drawing.Size(146, 26)
         Me.ListarToolStripMenuItem1.Text = "Listar"
         '
         'ContratosToolStripMenuItem
@@ -132,25 +132,25 @@ Partial Class FrmMenuPrincipal
         'NuevoToolStripMenuItem1
         '
         Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
-        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(146, 26)
         Me.NuevoToolStripMenuItem1.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem2
         '
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(146, 26)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'ListarToolStripMenuItem2
         '
         Me.ListarToolStripMenuItem2.Name = "ListarToolStripMenuItem2"
-        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.ListarToolStripMenuItem2.Size = New System.Drawing.Size(146, 26)
         Me.ListarToolStripMenuItem2.Text = "Listar"
         '
         'EliminarToolStripMenuItem2
         '
         Me.EliminarToolStripMenuItem2.Name = "EliminarToolStripMenuItem2"
-        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(216, 26)
+        Me.EliminarToolStripMenuItem2.Size = New System.Drawing.Size(146, 26)
         Me.EliminarToolStripMenuItem2.Text = "Eliminar"
         '
         'BtnSalir
@@ -179,6 +179,7 @@ Partial Class FrmMenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1050, 532)

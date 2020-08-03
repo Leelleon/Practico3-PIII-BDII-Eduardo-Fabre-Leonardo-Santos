@@ -39,67 +39,86 @@ Partial Class FrmEliminarPersona
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.Color.Transparent
         resources.ApplyResources(Me.BtnVolver, "BtnVolver")
         Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BtnVolver.ForeColor = System.Drawing.Color.White
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'LblTelefono
         '
         resources.ApplyResources(Me.LblTelefono, "LblTelefono")
+        Me.LblTelefono.BackColor = System.Drawing.Color.Transparent
+        Me.LblTelefono.ForeColor = System.Drawing.Color.White
         Me.LblTelefono.Name = "LblTelefono"
         '
         'LblMail
         '
         resources.ApplyResources(Me.LblMail, "LblMail")
+        Me.LblMail.BackColor = System.Drawing.Color.Transparent
+        Me.LblMail.ForeColor = System.Drawing.Color.White
         Me.LblMail.Name = "LblMail"
         '
         'LblApellido
         '
         resources.ApplyResources(Me.LblApellido, "LblApellido")
+        Me.LblApellido.BackColor = System.Drawing.Color.Transparent
+        Me.LblApellido.ForeColor = System.Drawing.Color.White
         Me.LblApellido.Name = "LblApellido"
         '
         'LblPersonaNombre
         '
         resources.ApplyResources(Me.LblPersonaNombre, "LblPersonaNombre")
+        Me.LblPersonaNombre.BackColor = System.Drawing.Color.Transparent
+        Me.LblPersonaNombre.ForeColor = System.Drawing.Color.White
         Me.LblPersonaNombre.Name = "LblPersonaNombre"
         '
         'LblPersonaId
         '
         resources.ApplyResources(Me.LblPersonaId, "LblPersonaId")
+        Me.LblPersonaId.BackColor = System.Drawing.Color.Transparent
+        Me.LblPersonaId.ForeColor = System.Drawing.Color.White
         Me.LblPersonaId.Name = "LblPersonaId"
         '
         'TxtMail
         '
+        Me.TxtMail.BackColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.TxtMail, "TxtMail")
         Me.TxtMail.Name = "TxtMail"
         '
         'TxtNombre
         '
+        Me.TxtNombre.BackColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.TxtNombre, "TxtNombre")
         Me.TxtNombre.Name = "TxtNombre"
         '
         'TxtApellido
         '
+        Me.TxtApellido.BackColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.TxtApellido, "TxtApellido")
         Me.TxtApellido.Name = "TxtApellido"
         '
         'BtnEliminar
         '
+        Me.BtnEliminar.BackColor = System.Drawing.Color.Transparent
         resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.White
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
+        Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'LstTelefono
         '
+        Me.LstTelefono.BackColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.LstTelefono, "LstTelefono")
         Me.LstTelefono.FormattingEnabled = True
         Me.LstTelefono.Name = "LstTelefono"
         '
         'CmbIdPersona
         '
-        resources.ApplyResources(Me.CmbIdPersona, "CmbIdPersona")
+        Me.CmbIdPersona.BackColor = System.Drawing.Color.LightBlue
         Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        resources.ApplyResources(Me.CmbIdPersona, "CmbIdPersona")
         Me.CmbIdPersona.FormattingEnabled = True
         Me.CmbIdPersona.Name = "CmbIdPersona"
         '
@@ -107,7 +126,7 @@ Partial Class FrmEliminarPersona
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ControlBox = False
         Me.Controls.Add(Me.CmbIdPersona)
         Me.Controls.Add(Me.LstTelefono)
