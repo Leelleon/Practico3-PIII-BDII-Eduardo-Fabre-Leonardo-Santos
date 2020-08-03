@@ -50,12 +50,13 @@ Partial Class FrmModificarContrata
         Me.CmbServicios.BackColor = System.Drawing.Color.LightBlue
         Me.CmbServicios.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CmbServicios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CmbServicios.Font = New System.Drawing.Font("Trebuchet MS", 9.75!)
         Me.CmbServicios.FormattingEnabled = True
         Me.CmbServicios.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informatica"})
-        Me.CmbServicios.Location = New System.Drawing.Point(581, 37)
+        Me.CmbServicios.Location = New System.Drawing.Point(581, 31)
         Me.CmbServicios.Margin = New System.Windows.Forms.Padding(4)
         Me.CmbServicios.Name = "CmbServicios"
-        Me.CmbServicios.Size = New System.Drawing.Size(160, 24)
+        Me.CmbServicios.Size = New System.Drawing.Size(160, 30)
         Me.CmbServicios.TabIndex = 0
         '
         'LblSeleccion
@@ -211,7 +212,7 @@ Partial Class FrmModificarContrata
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnCancelar.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(761, 424)
+        Me.BtnCancelar.Location = New System.Drawing.Point(761, 425)
         Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(158, 53)
@@ -223,7 +224,7 @@ Partial Class FrmModificarContrata
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1050, 532)
@@ -241,7 +242,7 @@ Partial Class FrmModificarContrata
         Me.Controls.Add(Me.DgvContratos)
         Me.Controls.Add(Me.LblSeleccion)
         Me.Controls.Add(Me.CmbServicios)
-        Me.ForeColor = System.Drawing.Color.MediumTurquoise
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmModificarContrata"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

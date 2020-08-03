@@ -7,8 +7,7 @@ Public Class FrmListarContrata
             TablaContratos.Load(ControladorContrata.ListarContratos)
             DgvContratos.DataSource = TablaContratos
         Catch ex As Exception
-            MsgBox(ex.ToString)
-            'MsgBox("No se pudo cargar la lista!", MsgBoxStyle.Critical)
+            MsgBox("No se pudo cargar la lista!", MsgBoxStyle.Critical)
         End Try
 
     End Sub

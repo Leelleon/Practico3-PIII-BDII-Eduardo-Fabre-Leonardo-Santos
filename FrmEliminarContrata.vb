@@ -16,8 +16,7 @@ Public Class FrmEliminarContrata
                 CmbUsuarios.Items.Add(LectorIdUsuarios.GetValue(0))
             End While
         Catch ex As Exception
-            'MsgBox("No se pudieron cargar los usuarios", MsgBoxStyle.Critical)
-            MsgBox(ex.ToString)
+            MsgBox("No se pudieron cargar los usuarios", MsgBoxStyle.Critical)
         End Try
 
     End Sub
