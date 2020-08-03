@@ -34,7 +34,7 @@ Public Class FrmEliminarPersona
                         MsgBox("No se puede eliminar al usuario", MsgBoxStyle.Critical)
                     End Try
                 Case DialogResult.No
-                        MsgBox("Algo")
+
             End Select
 
         Catch
