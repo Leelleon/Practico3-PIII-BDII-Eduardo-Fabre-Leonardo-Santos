@@ -216,7 +216,7 @@ Partial Class FrmAltaContrata
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1050, 532)
@@ -236,7 +236,7 @@ Partial Class FrmAltaContrata
         Me.Controls.Add(Me.CmbUsuario)
         Me.Controls.Add(Me.LblDescripcion)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
+        Me.ForeColor = System.Drawing.SystemColors.Window
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmAltaContrata"

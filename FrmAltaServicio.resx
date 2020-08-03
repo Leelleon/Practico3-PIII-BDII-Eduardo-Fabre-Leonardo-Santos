@@ -395,13 +395,13 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="BtnCancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 470</value>
+    <value>799, 323</value>
   </data>
   <data name="BtnCancelar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 1</value>
   </data>
   <data name="BtnCancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 50</value>
+    <value>211, 50</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BtnCancelar.TabIndex" type="System.Int32, mscorlib">
@@ -420,19 +420,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnCancelar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="LblTipo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblTipo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 9.75pt</value>
+    <value>Trebuchet MS, 10.8pt</value>
   </data>
   <data name="LblTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 328</value>
+    <value>255, 372</value>
   </data>
   <data name="LblTipo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 23</value>
+    <value>46, 24</value>
   </data>
   <data name="LblTipo.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -450,19 +450,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LblTipo.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="LblCosto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblCosto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 9.75pt</value>
+    <value>Trebuchet MS, 10.8pt</value>
   </data>
   <data name="LblCosto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 244</value>
+    <value>244, 284</value>
   </data>
   <data name="LblCosto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 23</value>
+    <value>57, 24</value>
   </data>
   <data name="LblCosto.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -480,19 +480,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LblCosto.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="LblPersonaNombre.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblPersonaNombre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 9.75pt</value>
+    <value>Trebuchet MS, 10.8pt</value>
   </data>
   <data name="LblPersonaNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 160</value>
+    <value>218, 197</value>
   </data>
   <data name="LblPersonaNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 23</value>
+    <value>76, 24</value>
   </data>
   <data name="LblPersonaNombre.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -510,19 +510,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LblPersonaNombre.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="LblPersonaId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblPersonaId.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 9.75pt</value>
+    <value>Trebuchet MS, 10.8pt</value>
   </data>
   <data name="LblPersonaId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 90</value>
+    <value>384, 112</value>
   </data>
   <data name="LblPersonaId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 23</value>
+    <value>26, 24</value>
   </data>
   <data name="LblPersonaId.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -540,13 +540,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LblPersonaId.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="TxtNombre.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10.8pt, style=Italic</value>
+    <value>Trebuchet MS, 12pt, style=Italic</value>
   </data>
   <data name="TxtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 184</value>
+    <value>309, 197</value>
   </data>
   <data name="TxtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 1</value>
@@ -555,7 +555,7 @@
     <value>20</value>
   </data>
   <data name="TxtNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 21</value>
+    <value>320, 24</value>
   </data>
   <data name="TxtNombre.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -573,13 +573,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TxtNombre.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="TxtCosto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10.8pt, style=Italic</value>
+    <value>Trebuchet MS, 12pt, style=Italic</value>
   </data>
   <data name="TxtCosto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 268</value>
+    <value>322, 284</value>
   </data>
   <data name="TxtCosto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 1</value>
@@ -588,7 +588,7 @@
     <value>20</value>
   </data>
   <data name="TxtCosto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 21</value>
+    <value>307, 24</value>
   </data>
   <data name="TxtCosto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -606,7 +606,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TxtCosto.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="TxtId.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -615,7 +615,7 @@
     <value>Trebuchet MS, 15.75pt, style=Bold</value>
   </data>
   <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 100</value>
+    <value>443, 112</value>
   </data>
   <data name="TxtId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 1</value>
@@ -639,7 +639,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TxtId.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BtnAceptar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2570,19 +2570,19 @@
     <value>False</value>
   </data>
   <data name="BtnAceptar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+    <value>Popup</value>
   </data>
   <data name="BtnAceptar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="BtnAceptar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 468</value>
+    <value>799, 197</value>
   </data>
   <data name="BtnAceptar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 1, 3, 1</value>
   </data>
   <data name="BtnAceptar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 50</value>
+    <value>211, 50</value>
   </data>
   <data name="BtnAceptar.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2600,10 +2600,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnAceptar.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="CmbTipo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="CmbTipo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10.2pt</value>
   </data>
   <data name="CmbTipo.Items" xml:space="preserve">
     <value>Limpieza</value>
@@ -2621,13 +2624,13 @@
     <value>Informática</value>
   </data>
   <data name="CmbTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 353</value>
+    <value>324, 372</value>
   </data>
   <data name="CmbTipo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="CmbTipo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 26</value>
+    <value>341, 31</value>
   </data>
   <data name="CmbTipo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2642,16 +2645,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CmbTipo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="LblLinea2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 288</value>
+    <value>249, 307</value>
   </data>
   <data name="LblLinea2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="LblLinea2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 1</value>
+    <value>510, 1</value>
   </data>
   <data name="LblLinea2.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -2666,19 +2669,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LblLinea2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 204</value>
+    <value>219, 222</value>
   </data>
   <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 1</value>
+    <value>548, 1</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -2693,16 +2696,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>412, 130</value>
+    <value>385, 144</value>
   </data>
   <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 1</value>
+    <value>161, 1</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2717,6 +2720,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblDatosNuevoServicio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblDatosNuevoServicio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 13.8pt, style=Bold</value>
+  </data>
+  <data name="LblDatosNuevoServicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 34</value>
+  </data>
+  <data name="LblDatosNuevoServicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 29</value>
+  </data>
+  <data name="LblDatosNuevoServicio.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="LblDatosNuevoServicio.Text" xml:space="preserve">
+    <value>Ingrese los datos para el nuevo servicio</value>
+  </data>
+  <data name="&gt;&gt;LblDatosNuevoServicio.Name" xml:space="preserve">
+    <value>LblDatosNuevoServicio</value>
+  </data>
+  <data name="&gt;&gt;LblDatosNuevoServicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblDatosNuevoServicio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblDatosNuevoServicio.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -12194,13 +12227,10 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1068, 579</value>
+    <value>1050, 532</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 8.25pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>

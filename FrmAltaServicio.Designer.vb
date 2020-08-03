@@ -36,6 +36,7 @@ Partial Class FrmAltaServicio
         Me.LblLinea2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.LblDatosNuevoServicio = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BtnCancelar
@@ -114,10 +115,10 @@ Partial Class FrmAltaServicio
         '
         'CmbTipo
         '
-        Me.CmbTipo.BackColor = System.Drawing.Color.White
+        Me.CmbTipo.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         resources.ApplyResources(Me.CmbTipo, "CmbTipo")
-        Me.CmbTipo.ForeColor = System.Drawing.Color.Black
+        Me.CmbTipo.ForeColor = System.Drawing.Color.LightSkyBlue
         Me.CmbTipo.FormattingEnabled = True
         Me.CmbTipo.Items.AddRange(New Object() {resources.GetString("CmbTipo.Items"), resources.GetString("CmbTipo.Items1"), resources.GetString("CmbTipo.Items2"), resources.GetString("CmbTipo.Items3"), resources.GetString("CmbTipo.Items4")})
         Me.CmbTipo.Name = "CmbTipo"
@@ -125,12 +126,14 @@ Partial Class FrmAltaServicio
         'LblLinea2
         '
         Me.LblLinea2.BackColor = System.Drawing.Color.White
+        Me.LblLinea2.ForeColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.LblLinea2, "LblLinea2")
         Me.LblLinea2.Name = "LblLinea2"
         '
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.Color.LightBlue
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
         '
@@ -140,12 +143,20 @@ Partial Class FrmAltaServicio
         resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
         '
+        'LblDatosNuevoServicio
+        '
+        resources.ApplyResources(Me.LblDatosNuevoServicio, "LblDatosNuevoServicio")
+        Me.LblDatosNuevoServicio.BackColor = System.Drawing.Color.Transparent
+        Me.LblDatosNuevoServicio.ForeColor = System.Drawing.SystemColors.Window
+        Me.LblDatosNuevoServicio.Name = "LblDatosNuevoServicio"
+        '
         'FrmAltaServicio
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ControlBox = False
+        Me.Controls.Add(Me.LblDatosNuevoServicio)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LblLinea2)
@@ -159,6 +170,7 @@ Partial Class FrmAltaServicio
         Me.Controls.Add(Me.TxtCosto)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.BtnAceptar)
+        Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FrmAltaServicio"
         Me.ResumeLayout(False)
@@ -179,4 +191,5 @@ Partial Class FrmAltaServicio
     Friend WithEvents LblLinea2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents LblDatosNuevoServicio As Label
 End Class

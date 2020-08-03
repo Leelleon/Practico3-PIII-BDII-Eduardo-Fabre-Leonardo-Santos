@@ -224,7 +224,7 @@ Partial Class FrmModificarContrata
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1050, 532)
@@ -242,7 +242,7 @@ Partial Class FrmModificarContrata
         Me.Controls.Add(Me.DgvContratos)
         Me.Controls.Add(Me.LblSeleccion)
         Me.Controls.Add(Me.CmbServicios)
-        Me.ForeColor = System.Drawing.Color.MediumTurquoise
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmModificarContrata"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

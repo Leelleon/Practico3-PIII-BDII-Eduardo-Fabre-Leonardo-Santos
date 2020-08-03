@@ -120,9 +120,6 @@
   <data name="&gt;&gt;TxtMail.Name" xml:space="preserve">
     <value>TxtMail</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FrmEliminarPersona</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LstTelefono.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 148</value>
@@ -173,6 +170,9 @@
   <data name="LblPersonaNombre.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;LblApellido.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="LstTelefono.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -185,6 +185,9 @@
   <data name="LblMail.Text" xml:space="preserve">
     <value>Mail</value>
   </data>
+  <data name="TxtMail.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
   <data name="LblPersonaNombre.Text" xml:space="preserve">
     <value>Nombre</value>
   </data>
@@ -196,9 +199,6 @@
   </data>
   <data name="&gt;&gt;BtnVolver.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LblPersonaId.Name" xml:space="preserve">
-    <value>LblPersonaId</value>
   </data>
   <data name="&gt;&gt;TxtMail.Parent" xml:space="preserve">
     <value>$this</value>
@@ -217,9 +217,6 @@
   </data>
   <data name="LblMail.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
-  </data>
-  <data name="&gt;&gt;LblPersonaNombre.Name" xml:space="preserve">
-    <value>LblPersonaNombre</value>
   </data>
   <data name="&gt;&gt;LblApellido.Parent" xml:space="preserve">
     <value>$this</value>
@@ -242,11 +239,8 @@
   <data name="&gt;&gt;TxtNombre.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="TxtMail.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;LblTelefono.Name" xml:space="preserve">
-    <value>LblTelefono</value>
+  <data name="&gt;&gt;LstTelefono.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="LstTelefono.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 198</value>
@@ -268,6 +262,9 @@
   </data>
   <data name="CmbIdPersona.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 24</value>
+  </data>
+  <data name="LblPersonaNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
   </data>
   <data name="TxtNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 22</value>
@@ -300,8 +297,8 @@
   <data name="LblPersonaId.Text" xml:space="preserve">
     <value>Seleccione la persona a eliminar</value>
   </data>
-  <data name="TxtMail.MaxLength" type="System.Int32, mscorlib">
-    <value>50</value>
+  <data name="&gt;&gt;LblPersonaId.Name" xml:space="preserve">
+    <value>LblPersonaId</value>
   </data>
   <data name="TxtApellido.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -315,6 +312,12 @@
   <data name="BtnVolver.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 38</value>
   </data>
+  <data name="&gt;&gt;BtnVolver.Name" xml:space="preserve">
+    <value>BtnVolver</value>
+  </data>
+  <data name="TxtMail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 159</value>
+  </data>
   <data name="LblApellido.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -326,9 +329,6 @@
   </data>
   <data name="&gt;&gt;CmbIdPersona.Name" xml:space="preserve">
     <value>CmbIdPersona</value>
-  </data>
-  <data name="&gt;&gt;TxtNombre.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="TxtApellido.MaxLength" type="System.Int32, mscorlib">
     <value>20</value>
@@ -363,17 +363,17 @@
   <data name="LblApellido.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 125</value>
   </data>
-  <data name="&gt;&gt;LblApellido.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LblTelefono.Name" xml:space="preserve">
+    <value>LblTelefono</value>
   </data>
-  <data name="&gt;&gt;LstTelefono.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="LblApellido.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
   </data>
-  <data name="&gt;&gt;BtnVolver.Name" xml:space="preserve">
-    <value>BtnVolver</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FrmEliminarPersona</value>
   </data>
-  <data name="TxtMail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 159</value>
+  <data name="&gt;&gt;TxtMail.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;LblTelefono.Parent" xml:space="preserve">
     <value>$this</value>
@@ -417,14 +417,14 @@
   <data name="LblPersonaId.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 17</value>
   </data>
-  <data name="LblPersonaNombre.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
+  <data name="&gt;&gt;LblPersonaNombre.Name" xml:space="preserve">
+    <value>LblPersonaNombre</value>
   </data>
   <data name="LblTelefono.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
   </data>
-  <data name="LblApellido.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;TxtNombre.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;BtnVolver.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -450,8 +450,8 @@
   <data name="&gt;&gt;LblMail.Name" xml:space="preserve">
     <value>LblMail</value>
   </data>
-  <data name="&gt;&gt;TxtMail.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="TxtMail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;BtnEliminar.Parent" xml:space="preserve">
     <value>$this</value>
