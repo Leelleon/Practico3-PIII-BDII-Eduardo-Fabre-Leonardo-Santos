@@ -9,12 +9,10 @@ Public Module ControladorPersona
 
     Public Function NuevaPersona(Nombre As String, Apellido As String, Mail As String, Telefono As List(Of String))
         Dim p As New ModeloPersona
-
         p.Nombre = Nombre
         p.Apellido = Apellido
         p.Mail = Mail
         p.Telefono = Telefono
-
         Return p.Insertar()
 
     End Function

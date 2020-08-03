@@ -39,8 +39,8 @@ Partial Class FrmEliminarPersona
         '
         'BtnVolver
         '
-        resources.ApplyResources(Me.BtnVolver, "BtnVolver")
         Me.BtnVolver.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.BtnVolver, "BtnVolver")
         Me.BtnVolver.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.BtnVolver.ForeColor = System.Drawing.Color.White
         Me.BtnVolver.Name = "BtnVolver"
@@ -83,42 +83,42 @@ Partial Class FrmEliminarPersona
         '
         'TxtMail
         '
-        resources.ApplyResources(Me.TxtMail, "TxtMail")
         Me.TxtMail.BackColor = System.Drawing.Color.LightBlue
+        resources.ApplyResources(Me.TxtMail, "TxtMail")
         Me.TxtMail.Name = "TxtMail"
         '
         'TxtNombre
         '
-        resources.ApplyResources(Me.TxtNombre, "TxtNombre")
         Me.TxtNombre.BackColor = System.Drawing.Color.LightBlue
+        resources.ApplyResources(Me.TxtNombre, "TxtNombre")
         Me.TxtNombre.Name = "TxtNombre"
         '
         'TxtApellido
         '
-        resources.ApplyResources(Me.TxtApellido, "TxtApellido")
         Me.TxtApellido.BackColor = System.Drawing.Color.LightBlue
+        resources.ApplyResources(Me.TxtApellido, "TxtApellido")
         Me.TxtApellido.Name = "TxtApellido"
         '
         'BtnEliminar
         '
-        resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
         Me.BtnEliminar.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.BtnEliminar, "BtnEliminar")
         Me.BtnEliminar.ForeColor = System.Drawing.Color.White
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'LstTelefono
         '
-        resources.ApplyResources(Me.LstTelefono, "LstTelefono")
         Me.LstTelefono.BackColor = System.Drawing.Color.LightBlue
+        resources.ApplyResources(Me.LstTelefono, "LstTelefono")
         Me.LstTelefono.FormattingEnabled = True
         Me.LstTelefono.Name = "LstTelefono"
         '
         'CmbIdPersona
         '
-        resources.ApplyResources(Me.CmbIdPersona, "CmbIdPersona")
         Me.CmbIdPersona.BackColor = System.Drawing.Color.LightBlue
         Me.CmbIdPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        resources.ApplyResources(Me.CmbIdPersona, "CmbIdPersona")
         Me.CmbIdPersona.FormattingEnabled = True
         Me.CmbIdPersona.Name = "CmbIdPersona"
         '
